@@ -1,0 +1,36 @@
+@keyframes gradient {
+    0% {
+        background-position: -1256px 0
+    }
+    100% {
+        background-position: 1256px 0
+    }
+}
+
+.sea {
+    width: 200%;
+    position: absolute;
+    bottom: 0;
+}
+
+#sea1 {
+    height: 300px;
+    background-image: url(../images/sea1.png);
+    opacity: 0.9;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: gradient;
+    animation-timing-function: linear;
+}
+
+#sea2 {
+    height: 270px;
+    background-image: url(../images/sea2.png);
+    opacity: 0.;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: gradient;
+    animation-timing-function: linear;
+}
