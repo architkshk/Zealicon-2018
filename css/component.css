@@ -16,6 +16,7 @@ body {
 }
 
 .color-nav {
+    position: fixed;
     background: transparent;
     z-index: 1;
     width: 100%;
