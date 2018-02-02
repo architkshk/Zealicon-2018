@@ -10,7 +10,7 @@
 #logo-container {
    width: 48vw;
    height: auto;
-   position: fixed;
+   position: relative;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -36,4 +36,12 @@ img {
    0% {top :50%; transform: translate(-50%, -50%);}
    50% {  top: 40%; transform: translate(-50%, -40%);}
    100% { top :50%; transform: translate(-50%, -50%);}
+}
+
+#donald {
+   width : 6vw;
+   position: absolute;
+   z-index: 20;
+   bottom: 250px;
+   left: 80px;
 }
