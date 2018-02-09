@@ -29,8 +29,13 @@ $(document).ready(function(){
 		$('.menu-button').click(function(){
 			$('.menu').css('display','block');
 		});
+
+		$('.abbtn').click(function(){
+			$('#aboutpage').css('right','0');
+			$('#content').css('right','100vw');
+		});
       }
     $( window ).on( "orientationchange", function( event ) {
       location.reload();
-    });
+    });    
 });

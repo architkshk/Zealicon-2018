@@ -6,10 +6,14 @@
     overflow-x: hidden;
 }
 
+
+
 #content {
 	position: fixed;
 	height: 100vh;
 	width: 100vw;
+	right: 0vw;
+	transition: right 2s;
 	background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
 }
 
@@ -74,10 +78,11 @@
 }
 
 .sky{
-	z-index: 10;
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100vw;
 }
 
 .cloud1 {
@@ -178,17 +183,3 @@
 	right: 5vw;
 	z-index: 100;
 }
-
-.menu {
-	display: none;
-	width: 100vw;
-	background-image: url('../images/mapwithelements/map.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	position: fixed;
-	z-index: 100000;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
