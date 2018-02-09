@@ -168,3 +168,27 @@
 		right: 80vw;
 	}
 }
+
+
+.menu-button {
+	position: fixed;
+	width: 5vw;
+	height: auto;
+	bottom: 5vh;
+	right: 5vw;
+	z-index: 100;
+}
+
+.menu {
+	display: none;
+	width: 100vw;
+	background-image: url('../images/mapwithelements/map.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	position: fixed;
+	z-index: 100000;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
