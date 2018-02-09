@@ -1,0 +1,178 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#content {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
+}
+
+.img {
+   max-width: 100%; 
+   height: auto;
+   display:inline-block;
+}
+
+#view {
+	position: fixed;
+	width: 100vw;
+	bottom: 0;
+	left: 0;
+	z-index: 20;
+}
+
+.island {
+	position: fixed;
+	z-index: 100;
+	width: 100vw;
+	left: 0;
+	bottom: 0; 
+	transition: transform 2s; 
+}
+
+.island:hover {
+	transform: scale(1.5);
+}
+
+.grass1 {
+	position: fixed;
+	left: -40%;
+	bottom: -30%;
+	z-index: 1000;
+	height: 60vw;
+	width: 100%;
+	transition: left 2s, transform 2s;
+}
+
+.grass2 {
+	position: fixed;
+	left:  40%;
+	bottom: -30%;
+	z-index: 1001;
+	height: 60vw;
+	width: 100%;
+	transition: left 2s, transform 2s;
+}
+
+.grass1:hover {
+	left: -100%;
+	transform: scale(1.2);
+}
+.grass2:hover {
+	left: 100%;
+	transform: scale(1.2);
+}
+#view:hover > .grass2{
+	left: 110%;
+	transform: scale(1.2);
+}
+#view:hover > .grass1{
+	left: -110%;
+	transform: scale(1.2);
+}
+
+#view:hover > .island {
+	transform: scale(1.5);
+}
+
+.sky{
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cloud1 {
+	top: 60px;
+	width: 150px;
+	position: absolute;
+	animation: cloud-move1 60s linear infinite;
+}
+.cloud2 {
+	top: 30px;
+	position: absolute;
+	animation: cloud-move5 46s linear infinite;
+}
+.cloud3 {
+	top: 17px;
+	width: 90px;
+	position: absolute;
+	animation: cloud-move3 70s linear infinite;
+}
+.cloud4 {
+	top: 28px;
+	position: absolute;
+	animation: cloud-move4 56s linear infinite;
+}
+.cloud5 {
+	top: 13px;
+	width: 70px;
+	position: absolute;
+	animation: cloud-move2 50s linear infinite;
+}
+
+
+@keyframes cloud-move1 {
+	from {
+		right: -400px;
+	}
+	to {
+		right: 110vw;
+	}
+}
+@keyframes cloud-move5 {
+	from {
+		right: -5vw;
+	}
+	to {
+		right: 110vw;
+	}
+}
+@keyframes cloud-move2 {
+	0% {
+		right: 50vw;
+	}
+	50% {
+		right: 100vw;
+	}
+	50.00000001%{
+		right: -150px;
+	}
+	100% {
+		right: 50vw;
+	}
+}
+@keyframes cloud-move3 {
+	0% {
+		right: 40vw;
+	}
+	50% {
+		right: 110vw;
+	}
+	50.00000001%{
+		right: -150px;
+	}
+	100% {
+		right: 40vw;
+	}
+}
+@keyframes cloud-move4 {
+	0% {
+		right: 80vw;
+	}
+	50% {
+		right: 110vw;
+	}
+	50.00000001%{
+		right: -150px;
+	}
+	100% {
+		right: 80vw;
+	}
+}

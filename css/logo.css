@@ -8,17 +8,12 @@
 }
 
 #logo-container {
-   width: 48vw;
+   width: 100vw;
    height: auto;
    position: relative;
-   top: 50%;
+   top: 60%;
    left: 50%;
    transform: translate(-50%, -50%);
-   animation-duration: 4s;
-   animation-fill-mode: forwards;
-   animation-iteration-count: infinite;
-   animation-name: motion;
-   animation-timing-function: linear;
 }
 
 .container {
@@ -28,7 +23,7 @@
 img {
    max-width: 100%; 
    height: auto;
-   display:block;
+   display:inline-block;
 }
 
 

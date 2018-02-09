@@ -26,7 +26,7 @@
     right : 320px;
     z-index: 100;
     height: 10vh;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 
@@ -51,4 +51,45 @@
     100% {
         right: 105%;
     }
+}
+
+
+#titanic {
+    position: absolute;
+    bottom: -10px;
+    left : 50px;
+    z-index: 101;
+    height: 25vh;
+    opacity: 1;
+}
+
+#land {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 20vh;
+    opacity: 0.9;
+    bottom: -55px;
+}
+
+#rocks {
+    position: absolute;
+    z-index: 100;
+    height: 20vh;
+    bottom: -55px;
+    right: 20px;
+}
+#oswald {
+    position: absolute;
+    z-index: 101;
+    height: 10vh;
+    bottom: 55px;
+    right: 60px;
+}
+#dice {
+    position: absolute;
+    z-index: 101;
+    height: 7vh;
+    bottom: 0px;
+    right: 460px;
 }
