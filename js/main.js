@@ -32,7 +32,11 @@ $(document).ready(function(){
 
 		$('.abbtn').click(function(){
 			$('#aboutpage').css('right','0');
-			$('#content').css('right','100vw');
+			$('#homepage').css('right','100vw');
+		});
+		$('.abclose').click(function(){
+			$('#aboutpage').css('right','-100vw');
+			$('#homepage').css('right','0');
 		});
       }
     $( window ).on( "orientationchange", function( event ) {
