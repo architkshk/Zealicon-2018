@@ -60,24 +60,16 @@
 	transition: left 2s, transform 2s;
 }
 
-.grass1:hover {
-	left: -100%;
-	transform: scale(1.2);
-}
-.grass2:hover {
-	left: 100%;
-	transform: scale(1.2);
-}
-#view:hover > .grass2{
-	left: 110%;
-	transform: scale(1.2);
-}
-#view:hover > .grass1{
+.grass1Hover {
 	left: -110%;
 	transform: scale(1.2);
 }
+.grass2Hover {
+	left: 110%;
+	transform: scale(1.2);
+}
 
-#view:hover > .island {
+.islandHover {
 	transform: scale(1.5);
 }
 
