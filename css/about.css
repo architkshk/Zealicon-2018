@@ -34,13 +34,14 @@
 	top: 30%;
 	left: 25%;
 	right: 25%;
-	font-size: 2vw;
+	font-size: 2vmax;
+  text-align: justify;
 	color: #fff;
 }
 
 .about-scooby{
 	position: absolute;
-	bottom: 10px;
+	bottom: 0px;
 	right: 0px;
 	height: 60vh;	
   animation-name: shake;

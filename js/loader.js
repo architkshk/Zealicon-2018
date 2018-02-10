@@ -9,13 +9,13 @@ $(window).on("load",function(){
     		$("#Top_counter").css({
                 display: "block"
     		});
-    }, 10000); 
-$(function(){
+    }, 3000); 
+    $(function(){
   $('.counter_1').each(function() {
       var $this = $(this),
       countTo = $this.attr('data-count');
   
-     $({ countNum: $this.text()}).delay(11000).animate({
+     $({ countNum: $this.text()}).delay(4000).animate({
         countNum: countTo
       },
 
@@ -48,7 +48,7 @@ $(function(){
               $this.text(this.countNum);
               setTimeout(function(){
                  $("#whiteScreen").css({
-                   display: "block"
+                   visibility: "visible"
                  });
                  $("#mySpaceship").css({
                    display: "none"
@@ -57,6 +57,17 @@ $(function(){
                    display: "none"
                  });
               },3000);
+              setTimeout(function(){
+                 $("#whiteScreen").css({
+                   visibility: "hidden"
+                 });
+                 $("#mySpaceship").css({
+                   display: "none"
+                 });
+                 $("#Top_counter").css({
+                   display: "none"
+                 });
+              },6000);
            }
 
           });
