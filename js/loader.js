@@ -1,4 +1,5 @@
 $(window).on("load",function(){
+    $('.counter_2').hide();
     setTimeout(function(){
     		$("#ball-loader").css({
     			display: "none"
@@ -11,69 +12,73 @@ $(window).on("load",function(){
     		});
     }, 3000); 
     $(function(){
-  $('.counter_1').each(function() {
-      var $this = $(this),
-      countTo = $this.attr('data-count');
-  
-     $({ countNum: $this.text()}).delay(4000).animate({
-        countNum: countTo
-      },
-
-     {
+      $('.counter_1').each(function() {
+        var $this = $(this),
+        countTo = $this.attr('data-count');
     
-        duration: 3000,
-        easing:'linear',
-        step: function() {
-        $this.text(Math.floor(this.countNum));
-     },
-        complete: function() {
-        $this.text(this.countNum);
-        $('.counter_1').hide();
-        $('.counter_2').each(function() {
-           var $this = $(this),
-           countTo = $this.attr('data-count');
-  
-           $({ countNum: $this.text()}).delay(250).animate({
-             countNum: countTo
-           },
+       $({ countNum: $this.text()}).delay(4000).animate({
+          countNum: countTo
+        },
 
-           {
+       {
+      
+          duration: 3000,
+          easing:'linear',
+          step: function() {
+          $this.text(Math.floor(this.countNum));
+       },
+          complete: function() {
+          $('.counter_2').show();
+          $this.text(this.countNum);
+          $('.counter_1').hide();
+          $('.counter_2').each(function() {
+             var $this = $(this),
+             countTo = $this.attr('data-count');
     
-              duration: 8000,
-              easing:'linear',
-              step: function() {
-              $this.text(Math.floor(this.countNum));
-           },
-              complete: function() {
-              $this.text(this.countNum);
-              setTimeout(function(){
-                 $("#whiteScreen").css({
-                   visibility: "visible"
-                 });
-                 $("#mySpaceship").css({
-                   display: "none"
-                 });
-                 $("#Top_counter").css({
-                   display: "none"
-                 });
-              },3000);
-              setTimeout(function(){
-                 $("#whiteScreen").css({
-                   visibility: "hidden"
-                 });
-                 $("#mySpaceship").css({
-                   display: "none"
-                 });
-                 $("#Top_counter").css({
-                   display: "none"
-                 });
-              },6000);
-           }
+             $({ countNum: $this.text()}).delay(250).animate({
+               countNum: countTo
+             },
 
+             {
+      
+                duration: 5000,
+                easing:'linear',
+                step: function() {
+                $this.text(Math.floor(this.countNum));
+             },
+                complete: function() {
+                $this.text(this.countNum);
+                setTimeout(function(){
+                   $("#whiteScreen").css({
+                     visibility: "visible"
+                   });
+                   $("#mySpaceship").css({
+                     display: "none"
+                   });
+                   $("#Top_counter").css({
+                     display: "none"
+                   });
+                },3000);
+                setTimeout(function(){
+                   $("#whiteScreen").css({
+                     visibility: "hidden"
+                   });
+                   $("#mySpaceship").css({
+                     display: "none"
+                   });
+                   $("#Top_counter").css({
+                     display: "none"
+                   });
+                   $("#pages").css({
+                     display: "block"
+                   });
+                },6000);
+             }
+
+            });
+      
           });
-    
-        });
-      }
+        }
 
     });  
 });

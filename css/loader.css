@@ -4,15 +4,9 @@
 }
 
 
-body {
-  font: 800% serif;
-  line-height: 1.5;
-  color: black;
+h1 {
   display: block;
   text-align: center;
-}
-
-h1 {
   font-weight: 600;
   line-height: 1.25;
   margin-top: 5em;
@@ -79,13 +73,13 @@ h1 {
 	z-index: 10010;
 }
 .counter_1,.counter_2{
+  text-align: center;
   font-size:50px;
-  width:200px;
-  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   height:200px;
-  vertical-align: middle;
-  margin-left: 55rem;
-  margin-top: 31rem;
   transition: 0.5s ease-in;
 }
 #Top_counter {

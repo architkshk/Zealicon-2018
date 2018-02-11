@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".button").click(function(){
+	$(".mapbtn").click(function(){
          $("#myNav").css({
         	height: "100%"
         });
