@@ -5,12 +5,17 @@ body {
 .overlay {
 	height: 0%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.9);
+    bottom: 0;
+    right: 0;
+    background: url('../images/mapwithelements/map.png');
     overflow-y: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     transition: 0.5s;
 }
 
