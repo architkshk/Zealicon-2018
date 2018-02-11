@@ -97,7 +97,6 @@ h1 {
 	font-family: 'Orbitron', sans-serif;
 }
 #whiteScreen{
-  visibility: hidden;
 	background-color: white;
 	top: 0;
 	left: 0;

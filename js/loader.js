@@ -1,4 +1,5 @@
 $(window).on("load",function(){
+  $("#whiteScreen").hide();
     $('.counter_2').hide();
     setTimeout(function(){
     		$("#ball-loader").css({
@@ -49,9 +50,7 @@ $(window).on("load",function(){
                 complete: function() {
                 $this.text(this.countNum);
                 setTimeout(function(){
-                   $("#whiteScreen").css({
-                     visibility: "visible"
-                   });
+                   $("#whiteScreen").fadeIn(1000);
                    $("#mySpaceship").css({
                      display: "none"
                    });
@@ -60,9 +59,7 @@ $(window).on("load",function(){
                    });
                 },3000);
                 setTimeout(function(){
-                   $("#whiteScreen").css({
-                     visibility: "hidden"
-                   });
+                   $("#whiteScreen").fadeOut();
                    $("#mySpaceship").css({
                      display: "none"
                    });
