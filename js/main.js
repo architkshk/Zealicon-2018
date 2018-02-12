@@ -8,19 +8,21 @@ $(document).ready(function(){
     else{
 
     	$(window).on('load',function() {
-    		$(".vidloader").fadeOut();
+    		setTimeout(function(){
+    			$(".vidloader").fadeOut();
             $('#whiteScreen').fadeIn();
             var typed = new Typed('#welcome', {
 			  strings: ["","Welcome to the 90's",""],
 			  typeSpeed: 40
 			});
+    		},3000);
+    		
 			setTimeout(function(){
 				$('#whiteScreen').fadeOut();
 	            $("#pages").css({
 	              display: "block"
-	        })},4000);	
-    	});
-          	$('body').show();
+	        })},6500);	
+	        $('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
 			$('.island, .water').addClass("islandHover");
 			$('.zealicon').addClass('zealiconhover');
@@ -54,6 +56,8 @@ $(document).ready(function(){
 			$('#aboutpage').css('right','-100vw');
 			$('#homepage').css('right','0');
 		});
+    	});
+          	
       }
     $( window ).on( "orientationchange", function( event ) {
       location.reload();
