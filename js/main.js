@@ -7,6 +7,19 @@ $(document).ready(function(){
     }
     else{
 
+    	$(window).on('load',function() {
+    		$(".vidloader").fadeOut();
+            $('#whiteScreen').fadeIn();
+            var typed = new Typed('#welcome', {
+			  strings: ["","Welcome to the 90's",""],
+			  typeSpeed: 40
+			});
+			setTimeout(function(){
+				$('#whiteScreen').fadeOut();
+	            $("#pages").css({
+	              display: "block"
+	        })},4000);	
+    	});
           	$('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
 			$('.island, .water').addClass("islandHover");

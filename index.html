@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" href="css/map.css">
 
     <script type="text/javascript" src="js/jquery.js"></script>
-<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
+    <script type="text/javascript" src="js/typed.js"></script>
+<link rel="stylesheet" type="text/css" href="css/csshake-slow.min.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                   <rect width="100vw" height="45vh" style="fill:rgb(94,204,254)" />
                 </svg>
                 <img class ="img zealicon" src="images/zealicon.png" />
-                <a href="#" class="mapbtn"><img class ="img home-map" src="images/mapwithelements/home-map.png" /></a>
+                <a href="#" class="mapbtn"><img class ="img home-map" src="images/mapwithelements/map-lying.png" /></a>
             </div>
 
                 <img class ="img grass1" src="images/leaves-left.png" />
@@ -48,7 +49,7 @@
     <div id="aboutpage">
         <a href="#" class="abclose" style="position: absolute; top: 0;z-index: 10000">close</a>
         <img class ="img aboutbg" src="images/aboutpage/about.png" />
-        <img class ="img about-scooby" src="http://i.imgur.com/8I5rwNn.png" />
+        <img class ="img about-scooby" src="images/aboutpage/about-scooby.png" />
          
         <p>
             'ZEALICON' is the Annual Techno-Culural Fest, organised by JSS Academy Of Technical Education, Noida. This year, ZEALICON turns 10, with more exciting events and loads of prizes to be given away. The fest is scheduled to be organised from 14th March 2018 - 17th March 2018. Further details will be added soon, keep visiting this page to stay updated on ZEALICON'18.
@@ -69,9 +70,15 @@
         </div>
       </div>
     </div>
-
-
   </div>
+  <div class="vidloader">
+      <video preload playsinline autoplay loop muted>
+        <source src="loader.mp4" type="video/mp4">
+      </video> 
+  </div>
+    <div id="whiteScreen">
+      <p id="welcome"></p>
+    </div> 
 <!--
     <div  id="ball-loader">
       <h1 class="loading">LET'S REWIND</h1>
