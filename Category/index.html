@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Pageflip Layout with BookBlock</title>
+    <meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+    <meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <style type="text/css">
+        body {
+            text-align: center;
+            padding: 0px;
+            /*in order to adjust with the arrow*/
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .modal-footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 60px;
+            padding: 10px;
+            background: #f1f3f5;
+        }
+
+        .modal.fade {
+            opacity: 1;
+        }
+
+        .modal.fade .modal-dialog {
+            -webkit-transform: translate(0);
+            -moz-transform: translate(0);
+            transform: translate(0);
+        }
+
+        .btn-black {
+            position: absolute;
+            bottom: 50px;
+            transform: translateX(-50%);
+            background: #222;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .modal-dialog {
+            position: fixed;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+    </style>
+    <script src="js/modernizr.custom.79639.js"></script>
+    <style type="text/css">
+        .abc {
+            position: center;
+        }
+
+
+        .a {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            position: absolute;
+            bottom: 20px;
+            left: 20%;
+            background: #000;
+            cursor: pointer;
+            display: inline-block;
+            margin: 30px;
+            padding: 20px 30px;
+            z-index: 1000;
+        }
+
+        .a::before,
+        .a::after {
+            background: #fff;
+            content: '';
+            display: block;
+            height: 10px;
+            left: 0;
+            position: relative;
+            -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -webkit-transition: right 0.5s, -webkit-transform 0.5s;
+            transition: right 0.5s, -webkit-transform 0.5s;
+            transition: transform 0.5s, right 0.5s;
+            transition: transform 0.5s, right 0.5s, -webkit-transform 0.5s;
+            width: 2px;
+        }
+
+        .a::after {
+            -webkit-transform-origin: right top;
+            transform-origin: right top;
+        }
+
+        .a:hover::before,
+        .a:hover::after {
+            right: 7px;
+        }
+
+        .a:hover::before {
+            -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+        }
+
+        .a:hover::after {
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+
+        .b {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            position: absolute;
+            top: 20px;
+            left: 20%;
+            background: #000;
+            cursor: pointer;
+            display: inline-block;
+            margin: 30px;
+            padding: 20px 30px;
+            z-index: 1000;
+        }
+
+        .b::before,
+        .b::after {
+            background: #fff;
+            content: '';
+            display: block;
+            height: 10px;
+            left: 0;
+            position: relative;
+            -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+            -webkit-transition: left 0.5s, -webkit-transform 0.5s;
+            transition: left 0.5s, -webkit-transform 0.5s;
+            transition: transform 0.5s, left 0.5s;
+            transition: transform 0.5s, left 0.5s, -webkit-transform 0.5s;
+            width: 2px;
+        }
+
+        .b::after {
+            -webkit-transform-origin: left top;
+            transform-origin: left top;
+        }
+
+        .b:hover::before,
+        .b:hover::after {
+            left: -7px;
+        }
+
+        .b:hover::before {
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+
+        .b:hover::after {
+            -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="b" id="bb-nav-prev"></span>
+        <span class="a" id="bb-nav-next"></span>
+    </nav>
+    <div id="container" class="container">
+        <div class="categoryIcon">
+            <div class="ci-item"></div>
+        </div>
+        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller" style="text-align: center;">
+                            <h2>Title</h2>
+                            <!-- Button trigger modal -->
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
+									  <img src="http://placehold.it/550x350">
+									</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Why we die</h2>
+                            <p><em>From<a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item3">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item4">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>A drawing joke</h2>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item5">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>Commencing practice</h2>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/jquery.bookblock.js"></script>
+    <script src="js/page.js"></script>
+    <script>
+        $(function() {
+            Page.init();
+        });
+    </script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function testAnim(x) {
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
+            console.log('class', 'modal-dialog  ' + x + '  animated');
+        };
+        $('#myModal').on('show.bs.modal', function(e) {
+            testAnim('flipInY');
+        })
+        $('#myModal').on('hide.bs.modal', function(e) {
+            testAnim('flipOutY');
+        })
+    </script>
+</body>
+
+</html>
