@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Raleway', sans-serif;
     z-index: 0;
@@ -9,21 +10,22 @@
 
 
 .vidloader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  display: block;
-  position: absolute;
-  background: #fff;
+  background: rgb(247,247,249);
   z-index: 1000;
 }
-
-.vidloader video {
-  width: 100vw;
-  height: 100vh;
+.gif {
+	position: absolute;
+  height: 60vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 body{
@@ -63,6 +65,76 @@ body{
 .img {
    max-width: 100%; 
    display:inline-block;
+}
+
+
+.pikachu {
+	position: absolute;
+	bottom: 180px;
+	height: 15vh;
+    animation-name: pikachu;
+    animation-duration: 8s;
+    z-index: 1000;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+.static {
+	display: block;
+	position: absolute;
+	height: 50vh;
+	bottom: 10vh;
+	left: 5vw;
+	z-index: 1000;
+}
+
+.active {	
+	display: none;
+	position: absolute;
+	height: 50vh;
+	bottom: 10vh;
+	left: 5vw;
+	z-index: 1000;
+}
+
+.roadrunner {
+	position: absolute;
+	bottom: 50px;
+	height: 10vw;
+    animation-name: roadrunner;
+    animation-duration: 8s;
+    z-index: 1000;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+
+@keyframes pikachu {
+	0% {
+		left: -15vw;
+	}
+	50% {
+		left: -15vw;
+	}
+	100% {
+		left: 105vw;
+	}
+}
+
+@keyframes roadrunner {
+	0% {
+		right: -50vw;
+	}
+	50% {
+		right: 105vw;
+	}
+	100% {
+		right: 105vw;
+	}
 }
 
 #view {

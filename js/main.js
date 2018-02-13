@@ -10,18 +10,19 @@ $(document).ready(function(){
     	$(window).on('load',function() {
     		setTimeout(function(){
     			$(".vidloader").fadeOut();
-            $('#whiteScreen').fadeIn();
-            var typed = new Typed('#welcome', {
-			  strings: ["","Welcome to the 90's",""],
-			  typeSpeed: 40
-			});
-    		},3000);
+	            $('#whiteScreen').fadeIn();
+	            var typed = new Typed('#welcome', {
+				  strings: ["","Welcome to the 90's",""],
+				  typeSpeed: 40
+				});
+	    	},3000);
     		
 			setTimeout(function(){
 				$('#whiteScreen').fadeOut();
 	            $("#pages").css({
 	              display: "block"
-	        })},6500);	
+	          })
+	        },6500);	
 	        $('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
 			$('.island, .water').addClass("islandHover");
@@ -57,7 +58,15 @@ $(document).ready(function(){
 			$('#homepage').css('right','0');
 		});
     	});
-          	
+
+    	$('.static').mouseover(function(){
+    		$('.static').css('display','none');
+    		$('.active').css('display','block');
+    	});
+    	$('.static').mouseleave(function(){
+    		$('.static').css('display','block');
+    		$('.active').css('display','none');
+    	});
       }
     $( window ).on( "orientationchange", function( event ) {
       location.reload();
