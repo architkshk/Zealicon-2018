@@ -29,6 +29,7 @@ $(document).ready(function(){
 			$('.zealicon').addClass('zealiconhover');
 			$('.grass1').addClass("grass1Hover");
 			$('.grass2').addClass("grass2Hover");
+			$('.grass3').addClass("grass3Hover");
 		});
 		$(document).keydown(function(e){
 			if(e.keyCode==38){
@@ -36,12 +37,14 @@ $(document).ready(function(){
 				$('.zealicon').addClass('zealiconhover');
 				$('.grass1').addClass("grass1Hover");
 				$('.grass2').addClass("grass2Hover");
+				$('.grass3').addClass("grass3Hover");
 			}
 			else if(e.keyCode==40){
 				$('.island, .water').removeClass("islandHover");
 				$('.zealicon').removeClass('zealiconhover');
 				$('.grass1').removeClass("grass1Hover");
 				$('.grass2').removeClass("grass2Hover");
+				$('.grass3').removeClass("grass3Hover");
 			}
 		});
 

@@ -16,6 +16,39 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/typed.js"></script>
 <link rel="stylesheet" type="text/css" href="css/csshake-slow.min.css">
+    <style type="text/css">
+      /*.mowgli{
+        z-index: 1003;
+      }*/
+
+      .grass3{
+        position: absolute;
+        left: 18%;
+        z-index: 1003;
+        /*height: 100vh;*/
+        width: 70%;
+        transition: left 2s linear, transform 2s;
+      }
+
+      .grass3Hover {
+        left: -110%;
+        transform: scale(1.2);
+      }
+
+      .tweety {
+          top: 13px;
+          width: 70px;
+          position: absolute;
+          
+      }
+
+      .bird {
+          top: 18%;
+          width: 12%;
+          position: absolute;
+          left:68%;
+      }
+    </style>
 </head>
 
 <body>
@@ -27,6 +60,9 @@
                 <img class="img cloud3" src="images/cloud.png">
                 <img class="img cloud4" src="images/cloud.png">
                 <img class="img cloud5" src="images/cloud.png">
+
+                <img class="tweety" src="images/Tweety.gif">
+                <img class="bird" src="images/bird.gif">
             
             <div id="view">
                 <img class ="img island" src="images/home_elongated2.png" />
@@ -43,6 +79,7 @@
 
                 <img class ="img grass1" src="images/leaves-left.png" />
                 <img class ="img grass2" src="images/leaves-right.png" />
+                <img class ="mowgli grass3" src="images/timon.gif" />
         </div>
 
         <div class="img menu">
