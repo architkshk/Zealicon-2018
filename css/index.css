@@ -7,6 +7,25 @@
     text-justify : inner-word;
 }
 
+
+.vidloader {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  background: #fff;
+  z-index: 1000;
+}
+
+.vidloader video {
+  width: 100vw;
+  height: 100vh;
+}
+
 body{
 	height: 100vh;
 	width: 100vw;
@@ -93,18 +112,18 @@ body{
 	position: absolute;
 	left: 0%;
 	z-index: 1000;
-	height: 60vw;
+	height: 100vh;
 	width: 100%;
-	transition: left 2s, transform 2s;
+	transition: left 2s linear, transform 2s;
 }
 
 .grass2 {
 	position: absolute;
 	left:  0%;
 	z-index: 1001;
-	height: 60vw;
+	height: 100vh;
 	width: 100%;
-	transition: left 2s, transform 2s;
+	transition: left 2s linear, transform 2s;
 }
 
 .grass1Hover {
@@ -165,8 +184,10 @@ body{
 
 .home-map {
 	position: absolute;
-	bottom: 50px;
-	right: 50px;
+	bottom: 8vh;
+	right: 8vw;
+	z-index: 3;
+	width: 100px;
 }
 
 @keyframes cloud-move1 {
