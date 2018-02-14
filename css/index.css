@@ -8,6 +8,32 @@
     text-justify : inner-word;
 }
 
+.plane {
+	position: absolute;
+	width: 100px;
+	top: 3%;
+    animation-name: plane;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes plane {
+	0% {
+		left: -200px;
+	}
+	15% {
+		left: -200px;
+	}
+
+	85% {
+		left: 110vw;
+	}
+	100% {
+		left: 110vw;
+	}
+}
 
 .vidloader {
   width: 100vw;
@@ -75,7 +101,6 @@ body{
     animation-name: pikachu;
     animation-duration: 8s;
     z-index: 1000;
-    animation-delay: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -107,7 +132,6 @@ body{
     animation-duration: 8s;
     z-index: 1000;
     animation-iteration-count: infinite;
-    animation-delay: 4s;
     animation-direction: normal;
     animation-timing-function: linear;
 }
