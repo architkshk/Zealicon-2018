@@ -36,10 +36,11 @@
       }
 
       .tweety {
-          top: 20%;
-          left: 23%;
-          width: 120px;
-          position: absolute;
+        top: 63%;
+        left: -2%;
+        z-index: 1001;
+        width: 9%;
+        position: absolute;
           
       }
 
@@ -146,6 +147,44 @@
         z-index: 1000;
         height: 15vh;
       }
+
+      .jungle{
+        width: 23%;
+        z-index: 1000;
+        position: absolute;
+        bottom: -4%;
+        left: -6%;
+      }
+
+      .chipmunk{
+        width: 13%;
+        top: 80%;
+        z-index: 1001;
+        position: absolute;
+        left: 86%;
+      }
+
+      .abcd{
+        position: absolute;
+        z-index: 1005;
+        display: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height:100%;
+      }
+
+      .lamp{
+        width: 8%;
+        transform: rotate(-30deg);
+        top: 67%;
+        position: absolute;
+        left: 35%;
+        z-index: 1001;
+      }
+
     </style>
 </head>
 
@@ -162,21 +201,27 @@
                 <img class="tweety" src="images/Tweety.gif">
                 <img class="plane" src="images/plane.png">
                 <img class="bird" src="images/bird.gif">
-            
+                <img class="jungle" src="images/jungle.gif">
+                <img class="chipmunk" src="images/chipmunk.gif">
+                <img class="abcd" id="abc" src="images/abcd.webp">
+                <img class="lamp" id="jin" src="images/lamp.png">
+
+
             <div id="view">
                 <img class ="img island" src="images/home_elongated2.png" />
                 <svg width="100vw" height="45vh" class="water">
                   <rect width="100vw" height="45vh" style="fill:rgb(94,204,254)" />
                 </svg>
                 <img class ="img zealicon" src="images/zealicon.png" />
-                <!--<img class ="img pikachu" src="images/pikachu.gif" />-->
-                <img class ="img bl1" src="images/babylooney/1.gif" />
+                <img class ="img pikachu" src="images/pikachu.gif" />
+                <!-- <img class ="img bl1" src="images/babylooney/1.gif" />
                 <img class ="img bl2" src="images/babylooney/2.gif" />
                 <img class ="img bl3" src="images/babylooney/3.gif" />
                 <img class ="img bl4" src="images/babylooney/4.gif" />
                 <img class ="img bl5" src="images/babylooney/5.png" />
-                <img class ="img bl6" src="images/babylooney/6.gif" />
-
+                <img class ="img bl6" src="images/babylooney/6.gif" /> -->
+                
+                
                 <img class ="img roadrunner" src="images/roadrunner.gif" />
               <!--<img class="img jin static" src="images/jinstatic.png">
               <img class="img jin active" src="images/jin.gif">-->
@@ -259,6 +304,22 @@
     <script type="text/javascript" src="js/loader.js"></script> -->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#jin').click(function(){
+          $('#abc').show();
+        });
+      });
+     
+
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#jin").mouseleave(function(){
+              setTimeout(function(){ $('#abc').hide(); }, 1500);
+          });
+      });
+    </script>
 </body> 
 
 </html>
