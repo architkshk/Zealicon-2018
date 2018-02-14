@@ -13,7 +13,7 @@
 	width: 100px;
 	top: 3%;
     animation-name: plane;
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -99,7 +99,7 @@ body{
 	bottom: 180px;
 	height: 15vh;
     animation-name: pikachu;
-    animation-duration: 8s;
+    animation-duration: 12s;
     z-index: 1000;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -129,7 +129,7 @@ body{
 	bottom: 50px;
 	height: 10vw;
     animation-name: roadrunner;
-    animation-duration: 8s;
+    animation-duration: 12s;
     z-index: 1000;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -207,7 +207,7 @@ body{
 .grass1 {
 	position: absolute;
 	left: 0%;
-	z-index: 1000;
+	z-index: 1001;
 	height: 100vh;
 	width: 100%;
 	transition: left 2s linear, transform 2s;
