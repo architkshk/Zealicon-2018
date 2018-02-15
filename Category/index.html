@@ -37,19 +37,8 @@
             right: 0;
             bottom: 0;
             left: 0;
-
             border-radius: 0;
             box-shadow: none;
-        }
-
-        .modal-footer {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 60px;
-            padding: 10px;
-            background: #f1f3f5;
         }
 
         .modal.fade {
@@ -81,6 +70,7 @@
             height: 100%;
             padding: 0;
         }
+
     </style>
     <script src="js/modernizr.custom.79639.js"></script>
     <style type="text/css">
@@ -90,11 +80,8 @@
 
 
         .a {
-            transform: rotate(90deg);
-            -webkit-transform: rotate(90deg);
-            position: absolute;
-            bottom: 20px;
-            left: 20%;
+            position: relative;
+            right: 10%;
             background: #000;
             cursor: pointer;
             display: inline-block;
@@ -140,12 +127,58 @@
             transform: rotateZ(45deg);
         }
 
-        .b {
+        .d {
             transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
             position: absolute;
-            top: 20px;
+            bottom: 0;
             left: 20%;
+            background: #000;
+            cursor: pointer;
+            display: inline-block;
+            margin: 30px;
+            padding: 20px 30px;
+            z-index: 1000;
+        }
+
+        .d::before,
+        .d::after {
+            background: #fff;
+            content: '';
+            display: block;
+            height: 10px;
+            left: 0;
+            position: relative;
+            -webkit-transform-origin: right bottom;
+            transform-origin: right bottom;
+            -webkit-transition: right 0.5s, -webkit-transform 0.5s;
+            transition: right 0.5s, -webkit-transform 0.5s;
+            transition: transform 0.5s, right 0.5s;
+            transition: transform 0.5s, right 0.5s, -webkit-transform 0.5s;
+            width: 2px;
+        }
+
+        .d::after {
+            -webkit-transform-origin: right top;
+            transform-origin: right top;
+        }
+
+        .d:hover::before,
+        .d:hover::after {
+            right: 7px;
+        }
+
+        .d:hover::before {
+            -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+        }
+
+        .d:hover::after {
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+
+        .b {
             background: #000;
             cursor: pointer;
             display: inline-block;
@@ -190,40 +223,93 @@
             -webkit-transform: rotateZ(-45deg);
             transform: rotateZ(-45deg);
         }
+
+        .c {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            position: absolute;
+            top: 0;
+            left: 20%;
+            background: #000;
+            cursor: pointer;
+            display: inline-block;
+            margin: 30px;
+            padding: 20px 30px;
+            z-index: 1000;
+        }
+
+        .c::before,
+        .c::after {
+            background: #fff;
+            content: '';
+            display: block;
+            height: 10px;
+            left: 0;
+            position: relative;
+            -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+            -webkit-transition: left 0.5s, -webkit-transform 0.5s;
+            transition: left 0.5s, -webkit-transform 0.5s;
+            transition: transform 0.5s, left 0.5s;
+            transition: transform 0.5s, left 0.5s, -webkit-transform 0.5s;
+            width: 2px;
+        }
+
+        .c::after {
+            -webkit-transform-origin: left top;
+            transform-origin: left top;
+        }
+
+        .c:hover::before,
+        .c:hover::after {
+            left: -7px;
+        }
+
+        .c:hover::before {
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+
+        .c:hover::after {
+            -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+        }
+
     </style>
 </head>
 
 <body>
     <nav>
-        <span class="b" id="bb-nav-prev"></span>
-        <span class="a" id="bb-nav-next"></span>
+        <div style="display:hidden" id="catCount" data-count="0"></div>
+        <span class="c" id="bb-cat-prev"></span>
+        <span class="d" id="bb-cat-next"></span>
     </nav>
     <div id="container" class="container">
         <div class="categoryIcon">
-            <div class="ci-item"></div>
+            <div class="ci-item" id="ci-item-1"></div>
+            <div class="ci-item" id="ci-item-2"></div>
+            <div class="ci-item" id="ci-item-3"></div>
+            <div class="ci-item" id="ci-item-4"></div>
+            <div class="ci-item" id="ci-item-5"></div>
+            <div class="ci-item" id="ci-item-6"></div>
         </div>
-        <div class="bb-custom-wrapper">
+        <div class="bb-custom-wrapper" id="book-1">
             <div id="bb-bookblock" class="bb-bookblock">
+                <nav>
+                    <span class="b" id="bb-nav-prev"></span>
+                    <span class="a" id="bb-nav-next"></span>
+                </nav>
                 <div class="bb-item" id="item1">
                     <div class="content">
                         <div class="scroller" style="text-align: center;">
-                            <h2>Title</h2>
+                            <h2>Title1</h2>
                             <!-- Button trigger modal -->
                             <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
-									  <img src="http://placehold.it/550x350">
-									</a>
+									  <img src="http://placehold.it/550x350"></a>
                         </div>
                     </div>
                 </div>
                 <div class="bb-item" id="item2">
-                    <div class="content">
-                        <div class="scroller">
-                            <h2>Why we die</h2>
-                            <p><em>From<a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bb-item" id="item3">
                     <div class="content">
                         <div class="scroller">
                             <h2>The honeymoon</h2>
@@ -233,18 +319,202 @@
                         </div>
                     </div>
                 </div>
-                <div class="bb-item" id="item4">
+                <div class="bb-item" id="item2">
                     <div class="content">
                         <div class="scroller">
-                            <h2>A drawing joke</h2>
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
                             <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
                         </div>
                     </div>
                 </div>
-                <div class="bb-item" id="item5">
+            </div>
+        </div>
+        <div class="bb-custom-wrapper" id="book-2">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <nav>
+                    <span class="b" id="bb-nav-prev"></span>
+                    <span class="a" id="bb-nav-next"></span>
+                </nav>
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller" style="text-align: center;">
+                            <h2>Title2</h2>
+                            <!-- Button trigger modal -->
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
+									  <img src="http://placehold.it/550x350"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
                     <div class="content">
                         <div class="scroller">
-                            <h2>Commencing practice</h2>
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bb-custom-wrapper" id="book-3">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <nav>
+                    <span class="b" id="bb-nav-prev"></span>
+                    <span class="a" id="bb-nav-next"></span>
+                </nav>
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller" style="text-align: center;">
+                            <h2>Title3</h2>
+                            <!-- Button trigger modal -->
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
+									  <img src="http://placehold.it/550x350"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bb-custom-wrapper" id="book-4">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <nav>
+                    <span class="b" id="bb-nav-prev"></span>
+                    <span class="a" id="bb-nav-next"></span>
+                </nav>
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller" style="text-align: center;">
+                            <h2>Title4</h2>
+                            <!-- Button trigger modal -->
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
+									  <img src="http://placehold.it/550x350"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bb-custom-wrapper" id="book-5">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <nav>
+                    <span class="b" id="bb-nav-prev"></span>
+                    <span class="a" id="bb-nav-next"></span>
+                </nav>
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller" style="text-align: center;">
+                            <h2>Title5</h2>
+                            <!-- Button trigger modal -->
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
+									  <img src="http://placehold.it/550x350"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bb-custom-wrapper" id="book-6">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <nav>
+                    <span class="b" id="bb-nav-prev"></span>
+                    <span class="a" id="bb-nav-next"></span>
+                </nav>
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller" style="text-align: center;">
+                            <h2>Title6</h2>
+                            <!-- Button trigger modal -->
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">
+									  <img src="http://placehold.it/550x350"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
+                            <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h2>The honeymoon</h2>
+                            <p>The origin of the honeymoon is not generally known.</p>
+                            <p>"The report did not say whether the husband was pleased or not with her long silence."</p>
                             <p><em>From <a href="http://www.gutenberg.org/ebooks/41595" target="_blank">"The Funny Side of Physic"</a> by A. D. Crabtre</em></p>
                         </div>
                     </div>
@@ -263,10 +533,6 @@
                 <div class="modal-body">
                     ...
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
             </div>
         </div>
     </div>
@@ -280,6 +546,7 @@
         $(function() {
             Page.init();
         });
+
     </script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -293,6 +560,7 @@
         $('#myModal').on('hide.bs.modal', function(e) {
             testAnim('flipOutY');
         })
+
     </script>
 </body>
 
