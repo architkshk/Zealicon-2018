@@ -7,6 +7,166 @@
     overflow-x: hidden;
     text-justify : inner-word;
 }
+.castle {
+	position: absolute;
+	bottom: 10%;
+	width: 12%;
+	z-index: 1000;    
+	transform: scaleX(-1);
+	transition: transform 2s, right 2s;
+	right: 17vw;
+}
+
+.castlehover {
+	right: 12vw;
+	transform: scaleX(-1.2) scaleY(1.2);
+}
+
+.leftplant {
+	height: 75vh;
+	top: 10%;
+	left: -15%;
+	position: absolute;
+	z-index: 1000;	
+	transition: transform 2s;
+}
+
+.chipmunk{
+	width: 10%;
+	bottom: 0%;
+	z-index: 1001;
+	position: absolute;
+	right : 5%;
+	transition: transform 2s, right 2s;
+}
+
+.chipmunkhover {
+	right: 0%;
+}
+
+.tweety {
+	top: 6%;
+	left: 0%;
+	z-index: 1002;
+	width: 5%;
+	position: absolute;
+}
+
+.jungle{
+	width: 17%;
+	z-index: 1001;
+	position: absolute;
+	top: 9%;
+	left: -3%;
+	transition: transform 2s, top 2s;
+}
+
+.junglehover {
+	top: 7%;
+	transform: scale(1.2);
+}
+
+.tape {
+	width: 5%;
+	z-index: 1000;
+	position: absolute;
+	bottom: 15%;
+	left: 5%;
+	transition: transform 2s;
+}
+.shinchan {
+	width: 13%;
+	z-index: 1000;
+	position: absolute;
+	bottom: 8%;
+	left: 18%;
+	transition: transform 2s, left 2s;
+}
+
+.shinchanhover {
+	left: 13%;
+	transform: scale(1.2);
+}
+
+.baloon {
+	position: absolute;
+	z-index: 1001;
+	width: 10%;
+    animation-name: baloon-anim;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transform: scaleX(-1);
+}
+
+@keyframes baloon-anim{
+	0% {
+		top: 5%;
+		right: 15%;
+	}
+	50% {
+		top: 9%;
+		right: 17%;
+	}
+	100% {
+		top: 5%;
+		right: 15%;
+	}
+
+}
+
+.bird {
+	bottom: 35%;
+	width: 5%;
+	position: absolute;
+    animation-name: bird-anim;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    z-index: 1000;
+	transition: transform 2s;
+}
+
+@keyframes bird-anim {
+	0% {
+		left: -21vw;
+	}
+	50% {
+		left: -21vw;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+
+
+.pikachu {
+	position: absolute;
+	bottom: 30%;
+	height: 12vh;
+    animation-name: pikachu;
+    animation-duration: 12s;
+    z-index: 1000;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+	transition: transform 2s;
+}
+
+@keyframes pikachu {
+	0% {
+		left: -15vw;
+	}
+	50% {
+		left: -15vw;
+	}
+	100% {
+		left: 111vw;
+	}
+}
+
 
 .plane {
 	position: absolute;
@@ -94,17 +254,7 @@ body{
 }
 
 
-.pikachu {
-	position: absolute;
-	bottom: 180px;
-	height: 15vh;
-    animation-name: pikachu;
-    animation-duration: 12s;
-    z-index: 1000;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
-}
+
 
 .static {
 	display: block;
@@ -135,20 +285,6 @@ body{
     animation-direction: normal;
     animation-timing-function: linear;
 }
-
-
-@keyframes pikachu {
-	0% {
-		left: -15vw;
-	}
-	50% {
-		left: -15vw;
-	}
-	100% {
-		left: 105vw;
-	}
-}
-
 @keyframes roadrunner {
 	0% {
 		right: -50vw;
@@ -207,7 +343,7 @@ body{
 .grass1 {
 	position: absolute;
 	left: 0%;
-	z-index: 1001;
+	z-index: 1005;
 	height: 100vh;
 	width: 100%;
 	transition: left 2s linear, transform 2s;
@@ -216,7 +352,7 @@ body{
 .grass2 {
 	position: absolute;
 	left:  0%;
-	z-index: 1001;
+	z-index: 1005;
 	height: 100vh;
 	width: 100%;
 	transition: left 2s linear, transform 2s;
@@ -281,7 +417,7 @@ body{
 .home-map {
 	position: absolute;
 	bottom: 8vh;
-	right: 8vw;
+	left: 18vw;
 	z-index: 3;
 	width: 100px;
 }
