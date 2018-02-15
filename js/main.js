@@ -25,26 +25,38 @@ $(document).ready(function(){
 	        },6500);	
 	        $('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
-			$('.island, .water').addClass("islandHover");
+			$('.island, .water, .bird, .pikachu, .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");
 			$('.zealicon').addClass('zealiconhover');
 			$('.grass1').addClass("grass1Hover");
 			$('.grass2').addClass("grass2Hover");
 			$('.grass3').addClass("grass3Hover");
+			$('.castle').addClass("castlehover");
+			$('.chipmunk').addClass("chipmunkhover");
+			$('.jungle').addClass("junglehover");
+			$('.shinchan').addClass("shinchanhover");
 		});
 		$(document).keydown(function(e){
 			if(e.keyCode==38){
-				$('.island, .water').addClass("islandHover");
+				$('.island, .water, .bird, .pikachu, .chipmunk, .tape, .leftplant').addClass("islandHover");
 				$('.zealicon').addClass('zealiconhover');
 				$('.grass1').addClass("grass1Hover");
 				$('.grass2').addClass("grass2Hover");
 				$('.grass3').addClass("grass3Hover");
+				$('.castle').addClass("castlehover");
+				$('.chipmunk').addClass("chipmunkhover");
+				$('.jungle').addClass("junglehover");
+				$('.shinchan').addClass("shinchanhover");
 			}
 			else if(e.keyCode==40){
-				$('.island, .water').removeClass("islandHover");
+				$('.island, .water, .bird, .pikachu, .castle, .chipmunk, .tape, .leftplant').removeClass("islandHover");
 				$('.zealicon').removeClass('zealiconhover');
 				$('.grass1').removeClass("grass1Hover");
 				$('.grass2').removeClass("grass2Hover");
 				$('.grass3').removeClass("grass3Hover");
+				$('.castle').removeClass("castlehover");
+				$('.chipmunk').removeClass("chipmunkhover");
+				$('.jungle').removeClass("junglehover");
+				$('.shinchan').removeClass("shinchanhover");
 			}
 		});
 
