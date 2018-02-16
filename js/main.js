@@ -34,6 +34,7 @@ $(document).ready(function(){
 			$('.chipmunk').addClass("chipmunkhover");
 			$('.jungle').addClass("junglehover");
 			$('.shinchan').addClass("shinchanhover");
+			$('.bottle').addClass("bottlehover");
 		});
 		$(document).keydown(function(e){
 			if(e.keyCode==38){
@@ -46,6 +47,7 @@ $(document).ready(function(){
 				$('.chipmunk').addClass("chipmunkhover");
 				$('.jungle').addClass("junglehover");
 				$('.shinchan').addClass("shinchanhover");
+				$('.bottle').addClass("bottlehover");
 			}
 			else if(e.keyCode==40){
 				$('.island, .water, .bird, .pikachu, .castle, .chipmunk, .tape, .leftplant').removeClass("islandHover");
@@ -57,6 +59,7 @@ $(document).ready(function(){
 				$('.chipmunk').removeClass("chipmunkhover");
 				$('.jungle').removeClass("junglehover");
 				$('.shinchan').removeClass("shinchanhover");
+				$('.bottle').removeClass("bottlehover");
 			}
 		});
 
