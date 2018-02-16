@@ -199,7 +199,7 @@ img#contact_image{
 }
 @media(max-width: 640px) and (min-width: 600px){
 a#home{
-    margin-top: -8rem;
+    margin-top: -9rem;
     margin-left: -17rem;
 }
 img#home_image{
@@ -370,21 +370,21 @@ img#contact_image{
 @media(max-width: 854px) and (min-width: 800px){
 a#home{
     margin-top: -12rem;
-    margin-left: -23rem;
+    margin-left: -22rem;
 }
 img#home_image{
     width: 6rem;
 }
 a#about{
-    margin-top: 20rem;
-    margin-left: 8rem;
+    margin-top: 19rem;
+    margin-left: 9rem;
 }
 img#about_image{
   width: 5rem;
 }
 a#events{
-    margin-top: -11rem;
-    margin-left: -16rem;
+    margin-top: -10rem;
+    margin-left: -15rem;
 }
 
 img#events_image{
@@ -398,8 +398,8 @@ img#sponsors_image{
     width: 5rem;
 }
 a#schedule{
-    margin-top: -13.5rem;
-    margin-left: 13rem;
+    margin-top: -12.5rem;
+    margin-left: 12rem;
 }
 img#schedule_image{
     width: 5rem;
@@ -413,7 +413,7 @@ img#team_image{
 }
 a#contact{
     margin-top: -16rem;
-    margin-left: 17rem;
+    margin-left: 16rem;
 }
 img#contact_image{
    width: 6rem;
@@ -481,22 +481,26 @@ img#contact_image{
 }
 }
 @media(max-width: 1024px) and (min-width: 1000px){
+img#map_background{
+    height: 80%;
+    width: 100%;
+}
 a#home{
     margin-top: -15rem;
-    margin-left: -27rem;
+    margin-left: -28rem;
 }
 img#home_image{
     width: 8rem;
 }
 a#about{
-    margin-top: 25rem;
+    margin-top: 23rem;
     margin-left: 11rem;
 }
 img#about_image{
   width: 5rem;
 }
 a#events{
-    margin-top: -12rem;
+    margin-top: -13rem;
     margin-left: -18.5rem;
 }
 
@@ -518,31 +522,96 @@ img#schedule_image{
     width: 6rem;
 }
 a#team{
-    margin-top: -23.5rem;
-    margin-left: 14rem;
+    margin-top: -22.5rem;
+    margin-left: 15rem;
 }
 img#team_image{
   width: 7rem;
 }
 a#contact{
-    margin-top: -20rem;
-    margin-left: 20.5rem;
+    margin-top: -19rem;
+    margin-left: 20rem;
 }
 img#contact_image{
    width: 7rem;
 }
 .overlay {
     overflow-y: auto;
-    margin-top: 150px;
+    margin-top: 55px;
 }
 }
 @media(max-width: 1280px) and (min-width: 1200px){
     .overlay{
         overflow-y: auto;
-        margin-top: 154px;
+        margin-top: 80px;
+    }
+    a#home{
+        margin-left: -34rem;
+    }
+    a#about{
+        margin-top: 31rem;
     }
 }
+@media(max-width: 1440px) and (min-width: 1400px){
+    .overlay{
+        overflow-y: auto;
+        margin-top: 60px;
+    }
+    img#map_background{
+        width: 100%;
+        height: 85%;
+    }
+    a#home{
+    margin-top: -20.5rem;
+    margin-left: -37rem;
+}
+img#home_image{
+    width: 8rem;
+}
+a#about{
+    margin-top: 38rem;
+    margin-left: 15rem;
+}
+img#about_image{
+  width: 7rem;
+}
+a#events{
+    margin-top: -19rem;
+    margin-left: -26.5rem;
+}
 
+img#events_image{
+    width: 10rem;
+}
+a#sponsors{
+    margin-top: -24rem;
+    margin-left: -19.5rem;
+}
+img#sponsors_image{
+    width: 9rem;
+}
+a#schedule{
+    margin-top: -23rem;
+    margin-left: 21.5rem;
+}
+img#schedule_image{
+    width: 8rem;
+}
+a#team{
+    margin-top: -34.5rem;
+    margin-left: 21rem;
+}
+img#team_image{
+  width: 10rem;
+}
+a#contact{
+    margin-top: -30rem;
+    margin-left: 29.5rem;
+}
+img#contact_image{
+   width: 9rem;
+}
+}
 @media screen and (max-height: 450px) {
   
   .overlay a {font-size: 20px}
