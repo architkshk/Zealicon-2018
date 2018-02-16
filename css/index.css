@@ -82,15 +82,6 @@
 	filter: drop-shadow(-1px 6px 5px #4444dd);
 }
 
-.abclose {
-	position: absolute;
-	z-index: 10001;
-	left: 20px;
-	text-decoration: none;
-    font-size: 60px;
-	color: #fff;
-	top: 20px;
-}
 
 .boat {
 	position: absolute;
@@ -316,7 +307,6 @@ body{
 	top: 0;
 	left: 0;
 }
-
 #homepage{
 	position: absolute;
 	top: 0;

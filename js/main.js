@@ -84,6 +84,15 @@ $(document).ready(function(){
 			$('#aboutpage').css('right','-100vw');
 			$('#homepage').css('right','0');
 		});
+
+		$('.spbtn').click(function(){
+			$('#sponsorpage').css('right','0');
+			$('#homepage').css('right','100vw');
+		});
+		$('.spclose').click(function(){
+			$('#sponsorpage').css('right','-100vw');
+			$('#homepage').css('right','0');
+		});
     	});
 
     	$('.static').mouseover(function(){
