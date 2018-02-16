@@ -4,7 +4,7 @@ $(document).ready(function(){
         	height: "100%"
         });
 	});
-	$(".closebtn").click(function(){
+	$(".closebtn, .map-homep").click(function(){
         $("#myNav").css({
         	height: "0%"
         });

@@ -37,11 +37,33 @@
 
 .leftplant {
 	height: 75vh;
-	top: 10%;
+	top: 9	%;
 	left: -15%;
 	position: absolute;
 	z-index: 1000;	
 	transition: transform 2s;
+}
+
+.glow {
+	filter: drop-shadow(-1px 6px 5px #4444dd);
+}
+
+.boat {
+	position: absolute;
+	bottom: 41%;
+	width: 1%;
+	z-index: 1001;
+    animation-name: plane;
+    animation-duration: 55s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transition: transform 2s, bottom 2s;
+}
+
+.boathover {
+	bottom: 45%;
+	transform: scale(1.2);
 }
 
 .chipmunk{
@@ -186,7 +208,7 @@
 	width: 100px;
 	top: 3%;
     animation-name: plane;
-    animation-duration: 12s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -196,15 +218,8 @@
 	0% {
 		left: -200px;
 	}
-	15% {
-		left: -200px;
-	}
-
-	85% {
-		left: 110vw;
-	}
 	100% {
-		left: 110vw;
+		left: 105vw;
 	}
 }
 
