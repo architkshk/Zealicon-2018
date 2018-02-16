@@ -133,6 +133,21 @@
 	transform: scale(1.2);
 }
 
+.sun {
+	width: 8%;
+	position: absolute;
+	bottom: 43%;
+	left: 25%;
+	z-index: -1;
+	transition: transform 2s, left 2s, bottom 2s;
+}
+
+.sunhover {
+	left: 20%;
+	transform: scale(1.2);
+	bottom: 50%;
+}
+
 .baloon {
 	position: absolute;
 	z-index: 1001;
@@ -142,21 +157,20 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
-    transform: scaleX(-1);
 }
 
 @keyframes baloon-anim{
 	0% {
 		top: 5%;
-		right: 15%;
+		right: 54%;
 	}
 	50% {
 		top: 9%;
-		right: 17%;
+		right: 52%;
 	}
 	100% {
 		top: 5%;
-		right: 15%;
+		right: 54%;
 	}
 
 }
@@ -190,7 +204,7 @@
 .pikachu {
 	position: absolute;
 	bottom: 30%;
-	height: 12vh;
+	height: 10%;
     animation-name: pikachu;
     animation-duration: 12s;
     z-index: 1000;
@@ -362,13 +376,12 @@ body{
 	height: auto;
 	transition:bottom 2s, transform 2s ; 
 	z-index: 2;	
-	left: 50%;
+	left: 70%;
 	transform: translateX(-50%);
 }
 
 .zealiconhover {
 	transform:  translateX(-50%) scale(1.2);
-	left: 50%;
 	bottom: 47%;
 }
 
