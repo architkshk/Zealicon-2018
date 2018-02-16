@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.heading{
+    color: #818181;
+    font-size: 60px;
+}
+
+.abc{
+    padding-left: 45%
+}
+
+/*.anurag{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}*/
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <h1 class="heading">Contact Us</h1>
+    <div class="anurag" style="width:70%; color: white;">
+        <div class="abc">
+        <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;">Email : <b>sponsors@jssaten.ac.in</b></p>
+        </div>
+        <div class="phone abc" style="display: flex;text-align: center;justify-content:center;">
+            <div class="">
+                <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;">Phone:</p>
+            </div>
+            <div class="">
+                <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;"><b>+91-9982220931 <br> Preeteshwar Singh</b></p>
+            </div>
+            <div class="">
+                <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;"><b>+91-7597283361 <br> Marut Lahoty</b></p>
+            </div>
+        </div>
+        <div class="add abc" style="display: flex;justify-content:center;">
+            <div style="align-self: center;">
+                <address class="" style="width:100%;">
+                Address :<br> <b>JSS Academy of Technical Education, Sector 62<br> Noida, UttarPradesh 201301<br></b>
+                </address>
+            </div>
+            
+        </div>
+    </div>
+
+  </div>
+</div>
+
+
+<button style="font-size:30px;cursor:pointer" onclick="openNav()">Click</button>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
