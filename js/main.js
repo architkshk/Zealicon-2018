@@ -25,7 +25,7 @@ function animateContent(direction) {
     }
 
     console.log("animationOffset:"+animationOffset);
-    $('.stripcontent').animate({ "marginTop": (animationOffset)+ "px" }, 12000);
+    $('.stripcontent').animate({ "marginTop": (animationOffset)+ "px" }, 10000);
 }
 
 function down(){
@@ -133,5 +133,6 @@ function start(){
       }
     $( window ).on( "orientationchange", function( event ) {
       location.reload();
-    });    
+    }); 
+    $("[data-toggle='tooltip']").tooltip();  
 });
