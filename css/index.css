@@ -282,7 +282,7 @@
   left: 0;
   bottom: 0;
   background: rgb(247,247,249);
-  z-index: 1000;
+  z-index: 1000000;
 }
 .gif {
 	position: absolute;
@@ -556,3 +556,18 @@ body{
 		right: 80vw;
 	}
 }
+
+
+.stripcontainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900000;
+	background: #fff;
+ height:800px; padding:0 10px; overflow:hidden; 
+}
+.stripimg {
+   max-width: 100%; 
+   display:inline-block;
+  overflow: hidden;
+ }

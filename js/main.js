@@ -9,20 +9,48 @@ $(document).ready(function(){
 
     	$(window).on('load',function() {
     		setTimeout(function(){
-    			$(".vidloader").fadeOut();
 	            $('#whiteScreen').fadeIn();
+    			$(".vidloader").fadeOut();
+    				if ($('.stripcontent').height() > $('.stripcontainer').height()) {
+		        setInterval(function () {
+		            start();
+		       }, 2000); 
+		    }
+		},3000);
+
+function animateContent(direction) {  
+    var animationOffset = $('.stripcontainer').height() - $('.stripcontent').height()-30;
+    if (direction == 'up') {
+        animationOffset = 0;
+    }
+
+    console.log("animationOffset:"+animationOffset);
+    $('.stripcontent').animate({ "marginTop": (animationOffset)+ "px" }, 12000);
+}
+
+function down(){
+    animateContent("down")
+}
+
+function start(){
+ setTimeout(function () {
+    down();
+}, 2000);
+}
+		setTimeout(function(){
+	            $('.stripcontainer').fadeOut();
 	            var typed = new Typed('#welcome', {
 				  strings: ["","Welcome to the 90's",""],
 				  typeSpeed: 40
 				});
-	    	},3000);
+	    	},19000);
     		
 			setTimeout(function(){
 				$('#whiteScreen').fadeOut();
 	            $("#pages").css({
 	              display: "block"
 	          })
-	        },6500);	
+	        },22000);	
 	        $('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
 			$('.island, .water, .bird, .pikachu, .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");
@@ -93,8 +121,7 @@ $(document).ready(function(){
 			$('#sponsorpage').css('right','-100vw');
 			$('#homepage').css('right','0');
 		});
-    	});
-
+});
     	$('.static').mouseover(function(){
     		$('.static').css('display','none');
     		$('.active').css('display','block');
