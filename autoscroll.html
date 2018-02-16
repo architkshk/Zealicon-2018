@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autoscroll</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<style type="text/css">
+		.container { height:800px; padding:0 10px; overflow:hidden; }
+        .img {
+           max-width: 100%; 
+           display:inline-block;
+         }
+	</style>
+</head>
+<body>
+<div id="images_strip">
+
+<div class="container">
+    <div class="content">
+        <img class="img" src="images/dfscv.jpg">
+     </div>
+</div>
+</div>
+<script type="text/javascript">
+	$(window).on("load",function() {
+
+    if ($('.content').height() > $('.container').height()) {
+        setInterval(function () {
+
+            start();
+       }, 3000); 
+   
+    }
+});
+
+function animateContent(direction) {  
+    var animationOffset = $('.container').height() - $('.content').height()-30;
+    if (direction == 'up') {
+        animationOffset = 0;
+    }
+
+    console.log("animationOffset:"+animationOffset);
+    $('.content').animate({ "marginTop": (animationOffset)+ "px" }, 12000);
+}
+
+function down(){
+    animateContent("down")
+}
+
+function start(){
+ setTimeout(function () {
+    down();
+}, 5000);
+   setTimeout(function () {
+    console.log("wait...");
+}, 7000);
+}    
+</script>
+</body>
+</html>
