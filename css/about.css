@@ -31,10 +31,11 @@
 #aboutpage p {
 	display: block;
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	left: 25%;
-	right: 25%;
-	font-size: 2vmax;
+	right: 20%;
+  text-align: center;
+	font-size: 1.5vmax;
   text-align: justify;
 	color: #fff;
 }
