@@ -7,14 +7,7 @@
     overflow-x: hidden;
     text-justify : inner-word;
 }
-.castle {
-	position: absolute;
-	bottom: 10%;
-	width: 12%;
-	z-index: 1000;    
-	transition: transform 2s, right 2s;
-	right: 17vw;
-}
+
 
 .bottle {
 	position: absolute;
@@ -30,8 +23,49 @@
 	bottom: 6%;
 }
 
+.starfish {
+	position: absolute;
+	bottom: 5%;
+	right: 35%;
+	width: 4.5%;
+	z-index: 996;
+	transition: transform 2s;
+}
+
+    .lamp{
+        width: 4%;
+        bottom: 5%;
+        position: absolute;
+        left: 40%;
+        z-index: 1001;
+		transition: transform 2s;
+    }
+
+.winnie {
+	position: absolute;
+	bottom: 8%;
+	width: 22%;
+	right: 8%;
+	z-index: 1001;
+	transition: transform 2s, right 2s;
+}
+
+.winniehover {
+	right: 4.5%;
+	transition: scale(1.2);
+}
+
+.castle {
+	position: absolute;
+	bottom: 18%;
+	width: 12%;
+	z-index: 1000;    
+	transition: transform 2s, left 2s;
+	left: 26vw;
+}
+
 .castlehover {
-	right: 12vw;
+	left: 23vw;
 	transform: scale(1.2);
 }
 
@@ -121,7 +155,7 @@
 }
 .shinchan {
 	width: 13%;
-	z-index: 1000;
+	z-index: 1001;
 	position: absolute;
 	bottom: 8%;
 	left: 18%;
@@ -151,12 +185,13 @@
 .baloon {
 	position: absolute;
 	z-index: 1001;
-	width: 10%;
+	width: 9%;
     animation-name: baloon-anim;
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
+    transition: transform 2s;
 }
 
 @keyframes baloon-anim{
@@ -184,7 +219,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
-    z-index: 1000;
+    z-index: 999;
 	transition: transform 2s;
 }
 
@@ -207,7 +242,7 @@
 	height: 10%;
     animation-name: pikachu;
     animation-duration: 12s;
-    z-index: 1000;
+    z-index: 999;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
