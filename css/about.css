@@ -31,10 +31,11 @@
 #aboutpage p {
 	display: block;
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	left: 25%;
-	right: 25%;
-	font-size: 2vmax;
+	right: 20%;
+  text-align: center;
+	font-size: 1.5vmax;
   text-align: justify;
 	color: #fff;
 }
@@ -43,22 +44,44 @@
 .abclose {
   position: absolute;
   z-index: 10001;
-  left: 20px;
+  left: 24vw;
   text-decoration: none;
     font-size: 60px;
   color: #fff;
-  top: 20px;
+  top: 26vh;
 }
 
 .about-scooby{
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
-	height: 60vh;	
+	height: 60vh;
   animation-name: shake;
   animation-duration:1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.about-overlay {
+  /*display: block;*/
+  position: relative;
+  width: 65vw;
+  height: 70vh;
+  top: 24vh;
+  left: 22vw;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  /*text-align: center;*/
+}
+
+.about-overlay p {
+    margin-top: -120px;
+    margin-left: -90px;
+		margin-right: -90px;
+		margin-bottom: 10px;
+    /*transform: translate(-50%,-50%);*/
+    /*position: absolute;*/
+    font-size: 3em;
+		/*overflow-y: scroll;*/
 }
 
 @keyframes shake {
@@ -161,7 +184,7 @@
   98% {
     transform: translate(-0.5px, -1.5px) rotate(0.5deg); }
   0%, 100% {
-    transform: translate(0, 0) rotate(0); } 
+    transform: translate(0, 0) rotate(0); }
 }
 
 

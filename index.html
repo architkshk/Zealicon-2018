@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEALICON - Let's Rewind...</title>
-    <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/loader.css">
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -47,7 +47,82 @@
       }
 
 
+      .overlaya {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          /*background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);*/
+          background-image: url("images/527.jpg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          overflow-x: hidden;
+          transition: 0.5s;
+      }
 
+      .overlaya-content {
+          position: relative;
+          top: 13%;
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+      }
+
+      .overlaya a {
+          padding: 8px;
+          text-decoration: none;
+          font-size: 36px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+      }
+
+      .overlaya a:hover, .overlaya a:focus {
+          color: #f1f1f1;
+      }
+
+      .overlaya .closebtna {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+      }
+
+      .headinga{
+          color: #818181;
+          font-size: 60px;
+      }
+
+      .abc{
+          padding-left: 0%
+      }
+
+      /*.anurag{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+      }*/
+
+      @media screen and (max-height: 450px) {
+        .overlaya a {font-size: 20px}
+        .overlaya .closebtna {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+
+      .ab{
+        background: rgba(0,0,0,0.8);
+        margin: 0% 15%;
+        padding: 5% 0%;
+      }
     </style>
 </head>
 
@@ -73,9 +148,9 @@
                 <img class="img baloon" src="images/mick-don.png">
                 <img class="img jungle" src="images/jungle.gif">
                 <img class="img abcd" id="abc" src="images/abcd.webp">
-                <img class="img lamp" id="jin" src="images/lamp.png">
+                <!-- <img class="img lamp" id="jin" src="images/lamp.png"> -->
                 <img class="img leftplant" src="images/left-plant.png">
-                
+
 
 
             <div id="view">
@@ -87,7 +162,7 @@
                 <img class ="img sun" src="images/sun.png" />
                 <img class="img bird" src="images/bird.gif">
                 <img class ="img tape glow" src="images/tape.gif" />
-                <img class ="img starfish" src="images/starfish.png" /> 
+                <img class ="img starfish" src="images/starfish.png" />
                 <img class="img shinchan" src="images/shinchan.gif">
                 <img class ="img pikachu" src="images/pikachu.gif" />
                 <img class ="img castle" src="images/sandcastle.png" />
@@ -101,8 +176,8 @@
                 <img class ="img bl4" src="images/babylooney/4.gif" />
                 <img class ="img bl5" src="images/babylooney/5.png" />
                 <img class ="img bl6" src="images/babylooney/6.gif" /> -->
-                
-              <!--  
+
+              <!--
                 <img class ="img roadrunner" src="images/roadrunner.gif" />
               <img class="img jin static" src="images/jinstatic.png">
               <img class="img jin active" src="images/jin.gif">
@@ -122,44 +197,90 @@
         <a href="#" class="abclose">&times;</a>
         <img class ="img aboutbg" src="images/aboutpage/about-without-elements3.png" />
         <img class ="img about-scooby" src="images/aboutpage/about-scooby.png" />
-         
-        <p>
-            'ZEALICON' is the Annual Techno-Culural Fest, organised by JSS Academy Of Technical Education, Noida. This year, ZEALICON turns 10, with more exciting events and loads of prizes to be given away. The fest is scheduled to be organised from 14th March 2018 - 17th March 2018. Further details will be added soon, keep visiting this page to stay updated on ZEALICON'18.
-        </p>
-    </div>    
+
+        <!-- <p>
+           Zealicon is the annual techno-cultural festival of JSSATE, Noida. Dedicated to the celebration of creativity and science, it is a stimulating event brimming with youthful dynamism. It transforms the campus into a veritable kaleidoscope of people. Involving multifarious exciting events from technical scratch to cultural zeal. A platform for all the creative minds to express their ideas in the form of events including band performances, discussions, film screenings that are spread over four days. Apart from the exuberant cultural events, Zealicon is also known for its mind boggling technical events that creates an ambience for the technocrats.
+
+Zealicon 2018 will cover the aspects of hysterical face of literature along with popular arts, science and technology. This edition of Zealicon promises all the trademarks of the earlier versions. A plethora of events where academicians will vouch out their intellect and artists will showcase the best of art. Projecting the fictitious gesture onto the real world, Zealicon will act as a connecting link between the fantasy and reality.
+
+Creating an aura of avidity and togetherness, we hope that Zealicon 2018 will turn out to be a memorable experience for you !
+        </p> -->
+        <div class="about-overlay container">
+          <p>
+            Zealicon is the annual techno-cultural festival of JSSATE, Noida. Dedicated to the celebration of creativity and science, it is a stimulating event brimming with youthful dynamism. It transforms the campus into a veritable kaleidoscope of people. Involving multifarious exciting events from technical scratch to cultural zeal. A platform for all the creative minds to express their ideas in the form of events including band performances, discussions, film screenings that are spread over four days. Apart from the exuberant cultural events, Zealicon is also known for its mind boggling technical events that creates an ambience for the technocrats.
+
+ Zealicon 2018 will cover the aspects of hysterical face of literature along with popular arts, science and technology. This edition of Zealicon promises all the trademarks of the earlier versions. A plethora of events where academicians will vouch out their intellect and artists will showcase the best of art. Projecting the fictitious gesture onto the real world, Zealicon will act as a connecting link between the fantasy and reality.
+
+ Creating an aura of avidity and togetherness, we hope that Zealicon 2018 will turn out to be a memorable experience for you !
+          </p>
+        </div>
+    </div>
     <div id="sponsorpage">
         <a href="#" class="spclose">&times;</a>
-        <img class ="img sponsorbg" src="images/sponsor-bg.png" />         
+        <img class ="img sponsorbg" src="images/sponsor-bg.png" />
         <div class="sponsor-overlay">
           <p>
               Sponsors are on their way. They'll join us soon.
           </p>
         </div>
     </div>
+    <div id="myNav1" class="overlaya">
+      <a href="javascript:void(0)" class="closebtna" onclick="closeNav()">&times;</a>
+      <div class="overlaya-content">
+      <div class="ab">
+        <h1 class="headinga">Contact Us</h1>
+        <div class="anurag" style="width:100%; color: white;">
+            <div class="abc">
+            <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;">Email : <b>sponsor@jssaten.ac.in<br>&nbsp;&nbsp;&nbsp;&nbsp;fest@jssaten.ac.in</b></p>
+            </div>
+            <div class="phone abc" style="display: flex;text-align: center;justify-content:center;">
+                <div class="">
+                    <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;">Phone:</p>
+                </div>
+                <div class="">
+                    <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;"><b>+91-8586852282 <br>Utkarsh Singh<br>Festival Secretary </b></p>
+                </div>
+                <div class="">
+                    <p style="padding:20px 0;font-family: &#39;Montserrat&#39;, sans-serif;"><b>+91-9711541714 <br>Abhishek Kumar<br>&nbsp;&nbsp;&nbsp; Deputy Festival Secretary</b></p>
+                </div>
+            </div>
+            <div class="add abc" style="display: flex;justify-content:center;">
+                <div style="align-self: center;">
+                    <address class="" style="width:100%;">
+                    Address :<br> <b>JSS Academy of Technical Education, Sector 62<br> Noida, UttarPradesh 201301<br></b>
+                    </address>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
     <div id = "map">
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn">&times;</a>
         <img src="images/mapwithelements/map.png" class="img" id="map_background">
         <div class="overlay-content">
-          <a href="#" class="map-homep map-btn" id="home">
+          <a href="#" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Home" id="home">
              <img src="images/mapwithelements/map-home.png" class="img" id="home_image">
           </a>
-          <a href="#" class="map-homep map-btn abbtn" id="about">
+          <a href="#" class="map-homep map-btn abbtn" data-placement="right" data-toggle="tooltip" title="About" id="about">
              <img src="images/mapwithelements/map-about.png" id="about_image" class="img">
           </a>
-          <a target="_blank" href="https://drive.google.com/file/d/0B_4X-wKiC3RIYzVwWUNQRUQ1S25fN2M0bGVFR0x5Szd2UU9r/view?ts=5a8165ee" class="map-homep map-btn" id="events">
+          <a target="_blank" href="https://drive.google.com/file/d/0B_4X-wKiC3RIYzVwWUNQRUQ1S25fN2M0bGVFR0x5Szd2UU9r/view?ts=5a8165ee" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Event" id="events">
              <img src="images/mapwithelements/map-events.png" id="events_image" class="img">
           </a>
-          <a href="#" class="map-homep map-btn spbtn" id="sponsors">
+          <a href="#" class="map-homep map-btn spbtn" data-placement="right" data-toggle="tooltip" title="Sponsors" id="sponsors">
              <img src="images/mapwithelements/map-sponsors.png" id="sponsors_image" class="img">
           </a>
-          <a href="schedule.html" class="map-homep map-btn" id="schedule">
+          <a href="schedule.html" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Schedule" id="schedule">
              <img src="images/mapwithelements/map-schedule.png" id="schedule_image" class="img">
           </a>
-          <a href="#" class="map-homep map-btn" id="team">
+          <a href="#" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Team" id="team">
              <img src="images/mapwithelements/map-team.png" id="team_image" class="img">
           </a>
-          <a href="#" class="map-homep map-btn" id="contact">
+          <a onclick="openNav()" href="#" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Contact" id="contact">
              <img src="images/mapwithelements/map-x.png" id="contact_image" class="img">
           </a>
         </div>
@@ -171,7 +292,7 @@
   </div>
   <div id="whiteScreen">
       <p id="welcome"></p>
-  </div> 
+  </div>
 <!--
     <div  id="ball-loader">
       <h1 class="loading">LET'S REWIND</h1>
@@ -190,17 +311,18 @@
     </div>
     <div id="whiteScreen">
       <p id="welcome">Welcome to 90's</p>
-    </div> 
+    </div>
     <script type="text/javascript" src="js/loader.js"></script> -->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/map.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="js/contact.js"></script>
+    <!-- <script type="text/javascript">
       $(document).ready(function(){
         $('#jin').click(function(){
           $('#abc').show();
         });
       });
-     
+
 
     </script>
     <script type="text/javascript">
@@ -209,8 +331,8 @@
               setTimeout(function(){ $('#abc').hide(); }, 1500);
           });
       });
-    </script>
+    </script> -->
 
-</body> 
+</body>
 
 </html>

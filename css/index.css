@@ -71,8 +71,8 @@
 
 .leftplant {
 	height: 75vh;
-	top: 9	%;
-	left: -15%;
+	top: 9%;
+	left: -11%;
 	position: absolute;
 	z-index: 1000;	
 	transition: transform 2s;
@@ -86,7 +86,7 @@
 .boat {
 	position: absolute;
 	bottom: 41%;
-	width: 1%;
+	width: 3%;
 	z-index: 1001;
     animation-name: plane;
     animation-duration: 55s;
@@ -141,11 +141,11 @@
 	z-index: 1000;
 	position: absolute;
 	bottom: 15%;
-	left: 5%;
+	left: 3%;
 	transition: transform 2s;
 }
 .shinchan {
-	width: 13%;
+	width: 9%;
 	z-index: 1001;
 	position: absolute;
 	bottom: 8%;
@@ -154,7 +154,7 @@
 }
 
 .shinchanhover {
-	left: 11%;
+	left: 9%;
 	transform: scale(1.2);
 }
 
