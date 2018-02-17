@@ -1,196 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZEALICON - Let's Rewind...</title>
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/loader.css">
-
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
-    <link rel="stylesheet" type="text/css" href="css/map.css">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEALICON - Let's Rewind...</title>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/loader.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/map.css">
   <link rel="icon" type="image/png" href="images/favicon.png" />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/typed.js"></script>
-<link rel="stylesheet" type="text/css" href="css/csshake-slow.min.css">
-    <style type="text/css">
-
-      .grass3{
-        position: absolute;
-        left: 18%;
-        z-index: 1006;
-        /*height: 100vh;*/
-        width: 70%;
-        transition: left 2s linear, transform 2s;
-      }
-
-      .grass3Hover {
-        left: -110%;
-        transform: scale(1.2);
-      }
-
-
-      .abcd{
-        position: absolute;
-        z-index: 1008;
-        display: none;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height:100%;
-      }
-
-
-      .overlaya {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          /*background-color: rgb(0,0,0);
-          background-color: rgba(0,0,0, 0.9);*/
-          background-image: url("../images/527.jpg");
-          background-repeat: no-repeat;
-          background-size: 100%;
-          overflow-x: hidden;
-          transition: 0.5s;
-      }
-
-      .overlaya-content {
-          position: relative;
-          top: 13%;
-          width: 100%;
-          text-align: center;
-          margin-top: 30px;
-      }
-
-      .overlaya a {
-          padding: 8px;
-          text-decoration: none;
-          font-size: 36px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-      }
-
-      .overlaya a:hover, .overlaya a:focus {
-          color: #f1f1f1;
-      }
-
-      .overlaya .closebtna {
-          position: absolute;
-          top: 20px;
-          right: 45px;
-          font-size: 60px;
-      }
-
-      .headinga{
-          color: #818181;
-          font-size: 60px;
-      }
-
-      .abc{
-          padding-left: 0%
-      }
-
-      /*.anurag{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items: center;
-
-      }*/
-
-      @media screen and (max-height: 450px) {
-        .overlaya a {font-size: 20px}
-        .overlaya .closebtna {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-        }
-      }
-
-      .ab{
-        background: rgba(0,0,0,0.8);
-        margin: 0% 15%;
-        padding: 5% 0%;
-      }
-    </style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/typed.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/csshake-slow.min.css">
 </head>
 
 <body>
   <div id="images_strip">
-
-<div class="stripcontainer">
-    <div class="stripcontent">
+    <div class="stripcontainer">
+      <div class="stripcontent">
         <img class="stripimg" src="images/dfscv.jpg">
-     </div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
   <div id="pages">
     <div id="homepage">
-        <div id="content">
-                <img class="img cloud1" src="images/cloud.png">
-                <img class="img cloud2" src="images/cloud.png">
-                <img class="img cloud3" src="images/cloud.png">
-                <img class="img cloud4" src="images/cloud.png">
-                <img class="img cloud5" src="images/cloud.png">
-
-                <img class="img tweety" src="images/Tweety.gif">
-                <img class="img baloon" src="images/mick-don.png">
-                <img class="img jungle" src="images/jungle.gif">
-                <img class="img abcd" id="abc" src="images/abcd.webp">
-                <!-- <img class="img lamp" id="jin" src="images/lamp.png"> -->
-                <img class="img leftplant" src="images/left-plant.png">
-
-
-
-            <div id="view">
-                <img class ="img island" src="images/home_elongated2.png" />
-                <svg width="100vw" height="45vh" class="water">
-                  <rect width="100vw" height="45vh" style="fill:rgb(31,151,168)" />
-                </svg>
-                <img class ="img zealicon" src="images/logo_new.png" />
-                <img class ="img sun" src="images/sun.png" />
-                <img class="img bird" src="images/bird.gif">
-                <img class ="img tape glow" src="images/tape.gif" />
-                <img class ="img starfish" src="images/starfish.png" />
-                <img class="img shinchan" src="images/shinchan.gif">
-                <img class ="img pikachu" src="images/pikachu.gif" />
-                <img class ="img castle" src="images/sandcastle.png" />
-                <img class ="img winnie" src="images/winnie.png" />
-                <img class="img chipmunk" src="images/chipmunk.gif">
-                <a href="#" class="mapbtn"><img class="img bottle glow" src="images/bottle2.png"></a>
-                <!-- <img class="img boat" src="images/boat.png"> -->
-                <!-- <img class ="img bl1" src="images/babylooney/1.gif" />
-                <img class ="img bl2" src="images/babylooney/2.gif" />
-                <img class ="img bl3" src="images/babylooney/3.gif" />
-                <img class ="img bl4" src="images/babylooney/4.gif" />
-                <img class ="img bl5" src="images/babylooney/5.png" />
-                <img class ="img bl6" src="images/babylooney/6.gif" /> -->
-
-              <!--
-                <img class ="img roadrunner" src="images/roadrunner.gif" />
-              <img class="img jin static" src="images/jinstatic.png">
-              <img class="img jin active" src="images/jin.gif">
-                <img class ="img home-map" src="images/mapwithelements/home-map.png" /></a>-->
-            </div>
-
-                <img class ="img grass1" src="images/leaves-left.png" />
-                <img class ="img grass2" src="images/leaves-right.png" />
-                <img class ="mowgli grass3" src="images/timon.gif" />
+      <div id="content">
+        <img class="img cloud1" src="images/cloud.png">
+        <img class="img cloud2" src="images/cloud.png">
+        <img class="img cloud3" src="images/cloud.png">
+        <img class="img cloud4" src="images/cloud.png">
+        <img class="img cloud5" src="images/cloud.png">
+        <img class="img tweety" src="images/Tweety.gif">
+        <img class="img baloon" src="images/mick-don.png">
+        <img class="img jungle" src="images/jungle.gif">
+        <img class="img abcd" id="abc" src="images/abcd.webp">
+        <!-- <img class="img lamp" id="jin" src="images/lamp.png"> -->
+        <img class="img leftplant" src="images/left-plant.png">
+        <div id="view">
+          <img class ="img island" src="images/home_elongated2.png" />
+          <svg width="100vw" height="45vh" class="water">
+            <rect width="100vw" height="45vh" style="fill:rgb(31,151,168)" />
+          </svg>
+          <img class ="img zealicon" src="images/logo_new.png" />
+          <img class ="img sun" src="images/sun.png" />
+          <img class="img bird" src="images/bird.gif">
+          <img class ="img tape glow" src="images/tape.gif" />
+          <img class ="img starfish" src="images/starfish.png" />
+          <img class="img shinchan" src="images/shinchan.gif">
+          <img class ="img pikachu" src="images/pikachu.gif" />
+          <img class ="img castle" src="images/sandcastle.png" />
+          <img class ="img winnie" src="images/winnie.png" />
+          <img class="img chipmunk" src="images/chipmunk.gif">
+          <a href="#" class="mapbtn"><img class="img bottle glow" src="images/bottle2.png"></a>
+          <!-- <img class="img boat" src="images/bojectsat.png"> -->
+          <!-- <img class ="img bl1" src="images/babylooney/1.gif" />
+          <img class ="img bl2" src="images/babylooney/2.gif" />
+          <img class ="img bl3" src="images/babylooney/3.gif" />
+          <img class ="img bl4" src="images/babylooney/4.gif" />
+          <img class ="img bl5" src="images/babylooney/5.png" />
+          <img class ="img bl6" src="images/babylooney/6.gif" /> -->
+          <!-- <img class ="img roadrunner" src="images/roadrunner.gif" />
+          <img class="img jin static" src="images/jinstatic.png">
+          <img class="img jin active" src="images/jin.gif">
+          <img class ="img home-map" src="images/mapwithelements/home-map.png" /></a>-->
         </div>
-
-        <div class="img menu">
-        </div>
+        <img class ="img grass1" src="images/leaves-left.png" />
+        <img class ="img grass2" src="images/leaves-right.png" />
+        <img class ="mowgli grass3" src="images/timon.gif" />
+      </div>
+      <div class="img menu">
+      </div>
     </div>
 
     <div id="aboutpage">
@@ -198,23 +79,27 @@
         <img class ="img aboutbg" src="images/aboutpage/about-without-elements3.png" />
         <img class ="img about-scooby" src="images/aboutpage/about-scooby.png" />
         <div class="about-overlay container">
-          <p>
-            Zealicon is the annual techno-cultural festival of JSSATE, Noida. Dedicated to the celebration of creativity and science, it is a stimulating event brimming with youthful dynamism. It transforms the campus into a veritable kaleidoscope of people. Involving multifarious exciting events from technical scratch to cultural zeal. A platform for all the creative minds to express their ideas in the form of events including band performances, discussions, film screenings that are spread over four days. Apart from the exuberant cultural events, Zealicon is also known for its mind boggling technical events that creates an ambience for the technocrats.
-
- Zealicon 2018 will cover the aspects of hysterical face of literature along with popular arts, science and technology. This edition of Zealicon promises all the trademarks of the earlier versions. A plethora of events where academicians will vouch out their intellect and artists will showcase the best of art. Projecting the fictitious gesture onto the real world, Zealicon will act as a connecting link between the fantasy and reality.
-
- Creating an aura of avidity and togetherness, we hope that Zealicon 2018 will turn out to be a memorable experience for you !
+          <p>Pokemon at 5, and then Beyblade at 5.30. Tom & Jerry, Looney tunes, Scooby Doo, Shaktiman…. That’s so Raven...Video games..
+<br><br>
+Do you yearn to live and bring all those times back ?
+<br><br>
+If the answer is Yes...then we are back with our Zeal… are you ?
+<br><br>
+JSS Academy of Technical Education, Noida presents to you the most enthusiastic annual Techno-Cultural fest in NCR- the “Zealicon”, turning 10 with the 90’s nostalgia.
+This time with a different aura and touchstone but an antiquated journey down to one’s memory lane.
+<br><br>
+Join us on this nostalgic journey from 14th March 2018 - 17th March 2018 with opportunity to be a part of some airing and zestful events. Promising, loads of fun, prizes and exposure to make this fest Bigger this time!
+<br><br>
+Further details will be disclosed soon. Keep visiting this page to stay updated on your journey in ZEALICON'18.
           </p>
         </div>
     </div>
     <div id="sponsorpage">
-        <a href="#" class="spclose">&times;</a>
-        <img class ="img sponsorbg" src="images/sponsor-bg.jpg" />
-        <div class="sponsor-overlay">
-          <p>
-              Sponsors are on their way. They'll join us soon.
-          </p>
-        </div>
+      <a href="#" class="spclose">&times;</a>
+      <img class ="img sponsorbg" src="images/sponsor-bg.png" />
+      <div class="sponsor-overlay">
+        <p>Sponsors are on their way. They'll join us soon.</p>
+      </div>
     </div>
     <div id="myNav1" class="overlaya">
       <a href="javascript:void(0)" class="closebtna" onclick="closeNav()">&times;</a>
@@ -237,15 +122,13 @@
                 </div>
             </div>
             <div class="add abc" style="display: flex;justify-content:center;">
-                <div style="align-self: center;">
-                    <address class="" style="width:100%;">
-                    Address :<br> <b>JSS Academy of Technical Education, Sector 62<br> Noida, UttarPradesh 201301<br></b>
-                    </address>
-                </div>
-
+              <div style="align-self: center;">
+                <address class="" style="width:100%;">
+                  Address :<br> <b>JSS Academy of Technical Education, Sector 62<br> Noida, UttarPradesh 201301<br></b>
+                </address>
+              </div>
             </div>
-        </div>
-
+          </div>
       </div>
       </div>
     </div>

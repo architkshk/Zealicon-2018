@@ -1,4 +1,3 @@
-
 *{
     font-family: 'Raleway', sans-serif;
     z-index: 0;
@@ -8,6 +7,78 @@
     text-justify : inner-word;
 }
 
+body{
+	height: 100vh;
+	width: 100vw;
+  cursor: url("../images/pointer.png"), auto;
+}
+
+/*Comic Strip*/
+.stripcontainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900000;
+	background: #fff;
+  height:800px;
+  padding:0 10px;
+  overflow:hidden;
+}
+.stripimg {
+   max-width: 100%;
+   display:inline-block;
+   overflow: hidden;
+ }
+ /*Home Page*/
+#pages {
+	display: block;
+}
+
+.abbtn {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#homepage{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100%;
+	transition: right 2s;
+}
+
+#content {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	right: 0vw;
+	transition: right 2s;
+	background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
+}
+
+.img {
+   max-width: 100%;
+   display:inline-block;
+}
+
+.static {
+	display: block;
+	position: absolute;
+	height: 50vh;
+	bottom: 10vh;
+	left: 5vw;
+	z-index: 1000;
+}
+
+.active {
+	display: none;
+	position: absolute;
+	height: 50vh;
+	bottom: 10vh;
+	left: 5vw;
+	z-index: 1000;
+}
 
 .bottle {
 	position: absolute;
@@ -32,14 +103,14 @@
 	transition: transform 2s;
 }
 
-    .lamp{
-        width: 4%;
-        bottom: 5%;
-        position: absolute;
-        left: 40%;
-        z-index: 1001;
-		transition: transform 2s;
-    }
+.lamp{
+  width: 4%;
+  bottom: 5%;
+  position: absolute;
+  left: 40%;
+  z-index: 1001;
+	transition: transform 2s;
+}
 
 .winnie {
 	position: absolute;
@@ -147,12 +218,10 @@
 	left: 18%;
 	transition: transform 2s, left 2s;
 }
-
 .shinchanhover {
 	left: 9%;
 	transform: scale(1.2);
 }
-
 .sun {
 	width: 8%;
 	position: absolute;
@@ -161,25 +230,22 @@
 	z-index: -1;
 	transition: transform 2s, left 2s, bottom 2s;
 }
-
 .sunhover {
 	left: 20%;
 	transform: scale(1.2);
 	bottom: 50%;
 }
-
 .baloon {
 	position: absolute;
 	z-index: 1001;
 	width: 9%;
-    animation-name: baloon-anim;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    transition: transform 2s;
+  animation-name: baloon-anim;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  transition: transform 2s;
 }
-
 @keyframes baloon-anim{
 	0% {
 		top: 5%;
@@ -195,20 +261,18 @@
 	}
 
 }
-
 .bird {
 	bottom: 35%;
 	width: 5%;
 	position: absolute;
-    animation-name: bird-anim;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    z-index: 999;
+  animation-name: bird-anim;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  z-index: 999;
 	transition: transform 2s;
 }
-
 @keyframes bird-anim {
 	0% {
 		left: -21vw;
@@ -220,21 +284,18 @@
 		left: 100vw;
 	}
 }
-
-
 .pikachu {
 	position: absolute;
 	bottom: 30%;
 	height: 10%;
-    animation-name: pikachu;
-    animation-duration: 12s;
-    z-index: 999;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
+  animation-name: pikachu;
+  animation-duration: 12s;
+  z-index: 999;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
 	transition: transform 2s;
 }
-
 @keyframes pikachu {
 	0% {
 		left: -15vw;
@@ -246,19 +307,16 @@
 		left: 111vw;
 	}
 }
-
-
 .plane {
 	position: absolute;
 	width: 100px;
 	top: 3%;
-    animation-name: plane;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: normal;
+  animation-name: plane;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
 }
-
 @keyframes plane {
 	0% {
 		left: -200px;
@@ -267,7 +325,6 @@
 		left: 105vw;
 	}
 }
-
 .vidloader {
   width: 100vw;
   height: 100vh;
@@ -285,73 +342,16 @@
   top: 50%;
   transform: translate(-50%,-50%);
 }
-
-body{
-	height: 100vh;
-	width: 100vw;
-    cursor: url("../images/pointer.png"), auto;
-}
-
-#pages {
-	display: block;
-}
-
-.abbtn {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-#homepage{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100vw;
-	height: 100%;
-	transition: right 2s;
-}
-
-#content {
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-	right: 0vw;
-	transition: right 2s;
-	background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
-}
-
-.img {
-   max-width: 100%;
-   display:inline-block;
-}
-
-.static {
-	display: block;
-	position: absolute;
-	height: 50vh;
-	bottom: 10vh;
-	left: 5vw;
-	z-index: 1000;
-}
-
-.active {
-	display: none;
-	position: absolute;
-	height: 50vh;
-	bottom: 10vh;
-	left: 5vw;
-	z-index: 1000;
-}
-
 .roadrunner {
 	position: absolute;
 	bottom: 50px;
 	height: 10vw;
-    animation-name: roadrunner;
-    animation-duration: 12s;
-    z-index: 1000;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-timing-function: linear;
+  animation-name: roadrunner;
+  animation-duration: 12s;
+  z-index: 1000;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 @keyframes roadrunner {
 	0% {
@@ -364,7 +364,6 @@ body{
 		right: 105vw;
 	}
 }
-
 #view {
 	position: absolute;
 	width: 100vw;
@@ -374,7 +373,6 @@ body{
 	left: 0;
 	z-index: 20;
 }
-
 .island {
 	position: absolute;
 	width: 100vw;
@@ -384,7 +382,6 @@ body{
 	transition: transform 2s;
 	z-index: 2;
 }
-
 .zealicon {
 	position: absolute;
 	bottom: 40%;
@@ -395,12 +392,10 @@ body{
 	left: 70%;
 	transform: translateX(-50%);
 }
-
 .zealiconhover {
 	transform:  translateX(-50%) scale(1.2);
 	bottom: 26%;
 }
-
 .water {
 	position: absolute;
 	left: 0;
@@ -415,7 +410,6 @@ body{
 	width: 100%;
 	transition: left 2s linear, transform 2s;
 }
-
 .grass2 {
 	position: absolute;
 	left:  0%;
@@ -424,7 +418,6 @@ body{
 	width: 100%;
 	transition: left 2s linear, transform 2s;
 }
-
 .grass1Hover {
 	left: -110%;
 	transform: scale(1.2);
@@ -432,6 +425,108 @@ body{
 .grass2Hover {
 	left: 110%;
 	transform: scale(1.2);
+}
+.grass3{
+  position: absolute;
+  left: 18%;
+  z-index: 1006;
+  /*height: 100vh;*/
+  width: 70%;
+  transition: left 2s linear, transform 2s;
+}
+.grass3Hover {
+  left: -110%;
+  transform: scale(1.2);
+}
+
+/*Contact Page*/
+.abcd{
+  position: absolute;
+  z-index: 1008;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height:100%;
+}
+.overlaya {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);*/
+    background-image: url("../images/527.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlaya-content {
+    position: relative;
+    top: 13%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlaya a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlaya a:hover, .overlaya a:focus {
+    color: #f1f1f1;
+}
+
+.overlaya .closebtna {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.headinga{
+    color: #818181;
+    font-size: 60px;
+}
+
+.abc{
+    padding-left: 0%
+}
+
+/*.anurag{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}*/
+
+@media screen and (max-height: 450px) {
+  .overlaya a {font-size: 20px}
+  .overlaya .closebtna {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*contact End*/
+.ab{
+  background: rgba(0,0,0,0.8);
+  margin: 0% 15%;
+  padding: 5% 0%;
 }
 
 .islandHover {
@@ -547,18 +642,3 @@ body{
 		right: 80vw;
 	}
 }
-
-
-.stripcontainer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 900000;
-	background: #fff;
- height:800px; padding:0 10px; overflow:hidden;
-}
-.stripimg {
-   max-width: 100%;
-   display:inline-block;
-  overflow: hidden;
- }
