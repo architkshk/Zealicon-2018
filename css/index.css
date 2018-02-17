@@ -642,3 +642,22 @@ body{
 		right: 80vw;
 	}
 }
+
+.glow{
+	animation:pulse 1.5s infinite;
+	filter: drop-shadow(5px 5px 5px #222);
+}
+
+@keyframes pulse{
+	0% {
+    	filter: drop-shadow(5px 5px 8px #222);
+	}
+
+	50% {
+	    filter: drop-shadow(5px 5px 6px #222);
+	}
+
+	100% {
+    	filter: drop-shadow(5px 5px 8px #222);
+	}
+}
