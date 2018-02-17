@@ -188,10 +188,9 @@ a:hover {
 
 .js .content {
     position: absolute;
-    top: 80px;
+    top: 130px;
     left: 0;
     width: 100%;
-    bottom: 50px;
     overflow: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -273,32 +272,28 @@ a:hover {
     left: -10px;
 }
 
-#ci-item-1 {
-    background: red;
+.ci-item img {
+    width: 400px;
+    height: 400px;
 }
 
 #ci-item-2 {
-    background: green;
     display: none;
 }
 
 #ci-item-3 {
-    background: blue;
     display: none;
 }
 
 #ci-item-4 {
-    background: pink;
     display: none;
 }
 
 #ci-item-5 {
-    background: purple;
     display: none;
 }
 
 #ci-item-6 {
-    background: white;
     display: none;
 }
 
