@@ -6,7 +6,9 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
-
+		$('.antiscroll-wrap').lionbars({
+			autohide : false
+		});
     	$(window).on('load',function() {
     		setTimeout(function(){
 	            $('#whiteScreen').fadeIn();
