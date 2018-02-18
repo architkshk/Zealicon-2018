@@ -254,11 +254,11 @@
 }
 
 .contact-overlay {
-  padding: 6%;
+  padding: 3% 6%;
   display: block;
   position: relative;
   width: 80vw;
-  height: 60vh;
+  height: 68vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -279,5 +279,9 @@
   top: 3.5vh;
 }
 
-
+.contacthead {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2%;
+}
 /**contact page ends*/

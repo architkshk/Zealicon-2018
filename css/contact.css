@@ -3,7 +3,7 @@
 /* Style the tab */
 .tab {
     float: left;
-    width: 30%;
+    width: 25%;
     height: 300px;
 }
 
@@ -11,25 +11,25 @@
 .tab button {
     display: block;
     background-color: inherit;
-    color: black;
-    padding: 10px;
+    color: #828080;
+    padding: 8px;
     width: 100%;
     border: none;
     outline: none;
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 17px;
-}
+    font-size: 15px;
+}   
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    color: #e5e5e5 !important;
 }
 
 /* Create an active/current "tab button" class */
 .catactive {
-    background-color: #ccc !important; 
+    color: #fff !important; 
 }
 
 /* Style the tab content */
@@ -37,7 +37,7 @@
     float: left;
     padding: 0px 12px;
     /*border: 1px solid #ccc;*/
-    width: 70%;
+    width: 75%;
     border-left: none;
     height: 300px;
 }
