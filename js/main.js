@@ -55,7 +55,7 @@ function start(){
 	        },22000);	
 	        $('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
-			$('.island, .water, .bird, .pikachu, .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");
+			$('.island, .water, .bird, .bird_left, .pikachu, .pikachu_left .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");
 			$('.zealicon').addClass('zealiconhover');
 			$('.grass1').addClass("grass1Hover");
 			$('.grass2').addClass("grass2Hover");

@@ -238,26 +238,26 @@ body{
 .baloon {
 	position: absolute;
 	z-index: 1001;
-	width: 9%;
-  animation-name: baloon-anim;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  transition: transform 2s;
+	width: 26%;
+  	animation-name: baloon-anim;
+  	animation-duration: 9s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+  	transition: transform 2s;
 }
 @keyframes baloon-anim{
 	0% {
-		top: 5%;
-		right: 54%;
+		top: 2%;
+		right: 46%;
 	}
 	50% {
-		top: 9%;
-		right: 52%;
+		top: 6%;
+		right: 44%;
 	}
 	100% {
-		top: 5%;
-		right: 54%;
+		top: 2%;
+		right: 46%;
 	}
 
 }
@@ -265,12 +265,12 @@ body{
 	bottom: 35%;
 	width: 5%;
 	position: absolute;
-  animation-name: bird-anim;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: normal;
-  z-index: 999;
+  	animation-name: bird-anim;
+  	animation-duration: 12s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+  	z-index: 999;
 	transition: transform 2s;
 }
 @keyframes bird-anim {
@@ -284,16 +284,39 @@ body{
 		left: 100vw;
 	}
 }
+.bird_left {
+	bottom: 35%;
+	width: 6%;
+	position: absolute;
+  	animation-name: bird-anim_left;
+  	animation-duration: 12s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+  	z-index: 999;
+	transition: transform 2s;
+}
+@keyframes bird-anim_left {
+	0% {
+		right: -56vw;
+	}
+	50% {
+		right: 101vw;
+	}
+	100% {
+		right: 101vw;
+	}
+}
 .pikachu {
 	position: absolute;
 	bottom: 30%;
 	height: 10%;
-  animation-name: pikachu;
-  animation-duration: 12s;
-  z-index: 999;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: normal;
+  	animation-name: pikachu;
+  	animation-duration: 12s;
+  	z-index: 999;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
 	transition: transform 2s;
 }
 @keyframes pikachu {
@@ -305,6 +328,29 @@ body{
 	}
 	100% {
 		left: 111vw;
+	}
+}
+.pikachu_left {
+	position: absolute;
+	bottom: 30%;
+	height: 10%;
+  	animation-name: pikachu_left;
+  	animation-duration: 12s;
+  	z-index: 999;
+  	animation-iteration-count: infinite;
+  	animation-direction: normal;
+  	animation-timing-function: linear;
+  	transition: transform 2s;
+}
+@keyframes pikachu_left {
+	0% {
+		right: -50vw;
+	}
+	50% {
+		right: 111vw;
+	}
+	100% {
+		right: 111vw;
 	}
 }
 .plane {
