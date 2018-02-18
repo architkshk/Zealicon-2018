@@ -123,6 +123,17 @@ function start(){
 			$('#sponsorpage').css('right','-100vw');
 			$('#homepage').css('right','0');
 		});
+
+		$('.contbtn').click(function(){
+			$('#contactpage').css('right','0');
+			$('#homepage').css('right','100vw');
+		});
+		$('.contclose').click(function(){
+			$('#contactpage').css('right','-100vw');
+			$('#homepage').css('right','0');
+		});
+
+
 });
     	$('.static').mouseover(function(){
     		$('.static').css('display','none');
