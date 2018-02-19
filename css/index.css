@@ -160,17 +160,27 @@ canvas#canvas{
 
 .boat {
 	position: absolute;
-	bottom: 41%;
+	right: 20%;
 	width: 3%;
 	z-index: 1001;
-    animation-name: plane;
-    animation-duration: 55s;
+    animation-name: boat;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
     transition: transform 2s, bottom 2s;
 }
-
+@keyframes boat {
+	0% {
+		bottom: 42%;
+	}
+	50% {
+		bottom: 43%;
+	}
+	100% {
+		bottom: 42%;
+	}
+}
 .boathover {
 	bottom: 45%;
 	transform: scale(1.2);
@@ -663,13 +673,13 @@ canvas#canvas{
 .skip{
 	padding: 5px 16px;
 	position: fixed;
-	bottom: 15px;
+	bottom: 2%;
 	left: 50%;
 	transform: translateX(-50%);
 	background: #fff;
 	border-radius: 5px;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 500;
 	color: #000;
 	z-index: 1000000000;
