@@ -49,10 +49,10 @@
           <canvas id="canvas" height="1500"></canvas>
           <img class ="img zealicon" src="images/zealicon-3d.png" />
           <img class ="img sun" src="images/sun.png" />
-          <img class="img bird" src="images/bird.gif">
           <a onclick="togglePlay()" href="#"><img class ="img tape glow" src="images/tape.gif" /></a>
           <img class ="img starfish" src="images/starfish.png" />
           <img class="img shinchan" src="images/shinchan.gif">
+          <img class="img bird" src="images/bird.gif">
           <img class ="img pikachu" src="images/pikachu.gif" />
           <img class ="img pikachu_left" src="images/pikachu_left.gif" />
           <img class="img bird_left" src="images/bird_left.gif">
@@ -752,10 +752,10 @@ document.getElementById("defaultOpen").click();
 <script type="text/javascript">
   var myAudio = document.getElementById("my_audio");
   var isPlaying = true;
-  window.onload = function(){
-    myAudio.play();
-    console.log("scd");
-  }
+  // window.onload = function(){
+  //   myAudio.play();
+  //   console.log("scd");
+  // }
 
   function togglePlay() {
     if (isPlaying) {
