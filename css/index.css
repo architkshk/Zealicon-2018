@@ -659,3 +659,18 @@ canvas#canvas{
 		top: 35%;
 	}
 }
+
+.skip{
+	padding: 5px 16px;
+	position: fixed;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 500;
+	color: #000;
+	z-index: 1000000000;
+} 

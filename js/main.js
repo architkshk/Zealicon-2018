@@ -6,6 +6,8 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
+
+	        $('body').show();
 		$('.antiscroll-wrap').lionbars({
 			autohide : false
 		});
@@ -19,6 +21,7 @@ $(document).ready(function(){
 		       }, 2000); 
 		    }
 		},3000);
+
 
 function animateContent(direction) {  
     var animationOffset = $('.stripcontainer').height() - $('.stripcontent').height()-30;
@@ -39,12 +42,29 @@ function start(){
     down();
 }, 2000);
 }
+
+
+		$('.skip').click(function(){
+	            $('.stripcontainer').fadeOut();
+	            $('.skip').fadeOut();
+	            var typed = new Typed('#welcome', {
+				  strings: ["","Welcome to the 90's",""],
+				  typeSpeed: 40
+				});			
+				setTimeout(function(){
+				$('#whiteScreen').fadeOut();
+	            $("#pages").css({
+	              display: "block"
+	          });
+	        },3000);
+		});
 		setTimeout(function(){
 	            $('.stripcontainer').fadeOut();
 	            var typed = new Typed('#welcome', {
 				  strings: ["","Welcome to the 90's",""],
 				  typeSpeed: 40
 				});
+				window.scrollTo(0,1);
 	    	},19000);
     		
 			setTimeout(function(){
@@ -53,9 +73,7 @@ function start(){
 	              display: "block"
 	          });
 
-    		window.scrollTo(0,1);
 	        },22000);	
-	        $('body').show();
           	$(".view, .island, .grass1, .grass2").mouseover(function(){
 			$('.island, .water, .bird, .bird_left, .pikachu, .pikachu_left .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");
 			$('.zealicon').addClass('zealiconhover');
