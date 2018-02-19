@@ -5,12 +5,19 @@
     margin: 0;
     overflow-x: hidden;
     text-justify : inner-word;
+            user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        overflow: hidden;
 }
 
 body{
 	height: 100vh;
 	width: 100vw;
   cursor: url("../images/pointer.png"), auto;
+  position: fixed;
 }
 
 /*Comic Strip*/
@@ -623,5 +630,32 @@ canvas#canvas{
 
 	100% {
     	filter: drop-shadow(5px 5px 8px #222);
+	}
+}
+
+
+.birds {
+	position: absolute;
+	z-index: 999;
+	width: 13%;
+  	animation-name: birds-anim;
+  	animation-duration: 50s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out;
+  	animation-direction: normal;
+}
+
+@keyframes birds-anim {
+	0% {
+		left: 28%;
+		top: 35%;
+	}
+	50% {
+		left: 5%;
+		top: -5%;
+	}
+	100% {
+		left: 28%;
+		top: 35%;
 	}
 }

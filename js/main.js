@@ -100,6 +100,9 @@ function start(){
 				$('.sun').removeClass("sunhover");
 				$('.winnie').removeClass("winniehover");
 			}
+			else if(e.keyCode==9){
+				return false;
+			}
 		});
 
 		$('.menu-button').click(function(){
@@ -135,6 +138,8 @@ function start(){
 
 
 });
+
+
     	$('.static').mouseover(function(){
     		$('.static').css('display','none');
     		$('.active').css('display','block');
