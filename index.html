@@ -45,10 +45,10 @@
         <div id="view">
           <img class ="img island" src="images/home_elongated2.png" />
           <canvas id="canvas" height="1500"></canvas>
-          <img class ="img zealicon" src="images/logo_new.png" />
+          <img class ="img zealicon" src="images/DZ.png" />
           <img class ="img sun" src="images/sun.png" />
           <img class="img bird" src="images/bird.gif">
-          <img class ="img tape glow" src="images/tape.gif" />
+          <a onclick="pausevedio()" href=""><img onclick="pausevedio()" class ="img tape glow" src="images/tape.gif" /></a>
           <img class ="img starfish" src="images/starfish.png" />
           <img class="img shinchan" src="images/shinchan.gif">
           <img class ="img pikachu" src="images/pikachu.gif" />
@@ -548,6 +548,7 @@
   <div id="whiteScreen">
       <p id="welcome"></p>
   </div>
+  <audio id="my_audio" src="robin_hood_whistle.mp3" loop="loop"></audio>
 <!--
     <div  id="ball-loader">
       <h1 class="loading">LET'S REWIND</h1>
@@ -746,7 +747,16 @@ document.getElementById("defaultOpen").click();
   },60/1000);
 
 </script>
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById("my_audio").play();
+  }
 
+  function pausevedio(){
+    console.log("sacs");
+    document.getElementById("my_audio").pause();
+  }
+</script>
 
 
 </body>
