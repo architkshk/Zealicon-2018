@@ -6,8 +6,8 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
-
-	        $('body').show();
+		$('body').height(window.innerHeight);
+	    $('body').show();
 		$('.antiscroll-wrap').lionbars({
 			autohide : false
 		});
