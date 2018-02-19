@@ -33,7 +33,9 @@ body{
 #pages {
 	display: block;
 }
-
+canvas#canvas{
+   margin-top: -12rem;
+}
 .abbtn {
 	position: absolute;
 	top: 0;
