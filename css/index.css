@@ -11,7 +11,9 @@ body{
 	height: 100%;
 	width: 100vw;
   cursor: url("../images/pointer.png"), auto;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 /*Comic Strip*/
@@ -678,3 +680,9 @@ canvas#canvas{
 	color: #000;
 	z-index: 1000000000;
 } 
+
+@media only screen and (max-width: 750px) {
+	#pages {
+		height: 90vh;
+	}
+}
