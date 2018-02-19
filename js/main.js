@@ -9,6 +9,10 @@ $(document).ready(function(){
 		$('.antiscroll-wrap').lionbars({
 			autohide : false
 		});
+		var requestFullScreen = document.documentElement.requestFullscreen 
+		|| document.documentElement.msRequestFullscreen || document.documentElement.mozRequestFullScreen || document.documentElement.webkitRequestFullscreen;
+
+		requestFullScreen.call(document.documentElement);
     	$(window).on('load',function() {
     		    setTimeout(function(){
         // This hides the address bar:
