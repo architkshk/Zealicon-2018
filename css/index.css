@@ -681,8 +681,3 @@ canvas#canvas{
 	z-index: 1000000000;
 } 
 
-@media only screen and (max-width: 750px) {
-	#pages {
-		height: 90vh;
-	}
-}
