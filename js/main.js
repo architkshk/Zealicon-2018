@@ -10,6 +10,7 @@ $(document).ready(function(){
 			autohide : false
 		});
     	$(window).on('load',function() {
+    		window.scrollTo(0,1);
     		setTimeout(function(){
 	            $('#whiteScreen').fadeIn();
     			$(".vidloader").fadeOut();
