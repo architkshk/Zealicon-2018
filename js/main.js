@@ -10,6 +10,10 @@ $(document).ready(function(){
 			autohide : false
 		});
     	$(window).on('load',function() {
+    		    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
     		setTimeout(function(){
 	            $('#whiteScreen').fadeIn();
     			$(".vidloader").fadeOut();
