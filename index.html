@@ -40,17 +40,17 @@
         <img class="img tweety" src="images/Tweety.gif">
         <img class="img birds" src="images/birds.gif">
         <!-- <img class="img baloon" src="images/mick-don.png"> -->
-        <a href="http://register.zealicon.in" class="" target="_blank"><img class="img baloon" src="images/baloon.png"></a>
+        <a href="http://register.zealicon.in" class="" target="_blank"><img class="img baloon" src="images/bal.png"></a>
         <img class="img jungle" src="images/jungle.gif">
         <!-- <img class="img lamp" id="jin" src="images/lamp.png"> -->
-        <img class="img leftplant" src="images/left-plant.png">
+        <img class="img leftplant" src="images/kkk.png">
         <div id="view">
           <img class ="img island" src="images/home_elongated2.png" />
           <canvas id="canvas" height="1500"></canvas>
-          <img class ="img zealicon" src="images/DZ.png" />
+          <img class ="img zealicon" src="images/zealicon-3d.png" />
           <img class ="img sun" src="images/sun.png" />
           <img class="img bird" src="images/bird.gif">
-          <a onclick="pausevedio()" href=""><img onclick="pausevedio()" class ="img tape glow" src="images/tape.gif" /></a>
+          <a onclick="togglePlay()" href="#"><img class ="img tape glow" src="images/tape.gif" /></a>
           <img class ="img starfish" src="images/starfish.png" />
           <img class="img shinchan" src="images/shinchan.gif">
           <img class ="img pikachu" src="images/pikachu.gif" />
@@ -750,15 +750,28 @@ document.getElementById("defaultOpen").click();
 
 </script>
 <script type="text/javascript">
- /** window.onload = function() {
-      document.getElementById("my_audio").play();
+  var myAudio = document.getElementById("my_audio");
+  var isPlaying = true;
+  window.onload = function(){
+    myAudio.play();
+    console.log("scd");
   }
-**/
-  function pausevedio(){
-    console.log("sacs");
-    document.getElementById("my_audio").pause();
-  }
+
+  function togglePlay() {
+    if (isPlaying) {
+      myAudio.pause()
+    } else {
+      myAudio.play();
+    }
+  };
+  myAudio.onplaying = function() {
+    isPlaying = true;
+  };
+  myAudio.onpause = function() {
+    isPlaying = false;
+  };
 </script>
+
 
 
 </body>

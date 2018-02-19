@@ -146,9 +146,9 @@ canvas#canvas{
 }
 
 .leftplant {
-	height: 75vh;
-	top: 9%;
-	left: -11%;
+	height: 50vh;
+	top: 5%;
+	left: -7%;
 	position: absolute;
 	z-index: 1000;
 	transition: transform 2s;
@@ -251,30 +251,31 @@ canvas#canvas{
 	bottom: 50%;
 }
 .baloon {
-	position: absolute;
-	z-index: 1001;
-	width: 26%;
-  	animation-name: baloon-anim;
-  	animation-duration: 9s;
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-  	animation-direction: normal;
-  	transition: transform 2s;
+  	position: absolute;
+  	z-index: 1001;
+  	width: 10%;
+    animation-name: baloon-anim;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transition: transform 2s;
 }
 @keyframes baloon-anim{
-	0% {
-		top: 2%;
-		right: 46%;
-	}
-	50% {
-		top: 6%;
-		right: 44%;
-	}
-	100% {
-		top: 2%;
-		right: 46%;
-	}
+  0% {
+    top: 2%;
+    right: 56%;
+  }
+  50% {
+    top: 6%;
+    right: 54%;
+  }
+  100% {
+    top: 2%;
+    right: 56%;
+  }
 
+}
 }
 .bird {
 	bottom: 35%;
