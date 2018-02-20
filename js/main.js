@@ -158,6 +158,14 @@ function start(){
 			$('#contactpage').css('right','-100vw');
 			$('#homepage').css('right','0');
 		});
+		$('.schbtn').click(function(){
+			$('#schedulepage').css('right','0');
+			$('#homepage').css('right','100vw');
+		});
+		$('.scclose').click(function(){
+			$('#schedulepage').css('right','-100vw');
+			$('#homepage').css('right','0');
+		});
 
 
 });

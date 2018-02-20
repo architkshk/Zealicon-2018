@@ -285,3 +285,40 @@
   padding-bottom: 2%;
 }
 /**contact page ends*/
+
+
+
+#schedulepage{
+  z-index: 10000;
+  display: block;
+  position: absolute;
+  right: -100vw;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: right 2s;
+}
+
+
+.schbg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.scclose {
+  position: absolute;
+  z-index: 10001;
+  left: 3vw;
+  text-decoration: none;
+    font-size: 60px;
+  color: #fff;
+  top: 4vh;
+}
