@@ -75,8 +75,12 @@ function start(){
 	          });
 	        },6200);
 		});	
-          	$(".view, .island, .grass1, .grass2").mouseover(function(){
+
+			$(".grass1, .grass2").mouseover(function(){
           	$("#my_audio")[0].play();
+          	});
+          	$(".view, .island, .grass1, .grass2").mouseover(function(){
+          	// $("#my_audio")[0].play();
 			$('.island, .water, .bird, .bird_left, .pikachu, .pikachu_left .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");
 			$('.zealicon').addClass('zealiconhover');
 			$('.grass1').addClass("grass1Hover");
