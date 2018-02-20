@@ -383,8 +383,8 @@ img#about_image{
   width: 5rem;
 }
 a#events{
-    margin-top: -10rem;
-    margin-left: -15rem;
+    margin-top: -11rem;
+    margin-left: -16rem;
 }
 
 img#events_image{
@@ -398,8 +398,8 @@ img#sponsors_image{
     width: 5rem;
 }
 a#schedule{
-    margin-top: -12.5rem;
-    margin-left: 12rem;
+    margin-top: -13.5rem;
+    margin-left: 13rem;
 }
 img#schedule_image{
     width: 5rem;
@@ -486,50 +486,50 @@ img#map_background{
     width: 100%;
 }
 a#home{
-    margin-top: -15rem;
+    margin-top: -17rem;
     margin-left: -28rem;
 }
 img#home_image{
     width: 8rem;
 }
 a#about{
-    margin-top: 23rem;
+    margin-top: 31rem;
     margin-left: 11rem;
 }
 img#about_image{
   width: 5rem;
 }
 a#events{
-    margin-top: -13rem;
-    margin-left: -18.5rem;
+    margin-top: -15rem;
+    margin-left: -19.5rem;
 }
 
 img#events_image{
-    width: 7rem;
+    width: 8rem;
 }
 a#sponsors{
-    margin-top: -16rem;
+    margin-top: -19rem;
     margin-left: -13.5rem;
 }
 img#sponsors_image{
     width: 7rem;
 }
 a#schedule{
-    margin-top: -15.5rem;
+    margin-top: -18.5rem;
     margin-left: 15.5rem;
 }
 img#schedule_image{
     width: 6rem;
 }
 a#team{
-    margin-top: -22.5rem;
+    margin-top: -27.5rem;
     margin-left: 15rem;
 }
 img#team_image{
   width: 7rem;
 }
 a#contact{
-    margin-top: -19rem;
+    margin-top: -23rem;
     margin-left: 20rem;
 }
 img#contact_image{
@@ -610,6 +610,122 @@ a#contact{
 }
 img#contact_image{
    width: 9rem;
+}
+}
+@media(max-width: 1440px) and (min-width: 1400px){
+    .overlay{
+        overflow-y: auto;
+        margin-top: 60px;
+    }
+    img#map_background{
+        width: 100%;
+        height: 85%;
+    }
+    a#home{
+    margin-top: -20.5rem;
+    margin-left: -37rem;
+}
+img#home_image{
+    width: 8rem;
+}
+a#about{
+    margin-top: 38rem;
+    margin-left: 15rem;
+}
+img#about_image{
+  width: 7rem;
+}
+a#events{
+    margin-top: -19rem;
+    margin-left: -26.5rem;
+}
+
+img#events_image{
+    width: 10rem;
+}
+a#sponsors{
+    margin-top: -24rem;
+    margin-left: -19.5rem;
+}
+img#sponsors_image{
+    width: 9rem;
+}
+a#schedule{
+    margin-top: -23rem;
+    margin-left: 21.5rem;
+}
+img#schedule_image{
+    width: 8rem;
+}
+a#team{
+    margin-top: -34.5rem;
+    margin-left: 21rem;
+}
+img#team_image{
+  width: 10rem;
+}
+a#contact{
+    margin-top: -30rem;
+    margin-left: 29.5rem;
+}
+img#contact_image{
+   width: 9rem;
+}
+}
+@media(max-width: 1600px) and (min-width: 1500px){
+    img#map_background{
+        width: 100%;
+        height: 97%;
+    } 
+a#home{
+    margin-top: -24.5rem;
+    margin-left: -43rem;
+}
+img#home_image{
+    width: 12rem;
+}
+a#about{
+    margin-top: 42rem;
+    margin-left: 17rem;
+}
+img#about_image{
+  width: 9rem;
+}
+a#events{
+    margin-top: -22rem;
+    margin-left: -29.5rem;
+}
+
+img#events_image{
+    width: 12rem;
+}
+a#sponsors{
+    margin-top: -27rem;
+    margin-left: -21.5rem;
+}
+img#sponsors_image{
+    width: 11rem;
+}
+a#schedule{
+    margin-top: -26rem;
+    margin-left: 24.5rem;
+}
+img#schedule_image{
+    width: 10rem;
+}
+a#team{
+    margin-top: -40.5rem;
+    margin-left: 23rem;
+}
+img#team_image{
+  width: 12rem;
+}
+a#contact{
+    margin-top: -34rem;
+    margin-left: 31.5rem;
+}
+img#contact_image{
+   width: 12rem;
 }
 }
 @media screen and (max-height: 450px) {
