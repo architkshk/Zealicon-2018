@@ -253,7 +253,63 @@ img#contact_image{
     margin-top: 28px;
 }
 }
-@media(max-width: 667px) and (min-width: 650px){
+@media(max-height: 600px) and (min-width: 590px){
+   a#home{
+    margin-top: -9rem;
+    margin-left: -17.5rem;
+}
+img#home_image{
+    width: 4rem;
+}
+a#about{
+    margin-top: 16rem;
+    margin-left: 7rem;
+}
+img#about_image{
+  width: 3rem;
+}
+a#events{
+    margin-top: -8rem;
+    margin-left: -12rem;
+}
+
+img#events_image{
+    width: 4rem;
+}
+a#sponsors{
+    margin-top: -11rem;
+    margin-left: -8.5rem;
+}
+img#sponsors_image{
+    width: 4rem;
+}
+a#schedule{
+    margin-top: -10rem;
+    margin-left: 10rem;
+}
+img#schedule_image{
+    width: 3rem;
+}
+a#team{
+    margin-top: -14.5rem;
+    margin-left: 10rem;
+}
+img#team_image{
+  width: 4rem;
+}
+a#contact{
+    margin-top: -12rem;
+    margin-left: 14rem;
+}
+img#contact_image{
+   width: 3rem;
+}
+.overlay {
+    overflow-y: auto;
+    margin-top: 28px;
+}    
+} 
+ @media(max-width: 667px) and (min-width: 650px){
 a#home{
     margin-top: -9rem;
     margin-left: -17.5rem;
@@ -486,7 +542,7 @@ img#map_background{
     width: 100%;
 }
 a#home{
-    margin-top: -17rem;
+    margin-top: -17.5rem;
     margin-left: -28rem;
 }
 img#home_image{
@@ -541,16 +597,60 @@ img#contact_image{
 }
 }
 @media(max-width: 1280px) and (min-width: 1200px){
-    .overlay{
+.overlay{
         overflow-y: auto;
-        margin-top: 80px;
-    }
-    a#home{
-        margin-left: -34rem;
-    }
-    a#about{
-        margin-top: 31rem;
-    }
+        margin-top: 50px;
+}
+a#home{
+    margin-top: -18rem;
+    margin-left: -34rem;
+}
+img#home_image{
+    width: 10rem;
+}
+a#about{
+    margin-top: 30rem;
+    margin-left: 11rem;
+}
+img#about_image{
+  width: 7rem;
+}
+a#events{
+    margin-top: -17rem;
+    margin-left: -24.5rem;
+}
+
+img#events_image{
+    width: 9rem;
+}
+a#sponsors{
+    margin-top: -21rem;
+    margin-left: -17.5rem;
+}
+img#sponsors_image{
+    width: 10rem;
+}
+a#schedule{
+    margin-top: -19.5rem;
+    margin-left: 19.5rem;
+}
+img#schedule_image{
+    width: 8rem;
+}
+a#team{
+    margin-top: -30.5rem;
+    margin-left: 18rem;
+}
+img#team_image{
+  width: 10rem;
+}
+a#contact{
+    margin-top: -25rem;
+    margin-left: 25rem;
+}
+img#contact_image{
+   width: 10rem;
+}
 }
 @media(max-width: 1440px) and (min-width: 1400px){
     .overlay{
