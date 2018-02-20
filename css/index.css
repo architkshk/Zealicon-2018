@@ -162,7 +162,7 @@ canvas#canvas{
 
 .boat {
 	position: absolute;
-	right: 20%;
+	right: 50%;
 	width: 5%;
 	z-index: 1001;
     animation-name: boat;
@@ -912,4 +912,10 @@ canvas#canvas{
 		background-color: rgba(0,0,0,0.8);
 	}
 
+}
+
+@media (max-width: 768px) {
+	#view {
+		bottom: 10%;
+	}
 }

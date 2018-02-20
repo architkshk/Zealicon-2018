@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 	    if(window.innerHeight > window.innerWidth){
-        alert("Please use landscape mode!");
+        alert("Please use desktop browser! Mobile site will be released soon.");
         $('body').hide();
     }
     else{

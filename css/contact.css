@@ -5,6 +5,7 @@
     float: left;
     width: 25%;
     height: 300px;
+    border-right: 1px solid white;
 }
 
 /* Style the buttons inside the tab */
@@ -62,6 +63,10 @@
 
 .contcontainer {
   padding: 0 16px;
+}
+
+.contacthead {
+  border-bottom: 1px solid white;
 }
 
 .contcontainer::after, .row::after {
