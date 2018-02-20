@@ -129,6 +129,7 @@ function start(){
 
 		$('.menu-button').click(function(){
 			$('.menu').css('display','block');
+			$('a').focusout();
 		});
 
 		$('.abbtn').click(function(){
