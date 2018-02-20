@@ -695,9 +695,6 @@ canvas#canvas{
 	.sun{
 		top: 40%;
 	}
-	.zealiconhover{
-		top: 22%;
-	}
 	.stripimg{
 		height: 220rem;
 	}
@@ -718,9 +715,6 @@ canvas#canvas{
 	.sun{
 		top: 33%;
 	}
-	.zealiconhover{
-		top: 15%;
-	}
 	.stripimg{
 		height: 260rem;
 	}
@@ -734,9 +728,6 @@ canvas#canvas{
 	}
 	.sun{
 		top: 35%;
-	}
-	.zealiconhover{
-		top: 15%;
 	}
 	.stripimg{
 		height: 300rem;
@@ -752,10 +743,6 @@ canvas#canvas{
 	.sun{
 		top: 43%;
 	}
-	.zealiconhover{
-		top: 27%;
-		width: 35%;
-	}
 	.stripimg{
 		height: 330rem;
 	}
@@ -767,9 +754,6 @@ canvas#canvas{
 
 	.sun{
 		top: 38%;
-	}
-	.zealiconhover{
-		top: 20%;
 	}
 	.stripimg{
 		height: 420rem;
@@ -785,9 +769,6 @@ canvas#canvas{
 
 	.sun{
 		top: 53%;
-	}
-	.zealiconhover{
-		top: 38%;
 	}
 	.pikachu{
 		top: 69%;
@@ -821,9 +802,6 @@ canvas#canvas{
 	.sun{
 		top: 44%;
 	}
-	.zealiconhover{
-		top: 27%;
-	}
 	.stripimg{
 		height: 550rem;
 	}
@@ -838,17 +816,10 @@ canvas#canvas{
 	.sun{
 		top: 30%;
 	}
-	.zealiconhover{
-		top: 16%;
-		width: 30%;
-	}
 }
 @media(max-height: 950px) and (min-height: 910px){
 	canvas#canvas{
 		margin-top: -21%;
-	}
-	.zealiconhover{
-		top: 32%;
 	}
 	.sun{
 		top:47%;
@@ -882,9 +853,6 @@ canvas#canvas{
 	canvas#canvas{
 		margin-top: -21%;
 	}
-	.zealiconhover{
-		top: 20%;
-	}
 	.sun{
 		top: 39%;
 	}
@@ -916,9 +884,6 @@ canvas#canvas{
 @media(max-height: 1024px) and (min-height: 1000px){
 	canvas#canvas{
 		margin-top: -21%;
-	}
-	.zealiconhover{
-		top: 34%;
 	}
 	.sun{
 		top: 50%;
