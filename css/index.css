@@ -8,8 +8,8 @@
 }
 
 body{
-	height: 100%;
-	width: 100vw;
+  height: 100vw; 
+  width: 100vw;
   cursor: url("../images/pointer.png"), auto;
   position: fixed;
   top: 0;
@@ -688,32 +688,6 @@ canvas#canvas{
 	color: #000;
 	z-index: 1000000000;
 } 
-/*@media(max-width: 640px) and (min-width: 600px){
-	canvas#canvas{
-		margin-top: -2%;
-	}
-}
-@media(max-width: 1024px) and (min-width: 1000px){
-	.zeliconhover{
-
-	}
-	canvas#canvas{
-		margin-top: -15%;
-	}
-}
-@media(max-width: 1440px) and (min-width: 1400px){
-	canvas#canvas{
-		margin-top: -23%;
-	}
-}
-@media(max-width: 1280px) and (min-width: 1200px){
-	.zeliconhover{
-
-	}
-	canvas#canvas{
-		margin-top: -21%;
-	}
-}*/
 @media(max-height: 320px) and (min-height: 300px){
 	canvas#canvas{
 		margin-top: 5%;
@@ -724,10 +698,17 @@ canvas#canvas{
 	.zealiconhover{
 		top: 22%;
 	}
+	.stripimg{
+		height: 220rem;
+	}
+	
 }
 @media(max-height: 360px) and (min-height: 330px){
 	canvas#canvas{
 		margin-top: -2%;
+	}
+	.stripimg{
+		height: 250rem;
 	}
 }
 @media(max-height: 384px) and (min-height: 370px){
@@ -740,6 +721,12 @@ canvas#canvas{
 	.zealiconhover{
 		top: 15%;
 	}
+	.stripimg{
+		height: 260rem;
+	}
+	.skip{
+		font-size: 22px;
+	}
 }
 @media(max-height: 414px) and (min-height: 400px){
 	canvas#canvas{
@@ -751,6 +738,12 @@ canvas#canvas{
 	.zealiconhover{
 		top: 15%;
 	}
+	.stripimg{
+		height: 300rem;
+	}
+	.skip{
+		font-size: 20px;
+	}
 }
 @media(max-height: 480px) and (min-height: 450px){
 	canvas#canvas{
@@ -760,8 +753,14 @@ canvas#canvas{
 		top: 43%;
 	}
 	.zealiconhover{
-		top: 29%;
+		top: 27%;
 		width: 35%;
+	}
+	.stripimg{
+		height: 330rem;
+	}
+	.skip{
+		font-size: 20px;
 	}
 }
 @media(max-height: 600px) and (min-height: 590px){
@@ -770,8 +769,17 @@ canvas#canvas{
 		top: 38%;
 	}
 	.zealiconhover{
-		top: 22%;
+		top: 20%;
 	}
+	.stripimg{
+		height: 420rem;
+	}
+	.skip{
+		font-size: 26px;
+	}
+}
+@media(max-height: 640px) and (min-height: 610px){
+
 }
 @media(max-height: 768px) and (min-height: 720px){
 
@@ -796,6 +804,14 @@ canvas#canvas{
 	.birds{
 		top: 65%;
 	}
+	.stripimg{
+       height: 517rem;
+	}
+	.skip{
+		font-size: 28px;
+		color: white;
+		background-color: rgba(0,0,0,0.8);
+	}
 
 }
 @media(max-height: 800px) and (min-height: 790px){
@@ -807,6 +823,12 @@ canvas#canvas{
 	}
 	.zealiconhover{
 		top: 27%;
+	}
+	.stripimg{
+		height: 550rem;
+	}
+	.skip{
+		font-size: 30px;
 	}
 }
 @media(max-width: 812px) and (min-width: 800px){
@@ -826,7 +848,7 @@ canvas#canvas{
 		margin-top: -21%;
 	}
 	.zealiconhover{
-		top: 34%;
+		top: 32%;
 	}
 	.sun{
 		top:47%;
@@ -845,6 +867,14 @@ canvas#canvas{
 	}
 	.birds{
 		top: 65%;
+	}
+	.stripimg{
+		height: 560rem;
+	}
+	.skip{
+		font-size: 35px;
+		color: white;
+		background-color: rgba(0,0,0,0.8);
 	}
 
 }
@@ -873,6 +903,14 @@ canvas#canvas{
 	.birds{
 		top: 65%;
 	}
+	.stripimg{
+		height: 650rem;
+	}
+	.skip{
+		font-size: 30px;
+		color: white;
+		background-color: rgba(0,0,0,0.8);
+	}
 
 }
 @media(max-height: 1024px) and (min-height: 1000px){
@@ -900,6 +938,13 @@ canvas#canvas{
 	.birds{
 		top: 65%;
 	}
+	.stripimg{
+		height: 600rem;
+	}
+	.skip{
+        font-size: 35px;
+        color: white;
+		background-color: rgba(0,0,0,0.8);
+	}
 
 }
-
