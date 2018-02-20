@@ -272,11 +272,12 @@
 .contclose {
   position: absolute;
   z-index: 10001;
-  left: 4vw;
+  left: 2vw;
   text-decoration: none;
     font-size: 60px;
-  color: #000;
-  top: 3.5vh;
+  color: #fff;
+  top: 1.5vh;
+  font-weight: 600;
 }
 
 .contacthead {
