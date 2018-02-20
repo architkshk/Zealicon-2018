@@ -18,7 +18,7 @@ $(document).ready(function(){
     			if ($('.stripcontent').height() > $('.stripcontainer').height()) {
 		        setInterval(function () {
 		            start();
-		       	}, 2000); 
+		       	}, 2000);
 		    }
 
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
 				  typeSpeed: 40
 				});
 	    	},15000);
-    		
+
 			setTimeout(function(){
 				$('#whiteScreen').fadeOut();
 	            $("#pages").css({
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		},3000);
 
 
-function animateContent(direction) {  
+function animateContent(direction) {
     var animationOffset = $('.stripcontainer').height() - $('.stripcontent').height()-30;
     if (direction == 'up') {
         animationOffset = 0;
@@ -67,14 +67,14 @@ function start(){
 	            var typed = new Typed('#welcome', {
 				  strings: ["","Welcome to the 90's",""],
 				  typeSpeed: 40
-				});			
+				});
 				setTimeout(function(){
 				$('#whiteScreen').fadeOut();
 	            $("#pages").css({
 	              display: "block"
 	          });
 	        },6200);
-		});	
+		});
 
 			$(".grass1, .grass2").mouseover(function(){
           	$("#my_audio")[0].play();
@@ -154,14 +154,14 @@ function start(){
 			$('#homepage').css('right','0');
 		});
 
-		$('.contbtn').click(function(){
-			$('#contactpage').css('right','0');
-			$('#homepage').css('right','100vw');
-		});
-		$('.contclose').click(function(){
-			$('#contactpage').css('right','-100vw');
-			$('#homepage').css('right','0');
-		});
+		// $('.contbtn').click(function(){
+		// 	$('#contactpage').css('right','0');
+		// 	$('#homepage').css('right','100vw');
+		// });
+		// $('.contclose').click(function(){
+		// 	$('#contactpage').css('right','-100vw');
+		// 	$('#homepage').css('right','0');
+		// });
 		$('.schbtn').click(function(){
 			$('#schedulepage').css('right','0');
 			$('#homepage').css('right','100vw');
@@ -186,6 +186,6 @@ function start(){
       }
     $( window ).on( "orientationchange", function( event ) {
       location.reload();
-    }); 
-    $("[data-toggle='tooltip']").tooltip();  
+    });
+    $("[data-toggle='tooltip']").tooltip();
 });
