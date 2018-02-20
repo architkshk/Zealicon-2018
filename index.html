@@ -10,11 +10,13 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/map.css">
+  <link rel="stylesheet" type="text/css" href="css/tooltip.css">
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/typed.js"></script>
   <link rel="stylesheet" type="text/css" href="css/csshake-slow.min.css">
   <script type="text/javascript" src="scroll/lionbars.js"></script>
+  <script type="text/javascript" src="js/tooltip.js"></script>
   <link rel="stylesheet" type="text/css" href="scroll/lionbars.css">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
 
@@ -40,7 +42,7 @@
         <img class="img tweety" src="images/Tweety.gif">
         <img class="img birds" src="images/birds.gif">
         <!-- <img class="img baloon" src="images/mick-don.png"> -->
-        <a href="http://register.zealicon.in" class="" target="_blank"><img class="img baloon" src="images/bal.png"></a>
+        <a href="http://register.zealicon.in" class="" target="_blank" data-placement="left" data-toggle="tooltip" title="Register Here"><img class="img baloon" src="images/bal.png"></a>
         <img class="img jungle" src="images/jungle.gif">
         <!-- <img class="img lamp" id="jin" src="images/lamp.png"> -->
         <img class="img leftplant" src="images/kkk.png">
@@ -51,18 +53,18 @@
           
           <img class ="img zealicon" src="images/zealicon-3d.png" />
           <img class ="img sun" src="images/sun.png" />
-          <a onclick="togglePlay()" href="#"><img class ="img tape glow" src="images/tape.gif" /></a>
+          <a onclick="togglePlay()" href="#" data-placement="top" data-toggle="tooltip" title="Audio"><img class ="img tape glow" src="images/tape.gif" /></a>
           <img class ="img starfish" src="images/starfish.png" />
-          <img class="img shinchan" src="images/shinchan.gif">
-          <img class="img bird" src="images/bird.gif">
+          <img class="img bird" src="images/bird.gif"/>
+          <img class="img shinchan" src="images/shinchan.gif"/>
           <img class ="img pikachu" src="images/pikachu.gif" />
           <img class ="img pikachu_left" src="images/pikachu_left.gif" />
-          <img class="img bird_left" src="images/bird_left.gif">
+          <img class="img bird_left" src="images/bird_left.gif"/>
           <img class ="img castle" src="images/sandcastle.png" />
           <img class ="img winnie" src="images/winnie.png" />
-          <img class="img chipmunk" src="images/chipmunk.gif">
-          <a href="#" class="mapbtn"><img class="img bottle glow" src="images/bottle2.png"></a>
-          <img class="img boat" src="images/boat-home.png"> 
+          <img class="img chipmunk" src="images/chipmunk.gif"/>
+          <a href="#" class="mapbtn" data-placement="right" data-toggle="tooltip" title="Navigate"><img class="img bottle glow" src="images/bottle2.png"></a>
+          <img class="img boat" src="images/boat-home.png"/> 
           <!-- <img class ="img bl1" src="images/babylooney/1.gif" />
           <img class ="img bl2" src="images/babylooney/2.gif" />
           <img class ="img bl3" src="images/babylooney/3.gif" />
@@ -76,7 +78,6 @@
         </div>
         <img class ="img grass1" src="images/leaves-left.png" />
         <img class ="img grass2" src="images/leaves-right.png" />
-        <img class ="mowgli grass3" src="images/timon.gif" />
       </div>
       <div class="img menu">
       </div>

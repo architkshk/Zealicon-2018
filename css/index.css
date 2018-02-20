@@ -274,9 +274,9 @@ canvas#canvas{
     top: 2%;
     right: 56%;
   }
+}
 
-}
-}
+
 .bird {
 	bottom: 35%;
 	width: 5%;
@@ -447,17 +447,16 @@ canvas#canvas{
 .zealicon {
 	position: absolute;
 	bottom: 40%;
-	width: 48vw;
+	width: 40vw;
 	height: auto;
-	transition:top 2s, transform 2s ;
+	transition:bottom 2s, transform 2s ;
 	z-index: 2;
 	left: 70%;
 	transform: translateX(-50%);
 }
 .zealiconhover {
 	transform:  translateX(-50%) scale(1.2);
-	bottom: 45.3%;
-	width: 40%;
+	bottom: 42%;
 }
 .water {
 	position: absolute;

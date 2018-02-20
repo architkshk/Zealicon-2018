@@ -61,7 +61,6 @@ function start(){
 }, 2000);
 }
 
-
 		$('.skip').click(function(){
 	            $('.stripcontainer').fadeOut();
 	            $('.skip').fadeOut();
