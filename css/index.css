@@ -954,14 +954,14 @@ canvas#canvas{
 }
 @media(max-width: 1600px) and (min-width: 1500px){
 	.zealiconhover{
-    	top: 27%;
+    	top: 14%;
     	width: 35%;
     }
     canvas#canvas{
     	margin-top: -17%;
     }
 	.sun{
-		top: 40%;
+		top: 34%;
 	}
 	.pikachu{
 		top: 69%;
