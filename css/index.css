@@ -463,7 +463,8 @@ canvas#canvas{
 }
 .zealiconhover {
 	transform:  translateX(-50%) scale(1.2);
-	bottom: 42%;
+	bottom: 46%;
+	width: 35%;
 }
 .water {
 	position: absolute;
@@ -695,6 +696,9 @@ canvas#canvas{
 	canvas#canvas{
 		margin-top: 5%;
 	}
+	.zealiconhover{
+		bottom: 37%;
+	}
 	.sun{
 		top: 40%;
 	}
@@ -713,13 +717,17 @@ canvas#canvas{
 }
 @media(max-height: 384px) and (min-height: 370px){
 	canvas#canvas{
-		margin-top: -5%;
+		margin-top: 0%;
 	}
-	.zealicon{
-		top: 30%;
+	.zealiconhover{
+		bottom: 42%;
 	}
 	.sun{
-		top: 33%;
+		bottom: 44%;
+	}
+	.boat{
+		top: 49%;
+		left: 42%;
 	}
 	.stripimg{
 		height: 260rem;
@@ -730,10 +738,17 @@ canvas#canvas{
 }
 @media(max-height: 414px) and (min-height: 400px){
 	canvas#canvas{
-		margin-top: -5%;
+		margin-top: -2%;
+	}
+	.zealiconhover{
+		bottom: 40%;
 	}
 	.sun{
-		top: 35%;
+		top: 42%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
 	}
 	.stripimg{
 		height: 300rem;
@@ -746,8 +761,15 @@ canvas#canvas{
 	canvas#canvas{
 		margin-top: -5%;
 	}
+	.zealiconhover{
+		bottom: 37%;
+	}
 	.sun{
 		top: 43%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
 	}
 	.stripimg{
 		height: 330rem;
@@ -783,7 +805,7 @@ canvas#canvas{
 		top: 69%;
 	}
 	.boat{
-		top: 65%;
+		top: 53%;
 	}
 	.castle{
 		bottom: 12%;
@@ -805,8 +827,15 @@ canvas#canvas{
 	canvas#canvas{
 		margin-top: -16%;
 	}
+	.zealiconhover{
+		bottom: 35%;
+	}
 	.sun{
 		top: 44%;
+	}
+	.boat{
+		top: 52%;
+		left: 43%;
 	}
 	.stripimg{
 		height: 550rem;
@@ -815,7 +844,7 @@ canvas#canvas{
 		font-size: 30px;
 	}
 }
-@media(max-width: 812px) and (min-width: 800px){
+@media(max-width: 812px) and (min-width: 801px){
 	canvas#canvas{
 		margin-top: -3%;
 	}
@@ -825,10 +854,13 @@ canvas#canvas{
 }
 @media(max-height: 950px) and (min-height: 910px){
 	canvas#canvas{
-		margin-top: -21%;
+		margin-top: -18%;
 	}
+	.zealiconhover{
+    	bottom: 30%;
+    }
 	.sun{
-		top:47%;
+		bottom: 38%;
 	}
 	.pikachu{
 		top: 69%;
@@ -837,7 +869,9 @@ canvas#canvas{
 		top: 69%;
 	}
 	.boat{
-		top: 59%;
+		top: 51%;
+		left: 45%;
+		width: 6%;
 	}
 	.castle{
 		bottom: 12%;
@@ -846,10 +880,10 @@ canvas#canvas{
 		top: 65%;
 	}
 	.stripimg{
-		height: 560rem;
+       height: 550rem;
 	}
 	.skip{
-		font-size: 35px;
+		font-size: 28px;
 		color: white;
 		background-color: rgba(0,0,0,0.8);
 	}
@@ -857,10 +891,13 @@ canvas#canvas{
 }
 @media(max-height: 900px) and (min-height: 890px){
 	canvas#canvas{
-		margin-top: -21%;
+		margin-top: -18%;
 	}
 	.sun{
-		top: 39%;
+		bottom: 44%;
+	}
+	.zealiconhover{
+		bottom: 40%;
 	}
 	.pikachu{
 		top: 69%;
@@ -869,7 +906,7 @@ canvas#canvas{
 		top: 69%;
 	}
 	.boat{
-		top: 59%;
+		top: 53%;
 	}
 	.castle{
 		bottom: 12%;
@@ -891,6 +928,9 @@ canvas#canvas{
 	canvas#canvas{
 		margin-top: -21%;
 	}
+	.zealiconhover{
+		bottom: 33%;
+	}
 	.sun{
 		top: 50%;
 	}
@@ -901,7 +941,7 @@ canvas#canvas{
 		top: 69%;
 	}
 	.boat{
-		top: 63%;
+		top: 53%;
 	}
 	.castle{
 		bottom: 12%;
@@ -919,12 +959,12 @@ canvas#canvas{
 	}
 
 }
-@media(max-width: 1280px) and (min-width: 1200px){
+/*@media(max-width: 1280px) and (min-width: 1200px){
 	.zealiconhover{
-    	top: 30%;
+    	bottom: 38%;
     }
 	.sun{
-		top: 45%;
+		bottom: 38%;
 	}
 	.pikachu{
 		top: 69%;
@@ -934,7 +974,7 @@ canvas#canvas{
 	}
 	.boat{
 		top: 51%;
-		left: 39%;
+		left: 45%;
 		width: 6%;
 	}
 	.castle{
@@ -951,7 +991,7 @@ canvas#canvas{
 		color: white;
 		background-color: rgba(0,0,0,0.8);
 	}
-}
+}*/
 @media(max-width: 1600px) and (min-width: 1500px){
 	.zealiconhover{
     	top: 14%;
@@ -989,6 +1029,6 @@ canvas#canvas{
 }
 @media (max-width: 768px) {
 	#view {
-		bottom: 10%;
+		bottom: 0%;
 	}
 }
