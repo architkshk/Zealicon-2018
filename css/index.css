@@ -692,7 +692,244 @@ canvas#canvas{
 	color: #000;
 	z-index: 1000000000;
 } 
-@media(max-height: 320px) and (min-height: 300px){
+@media(max-width: 480px) and (min-width: 420px){
+	canvas#canvas{
+		margin-top: 5%;
+	}
+	.zealiconhover{
+		bottom: 37%;
+	}
+	.sun{
+		top: 40%;
+	}
+	.stripimg{
+		height: 220rem;
+	}
+	
+}
+@media(max-width: 533px) and (min-width: 500px){
+	canvas#canvas{
+		margin-top: 5%;
+	}
+	.zealiconhover{
+		bottom: 37%;
+	}
+	.sun{
+		top: 40%;
+	}
+	.stripimg{
+		height: 220rem;
+	}
+	
+}
+@media(max-width: 640px) and (min-width: 600px){
+	canvas#canvas{
+		margin-top: 1%;
+	}
+	.zealiconhover{
+		bottom: 38%;
+	}
+	.sun{
+		bottom: 44%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
+	}
+	.stripimg{
+		height: 260rem;
+	}
+	.skip{
+		font-size: 22px;
+	}
+}
+@media(max-width: 667px) and (min-width: 650px){
+	canvas#canvas{
+		margin-top: 1%;
+	}
+	.zealiconhover{
+		bottom: 38%;
+	}
+	.sun{
+		bottom: 44%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
+	}
+	.stripimg{
+		height: 260rem;
+	}
+	.skip{
+		font-size: 22px;
+	}
+}
+@media(max-width: 732px) and (min-width: 700px){
+	canvas#canvas{
+		margin-top: -2%;
+	}
+	.zealiconhover{
+		bottom: 40%;
+	}
+	.sun{
+		top: 42%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
+	}
+	.stripimg{
+		height: 300rem;
+	}
+	.skip{
+		font-size: 20px;
+	}
+}
+@media(max-width: 736px) and (min-width: 734px){
+	canvas#canvas{
+		margin-top: -2%;
+	}
+	.zealiconhover{
+		bottom: 40%;
+	}
+	.sun{
+		top: 42%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
+	}
+	.stripimg{
+		height: 300rem;
+	}
+	.skip{
+		font-size: 20px;
+	}
+}
+@media(max-width: 812px) and (min-width: 800px){
+	canvas#canvas{
+		margin-top: -4%;
+	}
+	.zealiconhover{
+		bottom: 47%;
+	}
+	.sun{
+		top: 28%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
+	}
+	.stripimg{
+		height: 330rem;
+	}
+	.skip{
+		font-size: 20px;
+	}
+}
+@media(max-width: 854px) and (min-width: 820px){
+	canvas#canvas{
+		margin-top: -5%;
+	}
+	.zealiconhover{
+		bottom: 37%;
+	}
+	.sun{
+		top: 43%;
+	}
+	.boat{
+		top: 52%;
+		left: 42%;
+	}
+	.stripimg{
+		height: 330rem;
+	}
+	.skip{
+		font-size: 20px;
+	}
+}
+@media(max-width: 960px) and (min-width: 920px){
+
+	.sun{
+		top: 38%;
+	}
+	.stripimg{
+		height: 420rem;
+	}
+	.skip{
+		font-size: 26px;
+	}
+}
+@media(max-width: 1024px) and (min-width: 1000px){
+
+	.sun{
+		top: 38%;
+	}
+	.stripimg{
+		height: 420rem;
+	}
+	.skip{
+		font-size: 26px;
+	}
+}
+@media(max-width: 1280px) and (min-width: 1200px){
+	canvas#canvas{
+		margin-top: -16%;
+	}
+	.zealiconhover{
+		bottom: 37%;
+	}
+	.sun{
+		top: 44%;
+	}
+	.boat{
+		top: 52%;
+		left: 43%;
+	}
+	.stripimg{
+		height: 550rem;
+	}
+	.skip{
+		font-size: 30px;
+	}
+}
+@media(max-width: 1440px) and (min-width: 1400px){
+	canvas#canvas{
+		margin-top: -18%;
+	}
+	.zealiconhover{
+    	bottom: 38%;
+    }
+	.sun{
+		top: 43%;
+	}
+	.pikachu{
+		top: 69%;
+	}
+	.pikachu_left{
+		top: 69%;
+	}
+	.boat{
+		top: 51%;
+		left: 40%;
+		width: 6%;
+	}
+	.castle{
+		bottom: 12%;
+	}
+	.birds{
+		top: 65%;
+	}
+	.stripimg{
+       height: 550rem;
+	}
+	.skip{
+		font-size: 28px;
+		color: white;
+		background-color: rgba(0,0,0,0.8);
+	}
+}
+/*@media(max-height: 320px) and (min-height: 300px){
 	canvas#canvas{
 		margin-top: 5%;
 	}
@@ -1025,10 +1262,5 @@ canvas#canvas{
 		font-size: 28px;
 		color: white;
 		background-color: rgba(0,0,0,0.8);
-	}
-}
-@media (max-width: 768px) {
-	#view {
-		bottom: 0%;
 	}
 }
