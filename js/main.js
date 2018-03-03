@@ -136,7 +136,7 @@ function start(){
 			$('a').focusout();
 		});
 
-		$('.abbtn').click(function(){
+		$('.abbtn, .abbtn-top').click(function(){
 			$('#aboutpage').css('right','0');
 			$('#homepage').css('right','100vw');
 		});

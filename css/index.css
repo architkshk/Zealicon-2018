@@ -260,7 +260,7 @@ canvas#canvas{
 .baloon {
   	position: absolute;
   	z-index: 1001;
-  	width: 10%;
+  	width: 8%;
     animation-name: baloon-anim;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -270,15 +270,15 @@ canvas#canvas{
 }
 @keyframes baloon-anim{
   0% {
-    top: 2%;
+    top: 12%;
     right: 56%;
   }
   50% {
-    top: 6%;
+    top: 19%;
     right: 54%;
   }
   100% {
-    top: 2%;
+    top: 12%;
     right: 56%;
   }
 }
@@ -454,7 +454,7 @@ canvas#canvas{
 .zealicon {
 	position: absolute;
 	bottom: 40%;
-	width: 40vw;
+	width: 35vw;
 	height: auto;
 	transition:bottom 2s, transform 2s ;
 	z-index: 2;
@@ -463,8 +463,7 @@ canvas#canvas{
 }
 .zealiconhover {
 	transform:  translateX(-50%) scale(1.2);
-	bottom: 46%;
-	width: 35%;
+	bottom: 43%;
 }
 .water {
 	position: absolute;
@@ -528,33 +527,33 @@ canvas#canvas{
 }
 
 .cloud1 {
-	top: 60px;
-	width: 150px;
+	top: 70px;
+	width: 140px;
 	position: absolute;
 	animation: cloud-move1 60s linear infinite;
 	animation-direction: normal;
 }
 .cloud2 {
-	top: 30px;
+	top: 40px;
 	position: absolute;
 	animation: cloud-move5 46s linear infinite;
 	animation-direction: normal;
 }
 .cloud3 {
-	top: 17px;
+	top: 27px;
 	width: 90px;
 	position: absolute;
 	animation: cloud-move3 70s linear infinite;
 	animation-direction: normal;
 }
 .cloud4 {
-	top: 28px;
+	top: 38px;
 	position: absolute;
 	animation: cloud-move4 56s linear infinite;
 	animation-direction: normal;
 }
 .cloud5 {
-	top: 13px;
+	top: 23px;
 	width: 70px;
 	position: absolute;
 	animation: cloud-move2 50s linear infinite;
@@ -654,7 +653,7 @@ canvas#canvas{
 
 .birds {
 	position: absolute;
-	z-index: 999;
+	z-index: 99;
 	width: 13%;
   	animation-name: birds-anim;
   	animation-duration: 50s;
