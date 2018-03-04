@@ -1,812 +1,609 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=yes">
-  <title>ZEALICON - Let's Rewind...</title>
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/loader.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/about.css">
-  <link rel="stylesheet" type="text/css" href="css/map.css">
-  <link rel="stylesheet" type="text/css" href="css/tooltip.css">
-  <link rel="stylesheet" type="text/css" href="css/nav.css">
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114914042-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zealicon'18</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/about.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <section id="home">
+      <!-- homepage -->
+      <div class="row">
+        <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
 
-    gtag('config', 'UA-114914042-1');
-  </script>
+          <!-- layer1 -->
+          <div class="nav">
+            <div class="top">
+              <a href="" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">About</a>
+              <a href="#" target="_blank">Events</a>
+              <a href="#" class="schbtn">Schedule</a>
+              <a href="#" class="spbtn">Sponsors</a>
+              <a href="#" class="">Team</a>
+              <a href="#" class="contbtn">Contact</a>
+            </div>
+          </div>
+          <img class="img-responsive navbg" src="images/top-nav.png">
+          <div class="row">
+            <img class="img-responsive baloon" src="images/bal.png">
+            <img class="img-responsive tweety" src="images/Tweety.gif">
+            <img class="img-responsive jungle" src="images/jungle.gif">
+            <img class ="img-responsive castle" src="images/sandcastle.png">
+            <img class="img-responsive leftplant" src="images/kkk.png">
+            <img class ="img-responsive winnie" src="images/winnie.png">
+            <img class="img-responsive chipmunk" src="images/chipmunk.gif">
+            <img class ="img-responsive starfish" src="images/starfish.png">
+            <img class="img-responsive bird" src="images/bird.gif">
+            <!-- <img class="img-responsive boat" src="images/boat-home.png"> -->
+            <img class="img-responsive shinchan" src="images/shinchan.gif">
+            <img class ="img-responsive pikachu" src="images/pikachu.gif">
+            <img class ="img-responsive pikachu_left" src="images/pikachu_left.gif">
+            <img class="img-responsive bird_left" src="images/bird_left.gif">
+            <a onclick="togglePlay()" href="#" title="Audio" >
+              <img class ="img tape" src="images/tape.gif">
+            </a>
+          </div>
+          <!-- layer1 -->
+          <!-- <img class ="img grass1" src="images/leaves-left.png"> -->
+          <!-- <img class ="img grass2" src="images/leaves-right.png"> -->
+          <!-- layer2 -->
+          <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+            <img src="images/home.png" class="img-responsive shore navbar-fixed-bottom">
+          <!-- layer2 -->
 
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/typed.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/csshake-slow.min.css">
-  <script type="text/javascript" src="scroll/lionbars.js"></script>
-  <script type="text/javascript" src="js/tooltip.js"></script>
-  <link rel="stylesheet" type="text/css" href="scroll/lionbars.css">
-  <link rel="stylesheet" type="text/css" href="css/contact.css">
+            <!-- layer3 -->
+            <div class="row" style="margin-bottom: 20%;">
+              <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+                <img class="img-responsive cloud1" src="images/cloud.png">
+                <img class="img-responsive cloud2" src="images/cloud.png">
+                <img class="img-responsive cloud3" src="images/cloud.png">
+                <img class="img-responsive cloud4" src="images/cloud.png">
+                <img class="img-responsive cloud5" src="images/cloud.png">
+                <canvas id="canvas" class="water"></canvas>
+                <img class="img-responsive zealicon" src="images/zealicon.png">
+                <img class="img-responsive sun" src="images/sun.png">
+                <img class="img-responsive birds" src="images/birds.gif">
+              </div>
+            </div>
+            <!-- layer3 -->
 
-</head>
-
-<body>
-  <div id="images_strip">
-    <div class="stripcontainer">
-      <div class="stripcontent">
-        <img class="stripimg" src="images/dfscv.jpg">
-        <a href="#" class="skip">Skip</a>
-      </div>
-    </div>
-  </div>
-  <div id="pages">
-    <div id="homepage">
-      <div id="content">
-
-         <div class="nav">
-          <div class="top">
-                <a href="#" class="abbtn-top">About</a>
-                <a href="#"  target="_blank" href="https://drive.google.com/file/d/0B_4X-wKiC3RIYzVwWUNQRUQ1S25fN2M0bGVFR0x5Szd2UU9r/view?ts=5a8165ee">Events</a>
-                <a href="#" class="schbtn">Schedule</a>
-                <a href="#" class="spbtn">Sponsors</a>
-                <a href="#" class="">Team</a>
-                <a href="#" class="contbtn">Contact</a>
           </div>
         </div>
-        <img class="img navbg" src="images/top-nav.png">
-
-
-        <img class="img cloud1" src="images/cloud.png">
-        <img class="img cloud2" src="images/cloud.png">
-        <img class="img cloud3" src="images/cloud.png">
-        <img class="img cloud4" src="images/cloud.png">
-        <img class="img cloud5" src="images/cloud.png">
-        <img class="img tweety" src="images/Tweety.gif">
-        <img class="img birds" src="images/birds.gif">
-        <!-- <img class="img baloon" src="images/mick-don.png"> -->
-        <a href="#" class="baloon" target="_blank" data-placement="bottom" data-toggle="tooltip" title="Register Here (Coming Soon)"><img class="img " src="images/bal.png"></a>
-        <img class="img jungle" src="images/jungle.gif">
-        <!-- <img class="img lamp" id="jin" src="images/lamp.png"> -->
-        <img class="img leftplant" src="images/kkk.png">
-        <div id="view">
-          <img class ="img island" src="images/home_elongated2.png" />
-
-          <canvas id="canvas" height="1500"></canvas>
-
-          <img class ="img zealicon" src="images/zealicon.png" />
-          <img class ="img sun" src="images/sun.png" />
-          <a onclick="togglePlay()" href="#" data-placement="top" data-toggle="tooltip" title="Audio" class="tape glow"><img class ="img tapeinner" src="images/tape.gif" /></a>
-          <img class ="img starfish" src="images/starfish.png" />
-          <img class="img bird" src="images/bird.gif"/>
-          <img class="img shinchan" src="images/shinchan.gif"/>
-          <img class ="img pikachu" src="images/pikachu.gif" />
-          <img class ="img pikachu_left" src="images/pikachu_left.gif" />
-          <img class="img bird_left" src="images/bird_left.gif"/>
-          <img class ="img castle" src="images/sandcastle.png" />
-          <img class ="img winnie" src="images/winnie.png" />
-          <img class="img chipmunk" src="images/chipmunk.gif"/>
-          <a href="#" class="mapbtn bottle glow" data-placement="top" data-toggle="tooltip" title="Navigate"><img class="img bottleinner" src="images/bottle2.png"></a>
-           <a href="#" class="boat spbtn" data-placement="top" data-toggle="tooltip" title="Sponsors"><img class="img" src="images/boat-home.png"/> </a>
-          <!-- <img class ="img bl1" src="images/babylooney/1.gif" />
-          <img class ="img bl2" src="images/babylooney/2.gif" />
-          <img class ="img bl3" src="images/babylooney/3.gif" />
-          <img class ="img bl4" src="images/babylooney/4.gif" />
-          <img class ="img bl5" src="images/babylooney/5.png" />
-          <img class ="img bl6" src="images/babylooney/6.gif" /> -->
-          <!-- <img class ="img roadrunner" src="images/roadrunner.gif" />
-          <img class="img jin static" src="images/jinstatic.png">
-          <img class="img jin active" src="images/jin.gif">
-          <img class ="img home-map" src="images/mapwithelements/home-map.png" /></a>-->
-        </div>
-        <img class ="img grass1" src="images/leaves-left.png" />
-        <img class ="img grass2" src="images/leaves-right.png" />
       </div>
-      <div class="img menu">
-      </div>
-    </div>
+      <!-- homepage -->
 
-    <div id="aboutpage">
+      <!-- about us -->
+      <div id="aboutpage">
         <a href="#" class="abclose">&times;</a>
         <img class ="img aboutbg" src="images/aboutpage/about-without-elements3.png" />
         <img class ="img about-scooby" src="images/aboutpage/about-scooby.png" />
         <div class="about-overlay container antiscroll-wrap">
           <p class="antiscroll-inner">Pokemon at 5, and then Beyblade at 5.30. Tom & Jerry, Looney tunes, Scooby Doo, Shaktiman…. That’s so Raven...Video games..
-              <br><br>
-              Do you yearn to live and bring all those times back ?
-              <br><br>
-              If the answer is Yes...then we are back with our Zeal… are you ?
-              <br><br>
-              JSS Academy of Technical Education, Noida presents to you the most enthusiastic annual Techno-Cultural fest in NCR- the “Zealicon”, turning 10 with the 90’s nostalgia.
-              This time with a different aura and touchstone but an antiquated journey down to one’s memory lane.
-              <br><br>
-              Join us on this nostalgic journey from 14th March 2018 - 17th March 2018 with opportunity to be a part of some airing and zestful events. Promising, loads of fun, prizes and exposure to make this fest Bigger this time!
-              <br><br>
-              Further details will be disclosed soon. Keep visiting this page to stay updated on your journey in ZEALICON'18.
+            <br><br>
+            Do you yearn to live and bring all those times back ?
+            <br><br>
+            If the answer is Yes...then we are back with our Zeal… are you ?
+            <br><br>
+            JSS Academy of Technical Education, Noida presents to you the most enthusiastic annual Techno-Cultural fest in NCR- the “Zealicon”, turning 10 with the 90’s nostalgia.
+            This time with a different aura and touchstone but an antiquated journey down to one’s memory lane.
+            <br><br>
+            Join us on this nostalgic journey from 14th March 2018 - 17th March 2018 with opportunity to be a part of some airing and zestful events. Promising, loads of fun, prizes and exposure to make this fest Bigger this time!
+            <br><br>
+            Further details will be disclosed soon. Keep visiting this page to stay updated on your journey in ZEALICON'18.
           </p>
         </div>
-    </div>
-    <div id="sponsorpage">
-      <a href="#" class="spclose">&times;</a>
-      <img class ="img sponsorbg" src="images/sponsor-bg.png" />
-      <div class="sponsor-overlay">
-        <p>Sponsors are on their way. They'll join us soon.</p>
       </div>
-    </div>
-    <div id="schedulepage">
-      <a href="#" class="scclose">&times;</a>
-      <img class ="img schbg" src="images/scbg.jpg" />
-    </div>
+      <!-- about us -->
 
-
-    <div id="contactpage">
-      <a href="#" class="contclose">&times;</a>
-      <img class ="img contactbg" src="images/527.jpg" />
-      <div class="contact-overlay">
-      <h1 class="contacthead"> Contact Us </h1>
-        <div id="contact">
-        <div class="tab">
-          <button class="tablinks" onclick="opencat(event, 'cat1')" id="defaultOpen">Executive</button>
-          <button class="tablinks" onclick="opencat(event, 'cat2')">Web, Design & App</button>
-          <button class="tablinks" onclick="opencat(event, 'cat3')">Events</button>
-          <button class="tablinks" onclick="opencat(event, 'cat4')">Security</button>
-          <button class="tablinks" onclick="opencat(event, 'cat5')">Registrations</button>
-          <button class="tablinks" onclick="opencat(event, 'cat6')">Sponsorship</button>
-          <button class="tablinks" onclick="opencat(event, 'cat7')">Cultural</button>
-          <button class="tablinks" onclick="opencat(event, 'cat8')">Publicity</button>
-          <button class="tablinks" onclick="opencat(event, 'cat9')">Merchandise</button>
-        </div>
-
-        <div id="cat1" class="tabcontent">
-          <div class="row">
-          <div class="column" style="width: 48%">
-            <div class="card">
-              <!-- <img src="images/team1.jpg" alt="Jane"  style="width:100%"> -->
-              <div class="contcontainer">
-                <h2>Utkarsh Singh</h2>
-                <!-- <p class="title">CEO & Founder</p> -->
-                <p> </p>
-                <p>example@example.com</p>
-                <!-- <p><button class="button">Contact</button></p> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="column"  style="width: 48%">
-            <div class="card">
-              <!-- <img src="images/team1.jpg" alt="Mike" style="width:100%"> -->
-              <div class="contcontainer">
-                <h2>Abhishek Kumar</h2>
-                <!-- <p class="title">Art Director</p> -->
-                <p> </p>
-                <p>example@example.com</p>
-                <!-- <p><button class="button">Contact</button></p> -->
-              </div>
-            </div>
-          </div>
-          <!-- <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div> -->
-        </div>
-        </div>
-
-        <div id="cat2" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div id="cat3" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-
-        <div id="cat4" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane"  style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div id="cat5" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div id="cat6" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-
-        <div id="cat7" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane"  style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div id="cat8" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <div id="cat9" class="tabcontent">
-          <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Jane" style="width:100%">
-              <div class="contcontainer">
-                <h2>Jane Doe</h2>
-                <p class="title">CEO & Founder</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="Mike" style="width:100%">
-              <div class="contcontainer">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="card">
-              <img src="images/team1.jpg" alt="John" style="width:100%">
-              <div class="contcontainer">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
-                <p> </p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        </div>
-        </div>
-
-    </div>
-
-
-
-    <div id = "map">
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <img src="images/mapwithelements/map.png" class="img" id="map_background">
-        <div class="overlay-content">
-          <a href="#" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Home" id="home">
-             <img src="images/mapwithelements/map-home.png" class="img" id="home_image">
-          </a>
-          <a href="#" class="map-homep map-btn abbtn" data-placement="right" data-toggle="tooltip" title="About" id="about">
-             <img src="images/mapwithelements/map-about.png" id="about_image" class="img">
-          </a>
-          <a target="_blank" href="https://drive.google.com/file/d/0B_4X-wKiC3RIYzVwWUNQRUQ1S25fN2M0bGVFR0x5Szd2UU9r/view?ts=5a8165ee" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Event" id="events">
-             <img src="images/mapwithelements/map-events.png" id="events_image" class="img">
-          </a>
-          <a href="#" class="map-homep map-btn spbtn" data-placement="right" data-toggle="tooltip" title="Sponsors" id="sponsors">
-             <img src="images/mapwithelements/map-sponsors.png" id="sponsors_image" class="img">
-          </a>
-          <a href="#" class="map-homep map-btn schbtn" data-placement="right" data-toggle="tooltip" title="Schedule" id="schedule">
-             <img src="images/mapwithelements/map-schedule.png" id="schedule_image" class="img">
-          </a>
-          <a href="#" class="map-homep map-btn" data-placement="right" data-toggle="tooltip" title="Team" id="team">
-             <img src="images/mapwithelements/map-team.png" id="team_image" class="img">
-          </a>
-          <a href="#" class="map-homep map-btn contbtn" data-placement="right" data-toggle="tooltip" title="Contact" id="contact">
-             <img src="images/mapwithelements/map-x.png" id="contact_image" class="img">
-          </a>
+      <!-- sponsors -->
+      <div id="sponsorpage">
+        <a href="#" class="spclose">&times;</a>
+        <img class ="img sponsorbg" src="images/sponsor-bg.png" />
+        <div class="sponsor-overlay">
+          <p>Sponsors are on their way. They'll join us soon.</p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="vidloader">
-    <img class="gif" src="images/loader4.gif"/>
-  </div>
-  <div id="whiteScreen">
-      <p id="welcome"></p>
-  </div>
-  <audio id="my_audio" src="robin_hood_whistle.mp3" loop="loop"></audio>
-<!--
-    <div  id="ball-loader">
-      <h1 class="loading">LET'S REWIND</h1>
-      <div class="ball-loader">
-        <div class="ball-loader-ball ball1"></div>
-        <div class="ball-loader-ball ball2"></div>
-        <div class="ball-loader-ball ball3"></div>
+      <!-- sponsors -->
+
+      <!-- team -->
+
+      <!-- team -->
+
+      <!-- contact -->
+      <div id="contactpage">
+        <a href="#" class="contclose">&times;</a>
+        <img class ="img contactbg" src="images/527.jpg" />
+        <div class="contact-overlay">
+        <h1 class="contacthead"> Contact Us </h1>
+          <div id="contact">
+          <div class="tab">
+            <button class="tablinks" onclick="opencat(event, 'cat1')" id="defaultOpen">Executive</button>
+            <button class="tablinks" onclick="opencat(event, 'cat2')">Web, Design & App</button>
+            <button class="tablinks" onclick="opencat(event, 'cat3')">Events</button>
+            <button class="tablinks" onclick="opencat(event, 'cat4')">Security</button>
+            <button class="tablinks" onclick="opencat(event, 'cat5')">Registrations</button>
+            <button class="tablinks" onclick="opencat(event, 'cat6')">Sponsorship</button>
+            <button class="tablinks" onclick="opencat(event, 'cat7')">Cultural</button>
+            <button class="tablinks" onclick="opencat(event, 'cat8')">Publicity</button>
+            <button class="tablinks" onclick="opencat(event, 'cat9')">Merchandise</button>
+          </div>
+
+          <div id="cat1" class="tabcontent">
+            <div class="row">
+            <div class="column" style="width: 48%">
+              <div class="card">
+                <!-- <img src="images/team1.jpg" alt="Jane"  style="width:100%"> -->
+                <div class="contcontainer">
+                  <h2>Utkarsh Singh</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="column"  style="width: 48%">
+              <div class="card">
+                <!-- <img src="images/team1.jpg" alt="Mike" style="width:100%"> -->
+                <div class="contcontainer">
+                  <h2>Abhishek Kumar</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="cat2" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Divyanshu Verma</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Abhishek Singh</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="John" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Ayush Sehgal</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="cat3" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Abhishek Trivedi</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Ayush Gupta</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+          <div id="cat4" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane"  style="width:100%">
+                <div class="contcontainer">
+                  <h2> Prashant Singh</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Utkarsh Tomar</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="cat5" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Abhinav Pandey</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Aditya Talwar</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="cat6" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Gaurav Chaturvedi</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Vaibhav</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+          <div id="cat7" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane"  style="width:100%">
+                <div class="contcontainer">
+                  <h2>Aradhya Saxena</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Rahul Giri</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="cat8" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Mimanshi Tiwari</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Sharmishtha Sharma</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="John" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Akash Solanki</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div id="cat9" class="tabcontent">
+            <div class="row">
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Ashwani Singh</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <div class="contcontainer">
+                  <h2>Manu Agnihotri</h2>
+                  <p> </p>
+                  <p>example@example.com</p>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          </div>
+          </div>
+
       </div>
-    </div>
-    <div id="time_machine">
-      <div id="Top_counter">
-        <div class="counter_1" data-count="2001">2018</div>
-        <div class="counter_2" data-count="1990">2000</div>
+      <!-- contact -->
+      <!-- events -->
+
+      <!-- events -->
+      <!-- schedule -->
+      <div id="schedulepage">
+        <a href="#" class="scclose">&times;</a>
+        <img class ="img schbg" src="images/scbg.jpg" />
       </div>
-      <div id="mySpaceship"></div>
+      <!-- schedule -->
+    </section>
+    <div class="vidloader">
+      <img class="gif" src="images/loader4.gif"/>
     </div>
-    <div id="whiteScreen">
-      <p id="welcome">Welcome to 90's</p>
-    </div>
-    <script type="text/javascript" src="js/loader.js"></script> -->
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+    <audio id="my_audio" src="robin_hood_whistle.mp3" loop="loop"></audio>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Temporary script to play audio -->
     <!-- <script type="text/javascript">
-      $(document).ready(function(){
-        $('#jin').click(function(){
-          $('#abc').show();
-        });
-      });
-
-
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-          $("#jin").mouseleave(function(){
-              setTimeout(function(){ $('#abc').hide(); }, 1500);
-          });
-      });
+      $("#my_audio")[0].play();
     </script> -->
+    <!-- End of temp script -->
+    <!-- audio script -->
+    <script type="text/javascript">
+      var myAudio = document.getElementById("my_audio");
+      var isPlaying = true;
+      // window.onload = function(){
+      //   myAudio.play();
+      //   console.log("scd");
+      // }
+
+      function togglePlay() {
+        if (isPlaying) {
+          myAudio.pause()
+        } else {
+          myAudio.play();
+        }
+        $('a').focusout();
+      };
+      myAudio.onplaying = function() {
+        isPlaying = true;
+      };
+      myAudio.onpause = function() {
+        isPlaying = false;
+      };
+    </script>
+    <!-- audio script -->
+    <!-- water script -->
+    <script type="text/javascript">
+     var c=document.getElementById('canvas'),
+
+     w = window.innerWidth,
+     h = window.innerHeight,
+     ctx = c.getContext('2d'),
+     mouse,
+     drops=[],
+     shower= false,
+     water=[],
+     water_level = 180;
+     res=50,
+     k = 0.0025,
+     tension = 0.005
+     dampen = 0.02;
 
 
-<script>
-console.log(window.innerHeight);
-function opencat(evt, cat) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace("catactive", "");
-    }
-    document.getElementById(cat).style.display = "block";
-    evt.currentTarget.className += " catactive";
-}
+     dropplet = function(x,y){
+       this.x = x;
+       this.y = y;
+       this.vel = Math.random() * 10 - 5;
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
- <script type="text/javascript">
-  var c=document.getElementById('canvas'),
+       this.col = Math.floor(res/w*this.x);
+       this.update=function(){
+       this.vel = this.vel *0.7;
+       this.y = this.y + Math.random()  * 1.5 + 1;
+       this.x = this.x + this.vel;
+       this.col = Math.floor(res/w*this.x);
 
-  w = window.innerWidth,
-  h = window.innerHeight,
-  ctx = c.getContext('2d'),
-  mouse,
-  drops=[],
-  shower= false,
-  water=[],
-  water_level = 200;
-  res=50,
-  k = 0.0025,
-  tension = 0.005
-  dampen = 0.02;
+       if(this.x <= 0 || this.x >= w || this.y <= h || this.y <= water[this.col].height){
+         ctx.beginPath();
+         ctx.arc(this.x, this.y, 1.5, 0, 2 * Math.PI, false);
+         ctx.fillStyle = '#1C91A7';
+         ctx.fill();
+       } else {
+         this.destroy();
+         if (this.col >= 0 && this.col < water.length) {
+           water[this.col].speed = 1;
+         }
+       }
+       }
+       this.destroy=function(){
+       drops.splice( drops.indexOf( this ), 1 );
+       }
+     }
 
-  dropplet = function(x,y){
-    this.x = x;
-    this.y = y;
-    this.vel = Math.random() * 10 - 5;
+     spring = function(){
+       this.height = h-water_level;
+       this.speed = 0;
+       this.update = function() {
+       var x = (h-water_level) - this.height;
+       this.speed += tension * x - this.speed * dampen;
+       this.height += this.speed;
+       if(this.height > h) {this.height = h ;}
+       }
+     }
 
-    this.col = Math.floor(res/w*this.x);
-    this.update=function(){
-    this.vel = this.vel *0.7;
-    this.y = this.y + Math.random()  * 1.5 + 1;
-    this.x = this.x + this.vel;
-    this.col = Math.floor(res/w*this.x);
+     animate = function() {
+       ctx.clearRect(0, 0, w, h);
+       for (var i=0; i < drops.length; i++) {
+       drops[i].update();
+       }
 
-    if(this.x <= 0 || this.x >= w || this.y <= h || this.y <= water[this.col].height){
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, 1.5, 0, 2 * Math.PI, false);
-      ctx.fillStyle = '#1C91A7';
-      ctx.fill();
-    } else {
-      this.destroy();
-      if (this.col >= 0 && this.col < water.length) {
-        water[this.col].speed = 1;
-      }
-    }
-    }
-    this.destroy=function(){
-    drops.splice( drops.indexOf( this ), 1 );
-    }
-  }
+       var i;
+       for (i = 0; i < water.length; i++) {
+       water[i].update();
+       }
 
-  spring = function(){
-    this.height = h-water_level;
-    this.speed = 0;
-    this.update = function() {
-    var x = (h-water_level) - this.height;
-    this.speed += tension * x - this.speed * dampen;
-    this.height += this.speed;
-    if(this.height > h) {this.height = h ;}
-    }
-  }
+       var ldelta = new Array(water.length);
+       var rdelta = new Array(water.length);
 
-  animate = function() {
-    ctx.clearRect(0, 0, w, h);
-    for (var i=0; i < drops.length; i++) {
-    drops[i].update();
-    }
+       for (var j = 0; j < 8; j++) {
+       for (i = 0; i < water.length; i++) {
+         if (i > 0) {
+         ldelta[i] = k * (water[i].height - water[i - 1].height);
+         water[i - 1].speed += ldelta[i];
+         }
+         if (i < water.length - 1) {
+         rdelta[i] = k * (water[i].height - water[i + 1].height);
+         water[i + 1].speed += rdelta[i];
+         }
+       }
 
-    var i;
-    for (i = 0; i < water.length; i++) {
-    water[i].update();
-    }
+       for (i = 0; i < water[i].length; i++) {
+         if (i > 0) {
+         water[i - 1].height += ldelta[i];
+         }
+         if (i < water.length - 1) {
+         water[i + 1].height += rdelta[i];
+         }
+       }
+       }
 
-    var ldelta = new Array(water.length);
-    var rdelta = new Array(water.length);
+       var lingrad = ctx.createLinearGradient(0,0,0,h);
+       lingrad.addColorStop(0, '#1C91A7');
+       lingrad.addColorStop(1, '#116691')
 
-    for (var j = 0; j < 8; j++) {
-    for (i = 0; i < water.length; i++) {
-      if (i > 0) {
-      ldelta[i] = k * (water[i].height - water[i - 1].height);
-      water[i - 1].speed += ldelta[i];
-      }
-      if (i < water.length - 1) {
-      rdelta[i] = k * (water[i].height - water[i + 1].height);
-      water[i + 1].speed += rdelta[i];
-      }
-    }
+       ctx.fillStyle = lingrad;
 
-    for (i = 0; i < water[i].length; i++) {
-      if (i > 0) {
-      water[i - 1].height += ldelta[i];
-      }
-      if (i < water.length - 1) {
-      water[i + 1].height += rdelta[i];
-      }
-    }
-    }
+       ctx.beginPath();
+       ctx.moveTo(0, water[0].height);
 
-    var lingrad = ctx.createLinearGradient(0,0,0,h);
-    lingrad.addColorStop(0, '#1C91A7');
-    lingrad.addColorStop(1, '#116691')
+       for (var i = 0; i < water.length; i++) {
+       ctx.lineTo((i+1)*(w/res), water[i].height);
+       }
+       ctx.lineTo(w, h);
+       ctx.lineTo(0, h);
+       ctx.lineTo(0, water[water.length-1].height);
+       ctx.fill();
 
-    ctx.fillStyle = lingrad;
+     }
 
-    ctx.beginPath();
-    ctx.moveTo(0, water[0].height);
+     c.width=w;
+     c.height=h;
 
-    for (var i = 0; i < water.length; i++) {
-    ctx.lineTo((i+1)*(w/res), water[i].height);
-    }
-    ctx.lineTo(w, h);
-    ctx.lineTo(0, h);
-    ctx.lineTo(0, water[water.length-1].height);
-    ctx.fill();
+     c.addEventListener('mousemove', function(e) {
+       mouse = {
+       'x': e.clientX - c.getBoundingClientRect().left,
+       'y': e.clientY - c.getBoundingClientRect().top
+       }
+     }, false);
 
-  }
+     c.addEventListener('mousedown', function() {
+       shower = setInterval(function(){
+       drops.push(new dropplet(mouse.x,mouse.y));
+       },1);
+     }, false);
 
-  c.width=w;
-  c.height=h;
+     document.addEventListener('mouseup', function() {
+       clearInterval(shower);
+     }, false);
 
-  c.addEventListener('mousemove', function(e) {
-    mouse = {
-    'x': e.clientX - c.getBoundingClientRect().left,
-    'y': e.clientY - c.getBoundingClientRect().top
-    }
-  }, false);
+     for (var i=0;i<res;i++) {
+       water[i] = new spring();
+     }
 
-  c.addEventListener('mousedown', function() {
-    shower = setInterval(function(){
-    drops.push(new dropplet(mouse.x,mouse.y));
-    },1);
-  }, false);
+     setInterval(function(){
+       animate();
+     },60/1000);
+   </script>
+   <!-- water script -->
 
-  document.addEventListener('mouseup', function() {
-    clearInterval(shower);
-  }, false);
-
-  for (var i=0;i<res;i++) {
-    water[i] = new spring();
-  }
-
-  setInterval(function(){
-    animate();
-  },60/1000);
-
-</script>
-<script type="text/javascript">
-  var myAudio = document.getElementById("my_audio");
-  var isPlaying = true;
-  // window.onload = function(){
-  //   myAudio.play();
-  //   console.log("scd");
-  // }
-
-  function togglePlay() {
-    if (isPlaying) {
-      myAudio.pause()
-    } else {
-      myAudio.play();
-    }
-    $('a').focusout();
-  };
-  myAudio.onplaying = function() {
-    isPlaying = true;
-  };
-  myAudio.onpause = function() {
-    isPlaying = false;
-  };
-</script>
-
-
-
-</body>
-
+  </body>
 </html>
