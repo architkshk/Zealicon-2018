@@ -321,23 +321,23 @@
 	left: 0%;
 	z-index: 1005;
 	height: 100vh;
-	width: 100%;
-	transition: left 2s linear, transform 2s;
+	width: auto;
+	transition: left 1s linear, transform 1s;
 }
 .grass2 {
 	position: absolute;
-	left:  0%;
+	right:  0%;
 	z-index: 1005;
 	height: 100vh;
-	width: 100%;
-	transition: left 2s linear, transform 2s;
+	width: auto;
+	transition: right 1s linear, transform 1s;
 }
 .grass1Hover {
-	left: -110%;
+	left: -60%;
 	transform: scale(1.2);
 }
 .grass2Hover {
-	left: 110%;
+	right: -60%;
 	transform: scale(1.2);
 }
 .grass3{

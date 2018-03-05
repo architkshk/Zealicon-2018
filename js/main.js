@@ -12,7 +12,7 @@ $(document).ready(function(){
     		setTimeout(function(){
 				$(".vidloader").fadeOut();
 				$("#my_audio")[0].play();
-			},1000);
+			},100);
 		});
 
         
