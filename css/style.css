@@ -619,20 +619,20 @@
     top: 65%;
   }
   .shinchan{
-    bottom: 40%;
+    bottom: 42%;
   }
   .tape{
-    bottom: 40%;
-    left: 10%;
+    bottom: 42%;
+    left: 9%;
   }
   .castle{
-    bottom: 44%;
+    bottom: 47%;
   }
   .winnie{
-    bottom: 40%;
+    bottom: 42%;
   }
   .chipmunk{
-    bottom: 33%;
+    bottom: 35%;
   }
   .starfish{
     bottom: 40%;
@@ -646,16 +646,16 @@
     text-align: center;
   }
   .pikachu{
-    bottom: 52%;
+    bottom: 53%;
   }
   .pikachu_left{
-    bottom: 52%;
+    bottom: 53%;
   }
   .bird{
-    bottom: 57%;
+    bottom: 58%;
   }
   .bird_left{
-    bottom: 57%;
+    bottom: 58%;
   }
 }
 @media(min-width: 1024px) and (max-width: 1280px){

@@ -3,7 +3,7 @@
 /* Style the tab */
 .tab {
     float: left;
-    width: 25%;
+    width: 20%;
     height: 300px;
     border-right: 1px solid white;
 }
@@ -13,7 +13,7 @@
     display: block;
     background-color: inherit;
     color: #828080;
-    padding: 8px;
+    padding: 6px;
     width: 100%;
     border: none;
     outline: none;
@@ -21,7 +21,7 @@
     cursor: pointer;
     transition: 0.3s;
     font-size: 15px;
-}   
+}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -30,15 +30,15 @@
 
 /* Create an active/current "tab button" class */
 .catactive {
-    color: #fff !important; 
+    color: #fff !important;
 }
 
 /* Style the tab content */
 .tabcontent {
-    float: left;
-    padding: 0px 12px;
+    /*float: left;*/
+    padding: 0px 5px;
     /*border: 1px solid #ccc;*/
-    width: 75%;
+    width: 80%;
     border-left: none;
     height: 300px;
 }
@@ -57,12 +57,13 @@
   }
 }
 
-.card {
+.card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .contcontainer {
   padding: 0 16px;
+  font-size: 15px;
 }
 
 .contacthead {
@@ -78,7 +79,9 @@
 #contact .title {
   color: grey;
 }
-
+#contact .card1 img{
+  height: 200px;
+}
 #contact .button {
   border: none;
   outline: 0;

@@ -7,7 +7,8 @@
     <title>Zealicon'18</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/about.css" rel="stylesheet"> -->
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -23,12 +24,12 @@
           <!-- layer1 -->
           <div class="nav">
             <div class="top">
-              <a href="" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;">About</a>
-              <a href="#" target="_blank">Events</a>
-              <a href="#" class="schbtn">Schedule</a>
-              <a href="#" class="spbtn">Sponsors</a>
+              <a href="" data-toggle="modal" data-target="#myModal" style="padding:0; border:0;outline-style: none;">About</a>
+              <a target="_blank" href="https://drive.google.com/file/d/0B_4X-wKiC3RIYzVwWUNQRUQ1S25fN2M0bGVFR0x5Szd2UU9r/view?ts=5a8165ee">Events</a>
+              <a href="" data-toggle="modal" data-target="#myModal1" style="padding:0; border:0;outline-style: none;" class="schbtn">Schedule</a>
+              <a href="" data-toggle="modal" data-target="#myModal2" style="padding:0; border:0;outline-style: none;" class="spbtn">Sponsors</a>
               <a href="#" class="">Team</a>
-              <a href="#" class="contbtn">Contact</a>
+              <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none;">Contact</a>
             </div>
           </div>
           <img class="img-responsive navbg" src="images/top-nav.png">
@@ -80,13 +81,15 @@
       </div>
       <!-- homepage -->
 
-      <!-- about us -->
-      <div id="aboutpage">
-        <a href="#" class="abclose">&times;</a>
+     <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
         <img class ="img aboutbg" src="images/aboutpage/about-without-elements3.png" />
-        <img class ="img about-scooby" src="images/aboutpage/about-scooby.png" />
-        <div class="about-overlay container antiscroll-wrap">
-          <p class="antiscroll-inner">Pokemon at 5, and then Beyblade at 5.30. Tom & Jerry, Looney tunes, Scooby Doo, Shaktiman…. That’s so Raven...Video games..
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <img class ="img about-scooby" src="images/aboutpage/about-scooby.png" />
+            <div class="about-overlay container antiscroll-wrap">
+            <p class="antiscroll-inner">Pokemon at 5, and then Beyblade at 5.30. Tom & Jerry, Looney tunes, Scooby Doo, Shaktiman…. That’s so Raven...Video games..
             <br><br>
             Do you yearn to live and bring all those times back ?
             <br><br>
@@ -98,65 +101,85 @@
             Join us on this nostalgic journey from 14th March 2018 - 17th March 2018 with opportunity to be a part of some airing and zestful events. Promising, loads of fun, prizes and exposure to make this fest Bigger this time!
             <br><br>
             Further details will be disclosed soon. Keep visiting this page to stay updated on your journey in ZEALICON'18.
-          </p>
+            </p>
+          </div>
+          </div>
         </div>
       </div>
-      <!-- about us -->
+    </div>>
+    </div>
 
-      <!-- sponsors -->
-      <div id="sponsorpage">
-        <a href="#" class="spclose">&times;</a>
-        <img class ="img sponsorbg" src="images/sponsor-bg.png" />
-        <div class="sponsor-overlay">
-          <p>Sponsors are on their way. They'll join us soon.</p>
+    <div class="modal fade " id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <img class ="img schbg" src="images/scbg.jpg" />
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: black;background-color: black;"><span aria-hidden="true">&times;</span></button>
+          </div>
         </div>
       </div>
-      <!-- sponsors -->
+    </div>
 
-      <!-- team -->
 
-      <!-- team -->
+    <div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img class ="img sponsorbg" src="images/sponsor-bg.png" />
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img class ="img sponsorbg" src="images/sponsor-bg.png" />
+              <div class="sponsor-overlay">
+                <p>Sponsors are on their way. They'll join us soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <!-- contact -->
-      <div id="contactpage">
-        <a href="#" class="contclose">&times;</a>
-        <img class ="img contactbg" src="images/527.jpg" />
-        <div class="contact-overlay">
-        <h1 class="contacthead"> Contact Us </h1>
+
+   <div class="modal fade " id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <img class ="img contactbg" src="images/527.jpg" />
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="color: black;">&times;</span></button>
+            <div class="contact-overlay">
+            <h1 class="contacthead"> Core Team </h1>
           <div id="contact">
           <div class="tab">
-            <button class="tablinks" onclick="opencat(event, 'cat1')" id="defaultOpen">Executive</button>
+            <button class="tablinks" onclick="opencat(event, 'cat1')" id="defaultOpen">Management</button>
             <button class="tablinks" onclick="opencat(event, 'cat2')">Web, Design & App</button>
             <button class="tablinks" onclick="opencat(event, 'cat3')">Events</button>
             <button class="tablinks" onclick="opencat(event, 'cat4')">Security</button>
-            <button class="tablinks" onclick="opencat(event, 'cat5')">Registrations</button>
+            <!-- <button class="tablinks" onclick="opencat(event, 'cat5')">Registrations</button> -->
             <button class="tablinks" onclick="opencat(event, 'cat6')">Sponsorship</button>
             <button class="tablinks" onclick="opencat(event, 'cat7')">Cultural</button>
             <button class="tablinks" onclick="opencat(event, 'cat8')">Publicity</button>
             <button class="tablinks" onclick="opencat(event, 'cat9')">Merchandise</button>
+            <button class="tablinks" onclick="opencat(event, 'cat10')">Finance</button>
           </div>
 
           <div id="cat1" class="tabcontent">
-            <div class="row">
+            <div class="row" style="margin-left: 20px;">
             <div class="column" style="width: 48%">
-              <div class="card">
-                <!-- <img src="images/team1.jpg" alt="Jane"  style="width:100%"> -->
+              <div class="card1">
+                <img src="images/utkarshs.jpg" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Utkarsh Singh</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
+                  <h4>Utkarsh Singh</h4>
+                  <p>8586852282</p>
+                  <p>singh.utkarsh95@icloud.com</p>
                   <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
             <div class="column"  style="width: 48%">
-              <div class="card">
-                <!-- <img src="images/team1.jpg" alt="Mike" style="width:100%"> -->
+              <div class="card1">
+                <img src="images/abhishekk.jpg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Abhishek Kumar</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
+                  <h4>Abhishek Kumar</h4>
+                  <p> 9711541714</p>
+                  <p>abhi19.official@gmail.com</p>
                   <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
@@ -167,36 +190,36 @@
           <div id="cat2" class="tabcontent">
             <div class="row">
             <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+              <div class="card1" style="margin-left:10px; width: 110%">
+                <img src="images/dv.jpg" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Divyanshu Verma</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Divyanshu Verma</h4>
+                  <p>9643903611</p>
+                  <p>divyanshuvrm10@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
             <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+              <div class="card1">
+                <img src="images/abhisheks.jpeg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Abhishek Singh</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Abhishek Singh</h4>
+                  <p> 7503024739</p>
+                  <p>singhsterabhi@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
             <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="John" style="width:100%">
+              <div class="card1">
+                <img src="images/ayushs.jpg" alt="John" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Ayush Sehgal</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Ayush Sehgal</h4>
+                  <p>9910680524</p>
+                  <p>sehgalayush26@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
@@ -204,81 +227,80 @@
           </div>
 
           <div id="cat3" class="tabcontent">
-            <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column"  style="width: 48%">
+              <div class="card1"  style="margin-left:10px;">
+                <img src="images/abhishekt.jpg" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Abhishek Trivedi</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Abhishek Trivedi</h4>
+                  <p> 9451941865</p>
+                  <p>abhi16397@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="column" style="width: 48%">
+              <div class="card1">
+                <img src="images/ayushg.jpg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Ayush Gupta</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Ayush Gupta</h4>
+                  <p> 8505959587</p>
+                  <p>ayushgupta1324@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
           </div>
           </div>
-
 
           <div id="cat4" class="tabcontent">
-            <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane"  style="width:100%">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column"  style="width: 48%">
+              <div class="card1"  style="margin-left:10px;">
+                <img src="images/prashant.jpeg" alt="Jane"  style="width:100%">
                 <div class="contcontainer">
-                  <h2> Prashant Singh</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Prashant Singh</h4>
+                  <p>9868406005</p>
+                  <p>prashantxb1@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="column"  style="width: 48%">
+              <div class="card1">
+                <img src="images/utkarsht.png" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Utkarsh Tomar</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Utkarsh Tomar</h4>
+                  <p> 9958010964</p>
+                  <p>Utkarsh.tomar25@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
           </div>
           </div>
 
-          <div id="cat5" class="tabcontent">
+          <!-- <div id="cat5" class="tabcontent">
             <div class="row">
-            <div class="column">
-              <div class="card">
+            <div class="column"  style="width: 48%">
+              <div class="card1">
                 <img src="images/team1.jpg" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Abhinav Pandey</h2>
+                  <h4>Abhinav Pandey</h4>
                   <p> </p>
-                  <p>example@example.com</p>
+                  <p>abhinavpandey.1996@gmail.com</p>
                   <p><button class="button">Contact</button></p>
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="card">
+            <div class="column"  style="width: 48%">
+              <div class="card1">
                 <img src="images/team1.jpg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Aditya Talwar</h2>
+                  <h4>Aditya Talwar</h4>
                   <p> </p>
                   <p>example@example.com</p>
                   <p><button class="button">Contact</button></p>
@@ -286,30 +308,30 @@
               </div>
             </div>
           </div>
-          </div>
+          </div> -->
 
           <div id="cat6" class="tabcontent">
-            <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column"  style="width: 48%">
+              <div class="card1"  style="margin-left:10px;">
+                <img src="images/gaurav.jpg" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Gaurav Chaturvedi</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Gaurav Chaturvedi</h4>
+                  <p>9654986920</p>
+                  <p>gaurav.pg007@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="column"  style="width: 48%">
+              <div class="card1">
+                <img src="images/vaibhav.jpg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Vaibhav</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Vaibhav Shukla</h4>
+                  <p>9818302918</p>
+                  <p>vaibhavshukla12@hotmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
@@ -318,27 +340,27 @@
 
 
           <div id="cat7" class="tabcontent">
-            <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane"  style="width:100%">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column"  style="width: 48%">
+              <div class="card1"  style="margin-left:10px;">
+                <img src="images/aradhya.jpeg" alt="Jane"  style="width:100%">
                 <div class="contcontainer">
-                  <h2>Aradhya Saxena</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Aradhya Saxena</h4>
+                  <p>9971738740</p>
+                  <p>aradhya2211@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="column"  style="width: 48%">
+              <div class="card1">
+                <img src="images/rahul.jpg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Rahul Giri</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Rahul Giri</h4>
+                  <p>8447561809</p>
+                  <p>girirahul53@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
@@ -346,86 +368,97 @@
           </div>
 
           <div id="cat8" class="tabcontent">
-            <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column" style="width: 48%">
+              <div class="card1"  style="margin-left:10px;">
+                <img src="images/mimanshi.JPG" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Mimanshi Tiwari</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Mimanshi Tiwari</h4>
+                  <p> 9717753296</p>
+                  <p>mimanshi.jss.108@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+            <div class="column" style="width: 48%">
+              <div class="card1">
+                <img src="images/sharmishtha.jpg" alt="Mike" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Sharmishtha Sharma</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Sharmishtha Sharma</h4>
+                  <p> 8587998387</p>
+                  <p>sharmistha.gemini@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
-            <div class="column">
-              <div class="card">
+            <!-- <div class="column">
+              <div class="card1">
                 <img src="images/team1.jpg" alt="John" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Akash Solanki</h2>
+                  <h4>Akash Solanki</h4>
                   <p> </p>
                   <p>example@example.com</p>
                   <p><button class="button">Contact</button></p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           </div>
 
           <div id="cat9" class="tabcontent">
-            <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column"  style="width: 48%">
+              <div class="card1" style="margin-left:10px;">
+                <img src="images/ashwani.jpg" alt="Jane" style="width:100%">
                 <div class="contcontainer">
-                  <h2>Ashwani Singh</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Ashwani Singh</h4>
+                  <p>9717518241</p>
+                  <p>ashwanijssaten@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
 
-            <div class="column">
+            <div class="column"  style="width: 48%">
               <div class="card">
-                <img src="images/team1.jpg" alt="Mike" style="width:100%">
+                <img src="images/manu.jpg" alt="Mike" style="width:100%; height: 200px;">
                 <div class="contcontainer">
-                  <h2>Manu Agnihotri</h2>
-                  <p> </p>
-                  <p>example@example.com</p>
-                  <p><button class="button">Contact</button></p>
+                  <h4>Manu Agnihotri</h4>
+                  <p> 9560337040</p>
+                  <p>agnihotri.manu.2596@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
                 </div>
               </div>
             </div>
           </div>
           </div>
 
+          <div id="cat10" class="tabcontent">
+            <div class="row" style="margin-left: 20px;">
+            <div class="column">
+              <div class="card1"  style="margin-left:10px; width:120%">
+                <img src="images/shubham.jpg" alt="Jane" style="width:100%">
+                <div class="contcontainer">
+                  <h4>Shubham Saxena</h4>
+                  <p> 8287524525</p>
+                  <p>saxenashubham2001@gmail.com</p>
+                  <!-- <p><button class="button">Contact</button></p> -->
+                </div>
+              </div>
+            </div>
+
           </div>
           </div>
 
-      </div>
-      <!-- contact -->
-      <!-- events -->
+          </div>
+          </div>
 
-      <!-- events -->
-      <!-- schedule -->
-      <div id="schedulepage">
-        <a href="#" class="scclose">&times;</a>
-        <img class ="img schbg" src="images/scbg.jpg" />
+
+          </div>
+        </div>
       </div>
-      <!-- schedule -->
+    </div>
     </section>
     <div class="vidloader">
       <img class="gif" src="images/loader4.gif"/>
@@ -604,6 +637,26 @@
      },60/1000);
    </script>
    <!-- water script -->
+   <!-- contact script -->
+    <script>
+console.log(window.innerHeight);
+function opencat(evt, cat) {
+   var i, tabcontent, tablinks;
+   tabcontent = document.getElementsByClassName("tabcontent");
+   for (i = 0; i < tabcontent.length; i++) {
+       tabcontent[i].style.display = "none";
+   }
+   tablinks = document.getElementsByClassName("tablinks");
+   for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace("catactive", "");
+   }
+   document.getElementById(cat).style.display = "block";
+   evt.currentTarget.className += " catactive";
+}
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   <!-- contact script -->
   </body>
 </html>
