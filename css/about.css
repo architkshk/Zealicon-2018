@@ -35,13 +35,17 @@
   z-index: 10001;
   left: 2vw;
   text-decoration: none;
-  font-size: 60px;
+  font-size: 40px;
   outline-style: none;
   color: #fff;
   top: 2vh;
+  filter: opacity(100);
+  opacity: 1;
 }
 .close:hover{
   color: white;
+  filter: opacity(90);
+  opacity: 0.9;
 }
 .about-scooby{
   position: absolute;
@@ -226,7 +230,7 @@
   z-index: 10001;
   left: 13vw;
   text-decoration: none;
-    font-size: 60px;
+    font-size: 40px;
   color: #fff;
   top: 7vh;
 }
@@ -278,7 +282,7 @@
   z-index: 10001;
   left: 2vw;
   text-decoration: none;
-  font-size: 60px;
+  font-size: 40px;
   color: black;
   top: 1.5vh;
   font-weight: 600;
@@ -323,7 +327,7 @@
   z-index: 10001;
   left: 3vw;
   text-decoration: none;
-    font-size: 60px;
+    font-size: 40px;
   color: #fff;
   top: 4vh;
 }
