@@ -744,7 +744,7 @@
     bottom: 40%;
   }
   .jungle{
-    left: 2%;
+    left: 3%;
   }
   .bird{
     bottom: 45%;
@@ -754,7 +754,7 @@
   }
   .leftplant{
     top: 8%;
-    left: 1%;
+    left: 0.5%;
   }
   .starfish{
     bottom: 24%;
@@ -857,7 +857,11 @@
     bottom: 18%
   }
   .chipmunk{
-    bottom: 8%;
+    bottom:12%;
+  }
+  .jungle{
+    left: 2%;
+    top: 15%
   }
   .pikachu{
     bottom:30%;
@@ -870,6 +874,10 @@
   }
   .bird_left{
     bottom: 35%;
+  }
+  .tweety{
+    left: 5%;
+    top: 13%;
   }
   .starfish{
     bottom: 18%;
@@ -889,7 +897,12 @@
   .cloud2{
     top: 130px;
   }
+  .leftplant{
+    left: -3%;
+    top: 11%;
+  }
   .top a{
+    margin-top: 2.5%;
     font-size: 28px;
   }
 }
