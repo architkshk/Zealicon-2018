@@ -62,7 +62,7 @@
 .zealicon {
 	position: absolute;
 	bottom: 20%;
-	width: 48%;
+	width: 45%;
 	height: auto;
 	transition:bottom 2s, transform 2s;
 	z-index: 2;
