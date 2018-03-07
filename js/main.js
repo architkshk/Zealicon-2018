@@ -15,7 +15,7 @@ $(document).ready(function(){
 			},100);
 		});
 
-        
+
         $(".view, .island, .grass1, .grass2").mouseover(function(){
           	// $("#my_audio")[0].play();
 			/** $('.shore, .water, .bird, .bird_left, .pikachu, .pikachu_left .castle, .chipmunk, .tape, .leftplant').addClass("islandHover");

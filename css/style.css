@@ -544,7 +544,7 @@
     margin-left: -2.75%;
   }
   .zealicon{
-    bottom: 48%;
+    bottom: 50%;
     width: 42%;
   }
   .castle{
@@ -586,7 +586,7 @@
     margin-left: -2.75%;
   }
   .zealicon{
-    bottom: 45%;
+    bottom: 47%;
     width: 42%;
   }
   .jungle{
@@ -679,7 +679,7 @@
     top: -15%;
   }
   .zealicon{
-    bottom: 15%;
+    bottom: 17%;
   }
   .winnie{
     bottom: 15%
@@ -710,13 +710,13 @@
     width: 110%;
   }
   .castle{
-    bottom: 30%;
+    bottom: 32%;
   }
   .shinchan{
-    bottom: 20%;
+    bottom: 25%;
   }
   .tape{
-    bottom: 23%;
+    bottom: 25%;
     left: 8%;
   }
   .sun{
@@ -726,13 +726,16 @@
     top: -20%;
   }
   .zealicon{
-    bottom: 18%;
+    bottom: 20%;
+  }
+  .tweety{
+    left: 5%
   }
   .winnie{
-    bottom: 25%
+    bottom: 27%
   }
   .chipmunk{
-    bottom: 14%;
+    bottom: 18%;
   }
   .pikachu{
     bottom:40%;
@@ -740,14 +743,24 @@
   .pikachu_left{
     bottom: 40%;
   }
+  .jungle{
+    left: 2%;
+  }
   .bird{
     bottom: 45%;
   }
   .bird_left{
     bottom: 45%;
   }
+  .leftplant{
+    top: 8%;
+    left: 1%;
+  }
   .starfish{
     bottom: 24%;
+  }
+  .top a{
+    margin-top: 2.5%;
   }
 }
 @media(min-width: 1366px) and (max-width: 1440px){
@@ -772,7 +785,7 @@
     top: -20%;
   }
   .zealicon{
-    bottom: 18%;
+    bottom: 20%;
   }
   .winnie{
     bottom: 25%
@@ -838,7 +851,7 @@
     top: -18%;
   }
   .zealicon{
-    bottom: 12%;
+    bottom: 14%;
   }
   .winnie{
     bottom: 18%
@@ -905,7 +918,7 @@
     top: -20%;
   }
   .zealicon{
-    bottom: 10%;
+    bottom: 12%;
   }
   .winnie{
     bottom: 20%
