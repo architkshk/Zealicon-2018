@@ -43,7 +43,8 @@
 }
 
 #home{
-  background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
+  /*background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));*/
+  background: rgba(2,4,16,1);
 }
 .shore{
   margin-top: 10%;
