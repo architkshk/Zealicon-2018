@@ -13,7 +13,6 @@ $(document).ready(function(){
 				$(".vidloader").fadeOut();
 				$("#my_audio")[0].play();
 			},100);
-			initMap();
 		});
 
 
@@ -126,17 +125,3 @@ $(document).ready(function(){
     });
     $("[data-toggle='tooltip']").tooltip();
 });
-
-
-
-  function initMap() {
-    var mapOptions = {
-      zoom: 10,
-      center: new google.maps.LatLng(28.6126423,77.3590588),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById('map_canvas'),
-        mapOptions);
-  }
-
-  google.maps.event.addDomListener(window, 'load', initMap);
