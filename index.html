@@ -18,6 +18,28 @@
     <link rel="stylesheet" type="text/css" href="css/default1.css" />
     <link rel="stylesheet" type="text/css" href="css/component1.css" />
     <script src="js/modernizr.custom.js"></script>
+    <style type="text/css">
+      .vector{
+        position: absolute;
+        width: 33%;
+        height: 40%;
+        z-index: 999;
+        top: 43%;
+        left: -10%;
+      }
+      .poly {
+        animation: waves 1s infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes waves {
+        0% {
+          transform: scale(1.2);
+          transform-origin: center;
+        }
+      }
+
+    </style>
   </head>
   <body>
     <section id="home">
@@ -52,9 +74,18 @@
             <img class ="img-responsive pikachu" src="images/pikachu.gif">
             <img class ="img-responsive pikachu_left" src="images/pikachu_left.gif">
             <img class="img-responsive bird_left" src="images/bird_left.gif">
-            <a onclick="togglePlay()" href="" title="Audio" >
+            <a onclick="togglePlay()" href="#" title="Audio" >
               <img class ="img tape" src="images/tape.gif">
             </a>
+            <svg class="vector" > 
+  
+              
+              <polyline class="poly" points="340,130 390,120 370,100 420,90" fill= none stroke="#BBC42A" stroke-width="3" />
+              <polyline class="poly" points="337,180 390,190 380,170 450,180" fill= none stroke="#BBC42A" stroke-width="3" />
+              
+             
+            </svg>
+
           </div>
           <!-- layer1 -->
           <img class ="img grass1" src="images/leaves-left.png">
