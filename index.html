@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisE-4kejiL0kE-4arBkfVWGImEQzP16A&callback=initMap"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -29,13 +30,13 @@
               <a target="_blank" href="https://drive.google.com/file/d/0B_4X-wKiC3RIYzVwWUNQRUQ1S25fN2M0bGVFR0x5Szd2UU9r/view?ts=5a8165ee">Events</a>
               <a href="" data-toggle="modal" data-target="#myModal1" style="padding:0; border:0;outline-style: none;" class="schbtn">Schedule</a>
               <a href="" data-toggle="modal" data-target="#myModal2" style="padding:0; border:0;outline-style: none;" class="spbtn">Sponsors</a>
-              <a href="#" class="">Team</a>
-              <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none;">Contact</a>
+              <a href="" data-toggle="modal" data-target="#myModal4" style="padding:0; border:0;outline-style: none;"  class="">Team</a>
+              <a href="" data-toggle="modal" data-target="#myModal5" style="padding:0; border:0;outline-style: none;">Contact</a>
             </div>
           </div>
           <img class="img-responsive navbg" src="images/top-nav.png">
           <div class="row">
-            <img class="img-responsive baloon" src="images/bal.png">
+            <a href="http://register.zealicon.in" target="_blank"><img class="img-responsive baloon" src="images/bal.png"></a>
             <img class="img-responsive tweety" src="images/Tweety.gif">
             <img class="img-responsive jungle" src="images/jungle.gif">
             <img class ="img-responsive castle" src="images/sandcastle.png">
@@ -49,7 +50,7 @@
             <img class ="img-responsive pikachu" src="images/pikachu.gif">
             <img class ="img-responsive pikachu_left" src="images/pikachu_left.gif">
             <img class="img-responsive bird_left" src="images/bird_left.gif">
-            <a onclick="togglePlay()" href="#" title="Audio" >
+            <a onclick="togglePlay()" href="" title="Audio" >
               <img class ="img tape" src="images/tape.gif">
             </a>
           </div>
@@ -124,7 +125,41 @@
     </div>
 
 
-    <div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade " id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">;
+          <div class="modal-body" style="height: 100%;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
+            <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:50%">Core Team</a>
+            <a href="" data-toggle="modal" data-target="" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:30%">Web Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade " id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" style="height: 100%;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
+            <div class="reach-overlay">
+              <div class="contact-left">
+
+              </div>
+              <div class="contact-right" id="map_canvas">
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <img class ="img sponsorbg" src="images/sponsor-bg.png" />
@@ -142,10 +177,9 @@
 
    <div class="modal fade " id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <img class ="img contactbg" src="images/527.jpg" />
+        <div class="modal-content" style="background-color: #fff;">
           <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left"></i></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
             <div class="contact-overlay">
             <h1 class="contacthead"> Core Team </h1>
           <div id="contact">
