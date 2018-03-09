@@ -24,6 +24,7 @@
 
 .top {
     text-align: center;
+    margin-left: 50px;
 }
 .top a {font-family: 'Permanent Marker', cursive;
   font-variant: small-caps;
@@ -590,7 +591,7 @@
     width: 42%;
   }
   .jungle{
-    left: -1%;
+    left: 2.5%;
   }
   .sun{
     bottom: 50%;
@@ -622,7 +623,7 @@
     bottom: 42%;
   }
   .tape{
-    bottom: 32%;
+    bottom: 45%;
     left: 8%;
   }
   .castle{
@@ -654,8 +655,19 @@
   .bird{
     bottom: 58%;
   }
+  .tweety{
+    top: 8%;
+    left: 5.5%;
+  }
   .bird_left{
     bottom: 58%;
+  }
+  .leftplant{
+    top: 9%;
+    left: -1.5%;
+  }
+  .reach-overlay p{
+    font-size: 1 em;
   }
 }
 @media(min-width: 1024px) and (max-width: 1280px){

@@ -77,13 +77,9 @@
             <a onclick="togglePlay()" href="#" title="Audio" >
               <img class ="img tape" src="images/tape.gif">
             </a>
-            <svg class="vector" > 
-  
-              
+            <svg class="vector" >
               <polyline class="poly" points="340,130 390,120 370,100 420,90" fill= none stroke="#BBC42A" stroke-width="3" />
               <polyline class="poly" points="337,180 390,190 380,170 450,180" fill= none stroke="#BBC42A" stroke-width="3" />
-              
-             
             </svg>
 
           </div>
@@ -166,26 +162,28 @@
             <!-- <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:50%">Core Team</a>
             <a href="" data-toggle="modal" data-target="" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:30%">Web Team</a> -->
             <ul class="grid cs-style-3">
-              <li>
-                <figure>
-                  <img src="images/4.png" alt="img04">
-                  <figcaption>
-                    <h3>Core Team</h3>
-                    <!-- <span>Jacob Cummings</span> -->
-                    <a href="" data-toggle="modal" data-target="#myModal3">Take a look</a>
-                  </figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure>
-                  <img src="images/1.png" alt="img01">
-                  <figcaption>
-                    <h3>Web Team</h3>
-                    <!-- <span>Jacob Cummings</span> -->
-                    <a href="" data-toggle="modal" data-target="">Take a Look</a>
-                  </figcaption>
-                </figure>
-              </li>
+              <div class="row">
+                <li>
+                  <figure>
+                    <img src="images/4.png" alt="img04">
+                    <figcaption>
+                      <h3>Core Team</h3>
+                      <!-- <span>Jacob Cummings</span> -->
+                      <a href="" data-toggle="modal" data-target="#myModal3">Take a look</a>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/1.png" alt="img01">
+                    <figcaption>
+                      <h3>Web Team</h3>
+                      <!-- <span>Jacob Cummings</span> -->
+                      <a href="" data-toggle="modal" data-target="">Take a Look</a>
+                    </figcaption>
+                  </figure>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -199,19 +197,20 @@
           <div class="modal-body" style="height: 100%;">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
             <div class="reach-overlay">
-              <div class="contact-left" style="padding: 8% 2%;">
-                <p style="font-size:1.4em; font-weight:800;">JSS Academy of Technical Education</p>
-                <p>C-20/1, Sector-62, NOIDA (U.P)-201301</p>
-                <p>Get Directions</p>
-                &nbsp;
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6" style="padding: 8%">
+                  <p style="font-size:1.3 em; font-weight:800;">JSS Academy of Technical Education</p>
+                  <p>C-20/1, Sector-62, NOIDA (U.P)-201301</p>
 
-                <p style="font-size:1.3em; margin-top:13%;">Prof. Sampath Kumar V</p>
-                <p>Festival Coordinater - Zealicon'18</p>
-                <p>XXXXXXXXXX</p>
-              </div>
-              <div class="contact-right">
-                <div id="map_canvas" style="width:100%;height:100%;">
-              </div>
+                  <p style="font-size:1.1em; margin-top:13%;">Prof. Sampath Kumar V</p>
+                  <p>Festival Coordinater - Zealicon'18</p>
+                  <p>9873184185</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                  <div id="map" style="width:100%;height:450px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7005.126528335891!2d77.3591516!3d28.612876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fd027cb23d66b19!2sJSS+Academy+of+Technical+Education!5e0!3m2!1sen!2sin!4v1520580491967" width="600" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
               <div style="clear:both;"></div>
             </div>
@@ -625,8 +624,6 @@
       }
     </script>
 
-
-
     <!-- water script -->
     <script type="text/javascript">
      var c=document.getElementById('canvas'),
@@ -769,7 +766,7 @@
      },60/1000);
    </script>
    <!-- water script -->
-   <!-- contact script -->
+   <!-- team script -->
     <script>
       console.log(window.innerHeight);
       function opencat(evt, cat) {
@@ -788,18 +785,7 @@
 
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
-
-      function initMap() {
-        var mapOptions = {
-          center: new google.maps.LatLng(28.6126423,77.3590588),
-          zoom: 10,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
-      }
-
       </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBisE-4kejiL0kE-4arBkfVWGImEQzP16A&callback=initMap"></script>
-   <!-- contact script -->
+   <!-- team script -->
   </body>
 </html>
