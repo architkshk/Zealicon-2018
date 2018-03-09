@@ -59,6 +59,26 @@
   margin-left: -1.15%;
   max-width: 110%;
 }
+/*      .vector{
+        position: absolute;
+        width: 33%;
+        height: 40%;
+        z-index: 999;
+        top: 43%;
+        left: -10%;
+      }
+      .poly {
+        animation: waves 1s infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes waves {
+        0% {
+          transform: scale(1.2);
+          transform-origin: center;
+        }
+      }
+*/
 /*island*/
 .zealicon {
 	position: absolute;
@@ -787,7 +807,7 @@
     left: 13%;
   }
   .tape{
-    bottom: 32%;
+    bottom: 28%;
     left: 8%;
   }
   .sun{
