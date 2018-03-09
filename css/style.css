@@ -1035,7 +1035,14 @@
     bottom: 20%
   }
   .chipmunk{
-    bottom: 5%;
+    bottom: 8%;
+  }
+  .tweety{
+    left: 4%;
+  }
+  .jungle{
+    top: 10%;
+    left: 3.5%;
   }
   .pikachu{
     bottom:33%;
@@ -1048,6 +1055,10 @@
   }
   .bird_left{
     bottom: 39%;
+  }
+  .leftplant{
+    top: 9%;
+    left: -1%;
   }
   .starfish{
     bottom: 15%;
