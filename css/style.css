@@ -1118,11 +1118,11 @@ body {
 
 .wave {
   position: absolute;
-  bottom: 27%;
-  left:11%;
+  bottom: 30%;
+  left:10%;
   animation: wave 0.7s linear infinite;
   animation-direction: normal;
-  z-index: 1004;
+  z-index: 999;
   width: 3.5%;
   }
 
