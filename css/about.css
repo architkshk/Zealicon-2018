@@ -261,8 +261,12 @@
   transform: translate(-50%,-50%);
 }
 
+.contacthead {
+  border-bottom: 1px solid white;
+}
+
 .contact-overlay {
-  padding: 1% 8%;
+  padding: 4% 8%;
   display: block;
   position: relative;
   width: 80vw;
@@ -273,6 +277,8 @@
   background: rgba(0,0,0,0.8);
   color: white;
   text-align: center;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .reach-overlay {
