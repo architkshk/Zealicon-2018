@@ -15,6 +15,31 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default1.css" />
+    <link rel="stylesheet" type="text/css" href="css/component1.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <style type="text/css">
+      .vector{
+        position: absolute;
+        width: 33%;
+        height: 40%;
+        z-index: 999;
+        top: 43%;
+        left: -10%;
+      }
+      .poly {
+        animation: waves 1s infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes waves {
+        0% {
+          transform: scale(1.2);
+          transform-origin: center;
+        }
+      }
+
+    </style>
   </head>
   <body>
     <section id="home">
@@ -49,9 +74,18 @@
             <img class ="img-responsive pikachu" src="images/pikachu.gif">
             <img class ="img-responsive pikachu_left" src="images/pikachu_left.gif">
             <img class="img-responsive bird_left" src="images/bird_left.gif">
-            <a onclick="togglePlay()" href="" title="Audio" >
+            <a onclick="togglePlay()" href="#" title="Audio" >
               <img class ="img tape" src="images/tape.gif">
             </a>
+            <svg class="vector" > 
+  
+              
+              <polyline class="poly" points="340,130 390,120 370,100 420,90" fill= none stroke="#BBC42A" stroke-width="3" />
+              <polyline class="poly" points="337,180 390,190 380,170 450,180" fill= none stroke="#BBC42A" stroke-width="3" />
+              
+             
+            </svg>
+
           </div>
           <!-- layer1 -->
           <img class ="img grass1" src="images/leaves-left.png">
@@ -129,8 +163,30 @@
         <div class="modal-content">;
           <div class="modal-body" style="height: 100%;">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
-            <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:50%">Core Team</a>
-            <a href="" data-toggle="modal" data-target="" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:30%">Web Team</a>
+            <!-- <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:50%">Core Team</a>
+            <a href="" data-toggle="modal" data-target="" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:30%">Web Team</a> -->
+            <ul class="grid cs-style-3">
+              <li>
+                <figure>
+                  <img src="images/4.png" alt="img04">
+                  <figcaption>
+                    <h3>Core Team</h3>
+                    <!-- <span>Jacob Cummings</span> -->
+                    <a href="" data-toggle="modal" data-target="#myModal3">Take a look</a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="images/1.png" alt="img01">
+                  <figcaption>
+                    <h3>Web Team</h3>
+                    <!-- <span>Jacob Cummings</span> -->
+                    <a href="" data-toggle="modal" data-target="">Take a Look</a>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -540,6 +596,37 @@
       };
     </script>
     <!-- audio script -->
+
+
+
+    <!-- script to check click position on screen. Open console and click on the screen to see changes -->
+    <script type="text/javascript">
+      $( document ).on( "click", function(e) {
+        console.log(e.pageX+":"+e.pageY);
+      });
+    </script>
+    <!-- Script to generate clicks -->
+    <script type="text/javascript">
+      function simulateClick(x, y) {
+          var clickEvent = document.createEvent('MouseEvents');
+          clickEvent.initMouseEvent('click', true, true, window, 0, 0, 0, x, y, false, false, false, false, 0, null);
+          document.elementFromPoint(x, y).dispatchEvent(clickEvent);
+      }
+      simulateClick(70, 30);
+      simulateClick(110, 90);simulateClick(150, 90);simulateClick(115, 90);
+      simulateClick(130, 150);
+      simulateClick(20, 210);
+      simulateClick(100, 270);
+      setInterval(abc, 5000);//generates click after every 5 sec
+      function abc(){
+        for(let i=0;i<10;i++){
+          simulateClick(466, 255);//generating 10 clicks at a time
+        }
+      }
+    </script>
+
+
+
     <!-- water script -->
     <script type="text/javascript">
      var c=document.getElementById('canvas'),
