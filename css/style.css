@@ -985,6 +985,74 @@
     font-size: 36px;
   }
 }
+@media(min-width: 1920px){
+  .shore{
+    width: 110%;
+  }
+  #canvas{
+    margin-top: -16%;
+  }
+  .castle{
+    bottom: 25%;
+  }
+  .shinchan{
+    bottom: 15%;
+  }
+  .tape{
+    bottom: 20%;
+    left: 10%;
+  }
+  .sun{
+    bottom: 20%;
+  }
+  .navbg{
+    top: -20%;
+  }
+  .zealicon{
+    bottom: 12%;
+  }
+  .winnie{
+    bottom: 20%
+  }
+  .chipmunk{
+    bottom: 5%;
+  }
+  .pikachu{
+    bottom:33%;
+  }
+  .pikachu_left{
+    bottom: 33%;
+  }
+  .bird{
+    bottom: 39%;
+  }
+  .bird_left{
+    bottom: 39%;
+  }
+  .starfish{
+    bottom: 15%;
+  }
+  .cloud1{
+    top: 130px;
+  }
+  .cloud4{
+    top: 90px;
+  }
+  .cloud3{
+    top: 130px;
+  }
+  .cloud5{
+    top: 90px;
+  }
+  .cloud2{
+    top: 130px;
+  }
+  .top a{
+    margin-top: 2.3%;
+    font-size: 36px;
+  }
+}
+/*media queries*/
 
 .hover {
   transform: scale(1.1);
