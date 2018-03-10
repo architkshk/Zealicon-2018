@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backoffice</title>
+</head>
+<body>
+	<button id="user">Get Events</button>
+	<script type="text/javascript">
+		document.getElementById('user').addEventListener('click',showEvents);
+
+		function showEvents(){
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET','http://backoffice.zealicon.in/events',true);
+
+			xhr.onload = function(){
+				if(this.status==200){
+					console.log(JSON.parse(this.responseText));
+				}
+			}
+			xhr.send();
+		}
+	</script>
+	<!-- <script type="text/javascript">
+		$(document).ready(function(){
+			$.get('http://backoffice.zealicon.in/events', function(res){
+				console.log(res);
+			})
+		});
+	</script> -->
+</body>
+</html>
