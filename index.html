@@ -609,10 +609,13 @@
       // }
 
       function togglePlay() {
+        $('.wave').toggle();
         if (isPlaying) {
-          myAudio.pause()
+          myAudio.pause();
+          $(".tape").attr("src","images/tape-static.png");
         } else {
           myAudio.play();
+          $(".tape").attr("src","images/tape.gif");
         }
         $('a').focusout();
       };
