@@ -6,6 +6,18 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
+    	var d = new Date();
+		var n = d.getHours();
+		$('.moon').hide();
+		if (n > 19 || n < 6) {
+			$('#home').css('background','rgba(9,18,25,1)');
+			$('.birds, .sun, .cloud1, .cloud2, .cloud3, .cloud4, .cloud5').css('display', 'none');
+			$('.moon').show();
+		}
+		else {
+			$('#home').css('background','linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0))');
+			$('.moon').hide();
+		}
 		$('body').height(window.innerHeight);
 		$('body').show();
 		$(window).on('load',function() {

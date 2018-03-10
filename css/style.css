@@ -97,12 +97,20 @@
 /*island*/
 
 .sun {
-	width: 9%;
-	position: absolute;
-	bottom: 28%;
-	left: 20%;
-	z-index: -1;
-	transition: transform 2s, left 2s, bottom 2s;
+  width: 9%;
+  position: absolute;
+  bottom: 28%;
+  left: 20%;
+  z-index: -1;
+  transition: transform 2s, left 2s, bottom 2s;
+}
+.moon {
+  width: 6%;
+  position: absolute;
+  bottom: 48%;
+  left: 20%;
+  z-index: -1;
+  transition: transform 2s, left 2s, bottom 2s;
 }
 .sunhover {
 	left: 20%;
