@@ -321,21 +321,16 @@
   	transition: transform 2s;
 }
 .boat {
-	bottom: 80%;
 	right: 50%;
 	width: 5%;
   position: absolute;
-	z-index: 1001;
+	z-index: 990;
     animation-name: boat;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
     transition: transform 2s, bottom 2s;
-}
-.boathover {
-	bottom: 50%;
-	transform: scale(1.2);
 }
 .grass1 {
 	position: absolute;
@@ -529,13 +524,13 @@
 }
 @keyframes boat {
 	0% {
-		bottom: 42%;
+		bottom: 51%;
 	}
 	50% {
-		bottom: 43%;
+		bottom: 50%;
 	}
 	100% {
-		bottom: 42%;
+		bottom: 51%;
 	}
 }
 @keyframes baloon-anim{
@@ -1136,4 +1131,8 @@ body {
   100% {
     transform: scale(3);
   }
+}
+
+.team-link {
+  width: 50%;
 }

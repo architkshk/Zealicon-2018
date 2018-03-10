@@ -15,8 +15,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
     <link rel="stylesheet" type="text/css" href="css/default1.css" />
-    <link rel="stylesheet" type="text/css" href="css/component1.css" />
+    <link rel="stylesheet" type="text/css" href="css/component1.css" />-->
     <script src="js/modernizr.custom.js"></script>
 
   </head>
@@ -48,7 +49,7 @@
             <img class="img-responsive chipmunk" src="images/chipmunk.gif">
             <img class ="img-responsive starfish" src="images/starfish.png">
             <img class="img-responsive bird" src="images/bird.gif">
-            <!-- <img class="img-responsive boat" src="images/boat-home.png"> -->
+            <img class="img-responsive boat" src="images/boat-home.png">
             <img class="img-responsive shinchan" src="images/shinchan.gif">
             <img class ="img-responsive pikachu" src="images/pikachu.gif">
             <img class ="img-responsive pikachu_left" src="images/pikachu_left.gif">
@@ -140,32 +141,14 @@
           <img class ="img sponsorbg" src="images/teampage.png" />
           <div class="modal-body" style="height: 100%;">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
-            <!-- <a href="" data-toggle="modal" data-target="#myModal3" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:50%">Core Team</a>
-            <a href="" data-toggle="modal" data-target="" style="padding:0; border:0;outline-style: none; position:absolute;top:50%; left:30%">Web Team</a> -->
-            <ul class="grid cs-style-3">
-              <div class="row">
-                <li style="margin-right:-20px;">
-                  <figure>
-                    <img src="images/core-team.png" alt="img04">
-                    <figcaption>
-                      <h3>Core Team</h3>
-                      <!-- <span>Jacob Cummings</span> -->
-                      <a href="" data-toggle="modal" data-target="#myModal3">Take a look</a>
-                    </figcaption>
-                  </figure>
-                </li>
-                <li style="margin-left: -10px;">
-                  <figure>
-                    <img src="images/web-team.png">
-                    <figcaption>
-                      <h3>Web Team</h3>
-                      <!-- <span>Jacob Cummings</span> -->
-                      <a href="" data-toggle="modal" data-target="">Take a Look</a>
-                    </figcaption>
-                  </figure>
-                </li>
-              </div>
-            </ul>
+             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+               <a href="" data-toggle="modal" data-target="#myModal3" style="margin: 2%;">
+                <img src="images/core-team.png" alt="img04" class="team-link">
+               </a>
+                <a href="" data-toggle="modal" data-target="" style="margin: 2%;">
+                  <img src="images/web-team.png" class="team-link">
+                </a> 
+            </div>
           </div>
         </div>
       </div>
@@ -205,7 +188,7 @@
         <div class="modal-content">
           <img class ="img sponsorbg" src="images/sponsor-bg.png" />
             <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left"></i></button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left" style="color: black;"></i></button>
               <img class ="img sponsorbg" src="images/sponsor-bg.png" />
               <div class="sponsor-overlay">
                 <p>Sponsors are on their way. They'll join us soon.</p>
@@ -503,7 +486,7 @@
       });
     </script>
     <!-- Script to generate clicks -->
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
       function simulateClick(x, y) {
           var clickEvent = document.createEvent('MouseEvents');
           clickEvent.initMouseEvent('click', true, true, window, 0, 0, 0, x, y, false, false, false, false, 0, null);
@@ -520,7 +503,7 @@
           simulateClick(466, 255);//generating 10 clicks at a time
         }
       }
-    </script>
+    </script>-->
 
     <!-- water script -->
     <script type="text/javascript">
@@ -665,7 +648,7 @@
    </script>
    <!-- water script -->
    <!-- team script -->
-    <script>
+   <!-- <script>
       console.log(window.innerHeight);
       function opencat(evt, cat) {
          var i, tabcontent, tablinks;
@@ -682,8 +665,8 @@
       }
 
       // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-      </script>
+      // document.getElementById("defaultOpen").click();
+      </script>-->
    <!-- team script -->
   </body>
 </html>

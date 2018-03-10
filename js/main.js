@@ -70,58 +70,14 @@ $(document).ready(function(){
 				return false;
 			}
 		});
-
-		$('.menu-button').click(function(){
-			$('.menu').css('display','block');
-			$('a').focusout();
-		});
-
-		$('.abbtn, .abbtn-top').click(function(){
-			$('#aboutpage').css('right','0');
-			$('#homepage').css('right','100vw');
-		});
-		$('.abclose').click(function(){
-			$('#aboutpage').css('right','-100vw');
-			$('#homepage').css('right','0');
-		});
-
-		$('.spbtn').click(function(){
-			$('#sponsorpage').css('right','0');
-			$('#homepage').css('right','100vw');
-		});
-		$('.spclose').click(function(){
-			$('#sponsorpage').css('right','-100vw');
-			$('#homepage').css('right','0');
-		});
-
-		// $('.contbtn').click(function(){
-		// 	$('#contactpage').css('right','0');
-		// 	$('#homepage').css('right','100vw');
-		// });
-		// $('.contclose').click(function(){
-		// 	$('#contactpage').css('right','-100vw');
-		// 	$('#homepage').css('right','0');
-		// });
-		$('.schbtn').click(function(){
-			$('#schedulepage').css('right','0');
-			$('#homepage').css('right','100vw');
-		});
-		$('.scclose').click(function(){
-			$('#schedulepage').css('right','-100vw');
-			$('#homepage').css('right','0');
-		});
-
-    	$('.static').mouseover(function(){
-    		$('.static').css('display','none');
-    		$('.active').css('display','block');
-    	});
-    	$('.static').mouseleave(function(){
-    		$('.static').css('display','block');
-    		$('.active').css('display','none');
-    	});
-      }
+    }
     $( window ).on( "orientationchange", function( event ) {
       location.reload();
     });
     $("[data-toggle='tooltip']").tooltip();
 });
+
+
+function fout (){
+	$('a').focusout();
+}
