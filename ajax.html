@@ -5,6 +5,7 @@
 </head>
 <body>
 	<button id="user">Get Events</button>
+	<div id="events"></div>
 	<script type="text/javascript">
 		document.getElementById('user').addEventListener('click',showEvents);
 
@@ -15,6 +16,7 @@
 			xhr.onload = function(){
 				if(this.status==200){
 					console.log(JSON.parse(this.responseText));
+					document.getElementById("events").innerHTML = this.responseText;
 				}
 			}
 			xhr.send();
