@@ -269,12 +269,12 @@ a:hover {
     height: 400px;
     position: absolute;
     top: 15%;
-    left: 5%;
+    left: 4%;
 }
 
 .ci-item img {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
 #ci-item-2 {
@@ -325,5 +325,5 @@ li.brand-nav.active a:after{
 }
 
 .eventlist{
-  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
