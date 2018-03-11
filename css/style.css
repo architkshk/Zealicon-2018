@@ -1093,6 +1093,11 @@
 }
 
 body {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+  position: fixed; 
   transition: transform 1s;
 }
 
@@ -1106,7 +1111,7 @@ body {
 }
 
 #style-1::-webkit-scrollbar
-{
+{ 
   width: 6px;
   background-color: #000;
 }
@@ -1143,4 +1148,12 @@ body {
 
 .team-link {
   width: 80%;
+}
+
+.teambtn a:hover {
+  filter: drop-shadow(5px 4px 3px #236);
+}
+
+.img-circle {
+  margin: 0 auto;
 }
