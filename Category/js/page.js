@@ -1056,6 +1056,10 @@ var Page6 = (function () {
 })();
 (document).getElementById('bb-cat-next').addEventListener('click', function (e) {
     var count = $('#catCount').data('count');
+    if(count > 6){
+        $('#catCount').data('count', 0);
+        count=0;
+    }
     count += 1;
     $('#catCount').data('count', count);
     if (count == 1) {
