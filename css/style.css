@@ -349,6 +349,7 @@
 .boat {
 	right: 50%;
 	width: 5%;
+
   position: absolute;
 	z-index: 990;
     animation-name: boat;
@@ -624,6 +625,13 @@
 	.shore{
 		margin-left: -3%;
 	}
+  .sign{
+    bottom: 34%;
+    left: 24%;
+  }
+  .wave{
+    bottom: 46%
+  }
   #canvas{
     margin-top: 6%;
   }
@@ -631,7 +639,7 @@
     margin-left: -2.75%;
   }
   .zealicon{
-    bottom: 47%;
+    bottom: 38%;
     width: 42%;
   }
   .jungle{
@@ -677,13 +685,16 @@
     bottom: 42%;
   }
   .chipmunk{
-    bottom: 35%;
+    bottom: 34%;
   }
   .starfish{
     bottom: 40%;
   }
   .navbg{
     top: -15%;
+  }
+  .boat{
+    top:41%;
   }
   .top a{
     font-size: 14px;
