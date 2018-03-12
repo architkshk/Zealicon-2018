@@ -280,6 +280,24 @@
 	left: 4%;
 	transition: transform 2s;
 }
+.fb{
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+  top: 72%;
+  width: 3%;
+  left: 32%;
+  transform: skewY(-20deg);
+}
+.insta{
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+  top: 72%;
+  width: 3%;
+  left: 50%;
+  transform: skew(-20deg);
+}
 .bird {
 	bottom: 45%;
 	width: 5%;
@@ -384,7 +402,10 @@
     left: 0;
     overflow: hidden;
 }
-
+.fi{
+  position: fixed;
+  padding-left: 20%;
+}
 .modal-content {
     position: absolute;
     top: 0;
@@ -876,8 +897,11 @@
     bottom: 13%;
   }
   .tape{
-    bottom: 32%;
+    bottom: 20%;
     left: 8%;
+  }
+  .wave{
+    bottom: 21% !important;
   }
   .sun{
     bottom: 20%;
@@ -1096,8 +1120,8 @@ body {
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none; 
-  position: fixed; 
+  user-select: none;
+  position: fixed;
   transition: transform 1s;
 }
 
@@ -1111,7 +1135,7 @@ body {
 }
 
 #style-1::-webkit-scrollbar
-{ 
+{
   width: 6px;
   background-color: #000;
 }
@@ -1156,4 +1180,46 @@ body {
 
 .img-circle {
   margin: 0 auto;
+}
+
+.crate-container {
+  position: absolute;
+  bottom: 20%;
+  max-width: 95%;
+  max-height: 40%;
+  left: 50%;
+  padding-left: 1%;
+  transform: translateX(-50%);
+}
+
+
+.crate-container img {
+  display: inline-block;
+  width: 24%;
+  margin: 0 auto;
+}
+.crate-container a:hover {
+  filter: drop-shadow(5px 4px 3px #236);
+}
+
+
+.slot {
+  padding: 1% 0 4%;
+  margin-top: 1%;
+  height: auto;
+  min-height: 20%;
+  background-attachment: fixed;
+  width: 100%;
+  background: url(../images/board.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sign {
+  position: absolute;
+  bottom: 40%;
+  left:10%;
+  z-index: 1004;
+  width: 9%;
 }
