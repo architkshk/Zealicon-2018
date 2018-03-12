@@ -402,7 +402,10 @@
     left: 0;
     overflow: hidden;
 }
-
+.fi{
+  position: fixed;
+  padding-left: 20%;  
+}
 .modal-content {
     position: absolute;
     top: 0;
