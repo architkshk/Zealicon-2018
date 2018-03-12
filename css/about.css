@@ -28,6 +28,13 @@
   transform: translate(-50%,-50%);
 }
 
+@media(min-width: 1366px) and (max-width: 1440px){
+  .aboutbg{
+    max-width: 91%;
+    height: 91vh;
+  }
+}
+
 
 
 .close {
