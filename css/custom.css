@@ -272,6 +272,13 @@ a:hover {
     left: 4%;
 }
 
+@media(min-width: 1366px) and (max-width: 1440px){
+  .container .categoryIcon .ci-item {
+    top:5%;
+    left:-2%;
+  }
+}
+
 .ci-item img {
   width: 500px;
   height: 500px;
