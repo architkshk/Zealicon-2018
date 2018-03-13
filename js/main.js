@@ -6,7 +6,6 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
-    	$('#home').css('display','none');
 		$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});
 		$(".registerframe").colorbox({iframe:true, width:"90%", height:"95%"});
     	var d = new Date();
@@ -25,7 +24,6 @@ $(document).ready(function(){
 		$('body').show();
 		$(window).on('load',function() {
     		setTimeout(function(){
-		    	$('#home').css('display','block');
 				$(".vidloader").fadeOut();
 				$("#my_audio")[0].play();
 			},100);

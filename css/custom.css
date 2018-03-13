@@ -33,6 +33,9 @@ body {
     font-size: 100%;
     color: #333;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .js body {
