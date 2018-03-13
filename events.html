@@ -18,6 +18,7 @@
       padding: 0px;
       overflow-y: scroll;
       /*in order to adjust with the arrow*/
+      font-family: 'Raleway', sans-serif;
     }
 
     .modal {
@@ -307,12 +308,22 @@
      font-weight: bold;
      border-right: 2px solid black;
    }
-
+   #Coderz_eventname li,#Coloralo_eventname li,#Mechavoltz_eventname li,
+   #PlayitOn_eventname li,#Robotiles_eventname li,#Z-Wars_eventname li{
+     font-size: 25px;
+     font-weight: 400;
+   }
+   .category_to_click{
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: bold;
+     color: black;
+   }
  </style>
 </head>
 
 <body>
-   <div style="height:100%; width:100%; background:#000; filter:opacity(0.4); position:absolute;"></div>
+   <div style="height:100%; width:100%; filter:opacity(0.4); position:absolute;"></div>
   <nav>
     <div style="display:hidden" id="catCount" data-count="0"></div>
     <span class="c" id="bb-cat-prev"></span>
@@ -327,25 +338,26 @@
       <div class="ci-item" id="ci-item-5"><img src="images/robotiles.png"></div>
       <div class="ci-item" id="ci-item-6"><img src="images/z-wars.png"></div>
     </div>
-    <div class="bb-custom-wrapper" id="book-1">
+    <div class="bb-custom-wrapper" id="book-1" >
       <div id="bb-bookblock-1" class="bb-bookblock">
         <nav>
           <span class="b" id="bb-nav-prev-1"></span>
           <span class="a" id="bb-nav-next-1"></span>
         </nav>
-        <div class="bb-item" id="item-1-1">
+        <div class="bb-item" id="item-1-1" style="background:url(images/event-background.png);">
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>CODERZ</h2>
-              <!-- Button trigger modal --><a class="btn category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
+              <!-- Button trigger modal -->
+              <a class="btn category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
                View more details</a>
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-1-2" style="overflow-y: scroll;" id="style-1">
-          <div class="content force-overflow">
+         <div class="bb-item" id="item-1-2" style="overflow-y: scroll;background:url(images/event-background.png)">
+          <div class="content" style="margin-top:-10%; ">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Coderz_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%; font-size:15px" align="center" id="Coderz_eventname">
               </ul>
             </div>
           </div>
@@ -358,7 +370,7 @@
           <span class="b" id="bb-nav-prev-2"></span>
           <span class="a" id="bb-nav-next-2"></span>
         </nav>
-        <div class="bb-item" id="item-2-1">
+        <div class="bb-item" id="item-2-1" style="background:url(images/event-background.png);">
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>COLORALO</h2>
@@ -369,8 +381,8 @@
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-2-2" style="overflow-y: scroll;">
-          <div class="content">
+         <div class="bb-item" id="item-2-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
             <div class="scroller">
               <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Coloralo_eventname">
               </ul>
@@ -385,7 +397,7 @@
           <span class="b" id="bb-nav-prev-3"></span>
           <span class="a" id="bb-nav-next-3"></span>
         </nav>
-        <div class="bb-item" id="item-3-1">
+        <div class="bb-item" id="item-3-1" style="background:url(images/event-background.png);">
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>Mechavoltz</h2>
@@ -395,8 +407,8 @@
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-3-2" style="overflow-y: scroll;">
-          <div class="content">
+         <div class="bb-item" id="item-3-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
             <div class="scroller">
               <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Mechavoltz_eventname">
               </ul>
@@ -411,7 +423,7 @@
           <span class="b" id="bb-nav-prev-4"></span>
           <span class="a" id="bb-nav-next-4"></span>
         </nav>
-        <div class="bb-item" id="item-4-1">
+        <div class="bb-item" id="item-4-1" style="background:url(images/event-background.png);">
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>Play It On</h2>
@@ -422,8 +434,8 @@
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-4-2" style="overflow-y: scroll;">
-          <div class="content">
+         <div class="bb-item" id="item-4-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
             <div class="scroller">
               <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="PlayitOn_eventname">
               </ul>
@@ -438,7 +450,7 @@
           <span class="b" id="bb-nav-prev-5"></span>
           <span class="a" id="bb-nav-next-5"></span>
         </nav>
-        <div class="bb-item" id="item-5-1">
+        <div class="bb-item" id="item-5-1" style="background:url(images/event-background.png);">
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>Robotiles</h2>
@@ -447,8 +459,8 @@
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-5-2" style="overflow-y: scroll;">
-          <div class="content">
+         <div class="bb-item" id="item-5-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
             <div class="scroller">
               <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Robotiles_eventname">
               </ul>
@@ -463,8 +475,8 @@
           <span class="b" id="bb-nav-prev-6"></span>
           <span class="a" id="bb-nav-next-6"></span>
         </nav>
-        <div class="bb-item" id="item-6-1">
-          <div class="content">
+        <div class="bb-item" id="item-6-1" style="background:url(images/event-background.png);">
+          <div class="content" >
             <div class="scroller" style="text-align: center;">
               <h2>Z-Wars</h2>
               <!-- Button trigger modal -->
@@ -472,8 +484,8 @@
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-6-2" style="overflow-y: scroll;">
-          <div class="content">
+         <div class="bb-item" id="item-6-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
             <div class="scroller">
               <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Z-Wars_eventname">
               </ul>

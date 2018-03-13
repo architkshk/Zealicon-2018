@@ -25,7 +25,7 @@ $(document).ready(function(){
                 	data[(d.category).replace(/\s/g,'')] = [];
                 	//console.log("#"+((d.category).replace(/\s/g,''))+"_modal_eventname");
                 	//console.log("dfghj")
-                	$("#"+((d.category).replace(/\s/g,''))+"_eventname").append("<li>"+(d.event_name).replace(/\s/g,'').replace(/'/g, "\\'")+"</li>");
+                	$("#"+((d.category).replace(/\s/g,''))+"_eventname").append("<li>"+(d.event_name)+"</li>");
                 	$("#"+((d.category).replace(/\s/g,''))+"_modal_eventname").append('\<li role="presentation" class="brand-nav active "><a class="event_title_to_click" eventname="'+(d.event_name).replace(/\s/g,'').replace(/'/g, "\\'")+'" href="#event_tab_'+(d.event_name).replace(/\s/g,'').replace(/'/g, "\\'")+'" class="event_list" aria-controls="event_tab_'+(d.event_name).replace(/\s/g,'').replace(/'/g, "\\'")+'" role="tab" data-toggle="tab">'+(d.event_name)+'</a></li>');
                 	data[(d.category).replace(/\s/g,'')].push(d);
                 	//console.log($.parseJSON(d.contact)[0].name)
