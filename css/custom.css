@@ -13,6 +13,18 @@ html {
     padding: 0;
     margin: 0;
 }
+.close {
+  position: absolute !important;
+  left: 8vw !important;
+  text-decoration: none !important;
+  font-size: 4em !important;
+  outline-style: none !important;
+  color: #000 !important;
+  top: 8vh !important;
+  filter: opacity(100) !important;
+  opacity: 1 !important;
+}
+
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -366,9 +378,9 @@ li.brand-nav.active a:after{
 }
 
 
-
-
-
+.modal-body {
+    padding: 18px 5% !important;
+}
 
 
 .nav::-webkit-scrollbar-track

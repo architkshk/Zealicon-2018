@@ -44,6 +44,7 @@
 }
 
 #home{
+  display: none;
   background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
 }
 .shore{
@@ -152,6 +153,7 @@
 	animation-direction: normal;
 }
 .vidloader {
+  display: block;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -160,7 +162,7 @@
   left: 0;
   bottom: 0;
   background: rgb(247,247,249);
-  z-index: 1000000;
+  z-index: 100000;
 }
 .gif {
   position: absolute;
