@@ -6,6 +6,7 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
+				$(".iframe").colorbox({iframe:true, width:"93%", height:"97%"})
     	var d = new Date();
 		var n = d.getHours();
 		$('.moon').hide();
