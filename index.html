@@ -1570,12 +1570,6 @@
     </div>
     <audio id="my_audio" src="robin_hood_whistle.mp3" loop="loop"></audio>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Temporary script to play audio -->
-    <!-- <script type="text/javascript">
-      $("#my_audio")[0].play();
-    </script> -->
-    <!-- End of temp script -->
-    <!-- audio script -->
     <script type="text/javascript">
       var myAudio = document.getElementById("my_audio");
       var isPlaying = true;
@@ -1612,27 +1606,6 @@
         console.log(e.pageX+":"+e.pageY);
       });
     </script>
-    <!-- Script to generate clicks -->
-   <!-- <script type="text/javascript">
-      function simulateClick(x, y) {
-          var clickEvent = document.createEvent('MouseEvents');
-          clickEvent.initMouseEvent('click', true, true, window, 0, 0, 0, x, y, false, false, false, false, 0, null);
-          document.elementFromPoint(x, y).dispatchEvent(clickEvent);
-      }
-      simulateClick(70, 30);
-      simulateClick(110, 90);simulateClick(150, 90);simulateClick(115, 90);
-      simulateClick(130, 150);
-      simulateClick(20, 210);
-      simulateClick(100, 270);
-      setInterval(abc, 5000);//generates click after every 5 sec
-      function abc(){
-        for(let i=0;i<10;i++){
-          simulateClick(466, 255);//generating 10 clicks at a time
-        }
-      }
-    </script>-->
-
-    <!-- water script -->
     <script type="text/javascript">
      var c=document.getElementById('canvas'),
 
@@ -1773,27 +1746,5 @@
        animate();
      },60/1000);
    </script>
-   <!-- water script -->
-   <!-- team script -->
-   <!-- <script>
-      console.log(window.innerHeight);
-      function opencat(evt, cat) {
-         var i, tabcontent, tablinks;
-         tabcontent = document.getElementsByClassName("tabcontent");
-         for (i = 0; i < tabcontent.length; i++) {
-             tabcontent[i].style.display = "none";
-         }
-         tablinks = document.getElementsByClassName("tablinks");
-         for (i = 0; i < tablinks.length; i++) {
-             tablinks[i].className = tablinks[i].className.replace("catactive", "");
-         }
-         document.getElementById(cat).style.display = "block";
-         evt.currentTarget.className += " catactive";
-      }
-
-      // Get the element with id="defaultOpen" and click on it
-      // document.getElementById("defaultOpen").click();
-      </script>-->
-   <!-- team script -->
   </body>
 </html>
