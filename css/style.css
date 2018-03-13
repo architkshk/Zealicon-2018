@@ -1196,8 +1196,8 @@ body {
 .crate-container {
   position: absolute;
   bottom: 20%;
-  max-width: 95%;
-  max-height: 40%;
+  max-width: 100%;
+  max-height: 50%;
   left: 50%;
   padding-left: 1%;
   transform: translateX(-50%);

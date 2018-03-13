@@ -12,14 +12,14 @@ $(document).ready(function(){
                 wb.forEach(function(d){
                   rules = d.rules;
                   rules = $.parseJSON(rules)
-                  rulestring ="<ul>";
+                  rulestring ="<ol>";
                   rules.forEach(function(r){
                     rulestring = rulestring+"<li>";
                     rulestring+=r;
                     rulestring+="</li>";
 
                   })
-                  rulestring+="</ul>";
+                  rulestring+="</ol>";
                   console.log(rules.length)
                 	//console.log((d.category).replace(/\s/g,''));
                 	data[(d.category).replace(/\s/g,'')] = [];
@@ -33,7 +33,7 @@ $(document).ready(function(){
                 	$("#"+((d.category).replace(/\s/g,''))+"_event_desc_default").append('\
                     <div role="tabpanel" class="tab-pane event_specific_details_to_show" eve-cat="'+(d.category).replace(/\s/g,'')+'" id="event_tab_'+(d.event_name).replace(/\s/g,'')+'">\
                     <div class="col-md-8" id="desc">\
-                    <h2>Event Description</h2>'+$.parseJSON(d.event_description)+'<br><h3>Rules</h3>'+'\
+                    <h2 align="center">Event Description</h2>'+$.parseJSON(d.event_description)+'<br><h3 align="center">Rules</h3>'+'\
                     '+
                         rulestring
                     +'<br>\

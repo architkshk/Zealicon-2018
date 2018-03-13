@@ -71,10 +71,29 @@
       height: 100%;
       padding: 0;
     }
-    li{
-      list-style-type: none;
+    ol{
       text-align: left;
     }
+    #style-1::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #000;
+    }
+
+    #style-1::-webkit-scrollbar
+    {
+      width: 6px;
+      background-color: #000;
+    }
+
+    #style-1::-webkit-scrollbar-thumb
+    {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #262626;
+    }
+
   </style>
   <script src="js/modernizr.custom.79639.js"></script>
   <style type="text/css">
@@ -283,9 +302,12 @@
    }
    #desc{
      max-height: 80vh;
-overflow-y: scroll;
+     overflow-y: scroll;
+     text-align: left;
+     font-weight: bold;
      border-right: 2px solid black;
    }
+
  </style>
 </head>
 
@@ -315,15 +337,15 @@ overflow-y: scroll;
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>CODERZ</h2>
-              <!-- Button trigger modal --><a class="btn   category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
+              <!-- Button trigger modal --><a class="btn category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
                View more details</a>
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-1-2">
-          <div class="content">
+         <div class="bb-item" id="item-1-2" style="overflow-y: scroll;" id="style-1">
+          <div class="content force-overflow">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none" id="Coderz_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Coderz_eventname">
               </ul>
             </div>
           </div>
@@ -342,15 +364,15 @@ overflow-y: scroll;
               <h2>COLORALO</h2>
               <!-- Button trigger modal -->
 
-              <a class="btn   category_to_click" data-toggle="modal" data-category="Coloralo" data-target="#coloralo_myModal" style="padding:0; border:0;">
+              <a class="btn category_to_click" data-toggle="modal" data-category="Coloralo" data-target="#coloralo_myModal" style="padding:0; border:0;">
                 View more details</a>
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-2-2">
+         <div class="bb-item" id="item-2-2" style="overflow-y: scroll;">
           <div class="content">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none" id="Coloralo_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Coloralo_eventname">
               </ul>
             </div>
           </div>
@@ -368,15 +390,15 @@ overflow-y: scroll;
             <div class="scroller" style="text-align: center;">
               <h2>Mechavoltz</h2>
               <!-- Button trigger modal -->
-              <a class="btn category_to_click" data-toggle="modal" data-category="Mechavoltz" data-target="#mechavoltz_myModal" style="padding:0; border:0;">
+              <a class="btn category_to_click"  data-toggle="modal" data-category="Mechavoltz" data-target="#mechavoltz_myModal" style="padding:0; border:0;">
                View more details</a>
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-3-2">
+         <div class="bb-item" id="item-3-2" style="overflow-y: scroll;">
           <div class="content">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none" id="Mechavoltz_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Mechavoltz_eventname">
               </ul>
             </div>
           </div>
@@ -400,10 +422,10 @@ overflow-y: scroll;
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-4-2">
+         <div class="bb-item" id="item-4-2" style="overflow-y: scroll;">
           <div class="content">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none" id="PlayitOn_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="PlayitOn_eventname">
               </ul>
             </div>
           </div>
@@ -425,10 +447,10 @@ overflow-y: scroll;
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-5-2">
+         <div class="bb-item" id="item-5-2" style="overflow-y: scroll;">
           <div class="content">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none" id="Robotiles_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Robotiles_eventname">
               </ul>
             </div>
           </div>
@@ -446,14 +468,14 @@ overflow-y: scroll;
             <div class="scroller" style="text-align: center;">
               <h2>Z-Wars</h2>
               <!-- Button trigger modal -->
-            <a class="btn   category_to_click" data-toggle="modal" data-category="Z-Wars" data-target="#z-wars_myModal" style="padding:0; border:0;">               View more details</a>
+            <a class="btn category_to_click" data-toggle="modal" data-category="Z-Wars" data-target="#z-wars_myModal" style="padding:0; border:0;">               View more details</a>
              </div>
            </div>
          </div>
-         <div class="bb-item" id="item-6-2">
+         <div class="bb-item" id="item-6-2" style="overflow-y: scroll;">
           <div class="content">
             <div class="scroller">
-              <ul style="float: left;width: 50%;list-style: none" id="Z-Wars_eventname">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Z-Wars_eventname">
               </ul>
             </div>
           </div>
@@ -468,7 +490,7 @@ overflow-y: scroll;
           <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
-              <h4 id="cat_name">CODERZ</h4>
+              <h2 id="cat_name">CODERZ</h2>
               <div role="tabpanel" style="margin-top:5%;">
                 <div class="col-sm-3">
                   <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Coderz_modal_eventname">
@@ -492,7 +514,7 @@ overflow-y: scroll;
           <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
-              <h4 id="cat_name">COLORALO</h4>
+              <h2 id="cat_name">COLORALO</h2>
               <div role="tabpanel" style="margin-top:5%;">
                 <div class="col-sm-3">
                   <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Coloralo_modal_eventname">
@@ -516,7 +538,7 @@ overflow-y: scroll;
           <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
-              <h4 id="cat_name">Mechavoltz</h4>
+              <h2 id="cat_name">Mechavoltz</h2>
               <div role="tabpanel" style="margin-top:5%;">
                 <div class="col-sm-3">
                   <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Mechavoltz_modal_eventname">
@@ -540,7 +562,7 @@ overflow-y: scroll;
           <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
-              <h4 id="cat_name">Play It On</h4>
+              <h2 id="cat_name">Play It On</h2>
               <div role="tabpanel" style="margin-top:5%;">
                 <div class="col-sm-3">
                   <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="PlayitOn_modal_eventname">
@@ -565,7 +587,7 @@ overflow-y: scroll;
           <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
-              <h4 id="cat_name">Robotiles</h4>
+              <h2 id="cat_name">Robotiles</h2>
               <div role="tabpanel" style="margin-top:5%;">
                 <div class="col-sm-3">
                   <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Robotiles_modal_eventname">
@@ -590,7 +612,7 @@ overflow-y: scroll;
           <div class="modal-body" >
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <div class="row">
-              <h4 id="cat_name">Z-Wars</h4>
+              <h2 id="cat_name">Z-Wars</h2>
               <div role="tabpanel" style="margin-top:5%;">
                 <div class="col-sm-3">
                   <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Z-Wars_modal_eventname">
