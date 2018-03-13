@@ -979,6 +979,22 @@
 }
 
 @media(min-width: 1600px) and (max-width: 1920px){
+  .wave{
+    bottom: 22% !important;
+    left: 12% !important;
+  }
+  .sign{
+    bottom: 33% !important;
+  }
+  .insta{
+    top: 80%;
+  }
+  .fb{
+    top:81%;
+  }
+  .boat{
+    top: 50% !important;
+  }
   .shore{
     width: 110%;
   }
