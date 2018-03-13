@@ -6,7 +6,9 @@ $(document).ready(function(){
         $('body').hide();
     }
     else{
-				$(".iframe").colorbox({iframe:true, width:"93%", height:"97%"})
+    	$('#home').css('display','none');
+		$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});
+		$(".registerframe").colorbox({iframe:true, width:"90%", height:"95%"});
     	var d = new Date();
 		var n = d.getHours();
 		$('.moon').hide();
@@ -23,6 +25,7 @@ $(document).ready(function(){
 		$('body').show();
 		$(window).on('load',function() {
     		setTimeout(function(){
+		    	$('#home').css('display','block');
 				$(".vidloader").fadeOut();
 				$("#my_audio")[0].play();
 			},100);
