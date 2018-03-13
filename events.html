@@ -6,9 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events</title>
-  <meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
-  <meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
-  <meta name="author" content="Codrops" />
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
   <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
@@ -33,6 +30,9 @@
     }
 
     .modal-content {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: url(./images/event-background.png);
       position: absolute;
       top: 0;
       right: 0;
@@ -70,6 +70,10 @@
       width: 100%;
       height: 100%;
       padding: 0;
+    }
+    li{
+      list-style-type: none;
+      text-align: left;
     }
   </style>
   <script src="js/modernizr.custom.79639.js"></script>
@@ -284,6 +288,7 @@
 </head>
 
 <body>
+   <div style="height:100%; width:100%; background:#000; filter:opacity(0.4); position:absolute;"></div>
   <nav>
     <div style="display:hidden" id="catCount" data-count="0"></div>
     <span class="c" id="bb-cat-prev"></span>
@@ -308,9 +313,8 @@
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>CODERZ</h2>
-              <!-- Button trigger modal -->
-              <a class="btn btn-primary category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
-               text</a>
+              <!-- Button trigger modal --><a class="btn   category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
+               View more details</a>
              </div>
            </div>
          </div>
@@ -335,8 +339,9 @@
             <div class="scroller" style="text-align: center;">
               <h2>COLORALO</h2>
               <!-- Button trigger modal -->
-              <a class="btn btn-primary category_to_click" data-toggle="modal" data-category="Coloralo" data-target="#coloralo_myModal" style="padding:0; border:0;">
-               text</a>
+
+              <a class="btn   category_to_click" data-toggle="modal" data-category="Coloralo" data-target="#coloralo_myModal" style="padding:0; border:0;">
+                View more details</a>
              </div>
            </div>
          </div>
@@ -361,8 +366,8 @@
             <div class="scroller" style="text-align: center;">
               <h2>Mechavoltz</h2>
               <!-- Button trigger modal -->
-              <a class="btn btn-primary category_to_click" data-toggle="modal" data-category="Mechavoltz" data-target="#mechavoltz_myModal" style="padding:0; border:0;">
-               text</a>
+              <a class="btn category_to_click" data-toggle="modal" data-category="Mechavoltz" data-target="#mechavoltz_myModal" style="padding:0; border:0;">
+               View more details</a>
              </div>
            </div>
          </div>
@@ -387,8 +392,9 @@
             <div class="scroller" style="text-align: center;">
               <h2>Play It On</h2>
               <!-- Button trigger modal -->
-              <a class="btn btn-primary category_to_click" data-toggle="modal" data-category="PlayitOn" data-target="#playiton_myModal" style="padding:0; border:0;">
-               text</a>
+
+                          <a class="btn   category_to_click" data-toggle="modal" data-category="PlayitOn" data-target="#playiton_myModal" style="padding:0; border:0;">
+                           View more details</a>
              </div>
            </div>
          </div>
@@ -412,9 +418,8 @@
           <div class="content">
             <div class="scroller" style="text-align: center;">
               <h2>Robotiles</h2>
-              <!-- Button trigger modal -->
-              <a class="btn btn-primary category_to_click" data-toggle="modal" data-category="Robotiles" data-target="#robotiles_myModal" style="padding:0; border:0;">
-               text</a>
+              <!-- Button trigger modal --><a class="btn   category_to_click" data-toggle="modal" data-category="Robotiles" data-target="#robotiles_myModal" style="padding:0; border:0;">
+             View more details</a>
              </div>
            </div>
          </div>
@@ -439,8 +444,7 @@
             <div class="scroller" style="text-align: center;">
               <h2>Z-Wars</h2>
               <!-- Button trigger modal -->
-              <a class="btn btn-primary category_to_click" data-toggle="modal" data-category="Z-Wars" data-target="#z-wars_myModal" style="padding:0; border:0;">
-               text</a>
+            <a class="btn   category_to_click" data-toggle="modal" data-category="Z-Wars" data-target="#z-wars_myModal" style="padding:0; border:0;">               View more details</a>
              </div>
            </div>
          </div>
@@ -470,7 +474,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-9">
-                  <div class="tab-content" id="Coderz_event_desc_default"> 
+                  <div class="tab-content" id="Coderz_event_desc_default">
                   </div>
                 </div>
               </div>
@@ -494,7 +498,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-9">
-                  <div class="tab-content" id="Coloralo_event_desc_default"> 
+                  <div class="tab-content" id="Coloralo_event_desc_default">
                   </div>
                 </div>
               </div>
@@ -518,7 +522,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-9">
-                  <div class="tab-content" id="Mechavoltz_event_desc_default"> 
+                  <div class="tab-content" id="Mechavoltz_event_desc_default">
                   </div>
                 </div>
               </div>
@@ -542,7 +546,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-9">
-                  <div class="tab-content" id="PlayitOn_event_desc_default"> 
+                  <div class="tab-content" id="PlayitOn_event_desc_default">
 
                   </div>
                 </div>
@@ -567,7 +571,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-9">
-                  <div class="tab-content" id="Robotiles_event_desc_default"> 
+                  <div class="tab-content" id="Robotiles_event_desc_default">
 
                   </div>
                 </div>
@@ -592,7 +596,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-9">
-                  <div class="tab-content" id="Z-Wars_event_desc_default"> 
+                  <div class="tab-content" id="Z-Wars_event_desc_default">
 
                   </div>
                 </div>
