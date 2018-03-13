@@ -164,7 +164,7 @@
         <img class ="img schbg" src="images/schedule-bg.png">
           <div class="modal-body" style="height: 100%;">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-arrow-left"></i></button>
-            <h2 style="text-align:center; margin-top:6%; color:#8B4513; font-weight:700;">Schedule</h2>
+            <h2 style="text-align:center; margin-top:10%; color:#8B4513; font-weight:1000; font-size: 3em;">Schedule</h2>
             <div class="crate-container">
              <a href="" data-toggle="modal" data-target="#day1">
                <img class="img-responsive crate1" src="images/crate1.png">
@@ -1587,6 +1587,14 @@
       myAudio.onpause = function() {
         isPlaying = false;
       };
+
+      $('.cboxElement').click(function(){
+        setTimeout(function() {
+
+        $('#cboxClose').html('<i class="fa fa-arrow-left"></i>');
+        }, 100);
+    });
+
     </script>
     <!-- audio script -->
 
