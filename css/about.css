@@ -16,7 +16,10 @@
   transition: right 2s;
 }
 
-
+.bigevent{
+  padding: 1.6% 3%;
+  width: 100%;
+}
 .aboutbg {
   width: 100vw;
   max-width: 100%;
