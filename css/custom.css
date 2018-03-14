@@ -7,6 +7,7 @@ html {
 *,
 *:after,
 *:before {
+    font-family: 'Permanent Marker', Arial, sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -27,15 +28,15 @@ html {
 
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: url('../images/event.png') !important;
+    /*background: url('../images/event.png') !important;*/
+    background-color: #25CCF7 !important;
     font-weight: 400;
     font-size: 100%;
     color: #333;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
 }
 
 .js body {
@@ -58,8 +59,8 @@ a:hover {
     width: 600px;
     height: 400px;
     position: absolute;
-    right: 0;
-    top: 60px;
+    right: 20px;
+    top: 44px;
 }
 
 
@@ -212,6 +213,9 @@ a:hover {
 
 .scroller {
     padding: 10px 5% 10px 5%;
+}
+.scroller h2{
+  font-family: 'Permanent Marker', Arial, sans-serif !important;
 }
 
 .js .content:before,
