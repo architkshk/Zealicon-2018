@@ -1,0 +1,100 @@
+
+
+/* Style the tab */
+.tab {
+    float: left;
+    width: 20%;
+    height: 300px;
+    border-right: 1px solid white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #828080;
+    padding: 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #e5e5e5 !important;
+}
+
+/* Create an active/current "tab button" class */
+.catactive {
+    color: #fff !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+    /*float: left;*/
+    padding: 0px 5px;
+    /*border: 1px solid #ccc;*/
+    width: 80%;
+    border-left: none;
+    height: 300px;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contcontainer {
+  padding: 0 16px;
+  font-size: 15px;
+}
+
+.contacthead {
+  border-bottom: 1px solid white;
+}
+
+.contcontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#contact .title {
+  color: grey;
+}
+#contact .card1 img{
+  height: 200px;
+  width: 200px;
+}
+#contact .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+#contact .button:hover {
+  background-color: #555;
+}

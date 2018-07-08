@@ -1,0 +1,35 @@
+.jumbotron.bigBox{
+  color: black;
+  background-color: #ffeb3b;
+	width: 74%;
+  margin: 6% 13%;
+  border-radius: 10px;
+  height: 80rem;
+  position: relative;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.jumbotron.smallBox{
+  background-color: #5f9fb1;
+  color: white;
+  width: 88%;
+  margin: 4rem 4.5rem;
+  height: 78rem;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rb-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	min-height: 10%;
+	height: auto;
+	background: #444;
+}

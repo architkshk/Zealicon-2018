@@ -1,0 +1,1253 @@
+*{
+  font-family: 'Raleway', sans-serif;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-justify : inner-word;
+}
+.navbg{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    /*height: 20%;*/
+    z-index: 100;
+}
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    text-align: center;
+}
+
+.top {
+    text-align: center;
+    margin-left: 50px;
+}
+.top a {font-family: 'Permanent Marker', cursive;
+  font-variant: small-caps;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1.6em;
+    color: #fff;
+    transition: transform 0.5s;
+}
+
+.top a:hover {
+  font-weight: 700;
+  transform: rotate(-18deg);
+}
+
+#home{
+  background: linear-gradient(rgba(82,201,251,1),rgba(122,213,252,0.1),rgba(255,0,0,0));
+}
+.shore{
+  margin-top: 10%;
+  margin-left: -2%;
+  max-width: 110%;
+}
+#canvas{
+  margin-top: -10%;
+  max-width: 120%;
+}
+.water{
+  margin-left: -1.15%;
+  max-width: 110%;
+}
+/*      .vector{
+        position: absolute;
+        width: 33%;
+        height: 40%;
+        z-index: 999;
+        top: 43%;
+        left: -10%;
+      }
+      .poly {
+        animation: waves 1s infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes waves {
+        0% {
+          transform: scale(1.2);
+          transform-origin: center;
+        }
+      }
+*/
+/*island*/
+.zealicon {
+	position: absolute;
+	bottom: 20%;
+	width: 45%;
+	height: auto;
+	transition:bottom 2s, transform 2s;
+	z-index: 2;
+	left: 70%;
+	transform: translateX(-50%);
+}
+.zealiconhover {
+	transform:  translateX(-50%) scale(1.2);
+	bottom: 50%;
+}
+/*island*/
+
+.sun {
+  width: 9%;
+  position: absolute;
+  bottom: 28%;
+  left: 20%;
+  z-index: -1;
+  transition: transform 2s, left 2s, bottom 2s;
+}
+.moon {
+  width: 6%;
+  position: absolute;
+  bottom: 48%;
+  left: 20%;
+  z-index: -1;
+  transition: transform 2s, left 2s, bottom 2s;
+}
+.sunhover {
+	left: 20%;
+	transform: scale(1.2);
+	bottom: 50%;
+}
+
+.cloud1 {
+	top: 100px;
+	width: 150px;
+	position: absolute;
+	animation: cloud-move1 60s linear infinite;
+	animation-direction: normal;
+}
+.cloud2 {
+	top: 70px;
+	position: absolute;
+	animation: cloud-move5 46s linear infinite;
+	animation-direction: normal;
+}
+.cloud3 {
+	top: 80px;
+	width: 90px;
+	position: absolute;
+	animation: cloud-move3 70s linear infinite;
+	animation-direction: normal;
+}
+.cloud4 {
+	top: 78px;
+	position: absolute;
+	animation: cloud-move4 56s linear infinite;
+	animation-direction: normal;
+}
+.cloud5 {
+	top: 130px;
+	width: 70px;
+	position: absolute;
+	animation: cloud-move2 50s linear infinite;
+	animation-direction: normal;
+}
+.vidloader {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(247,247,249);
+  z-index: 100000;
+}
+.gif {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.birds {
+	position: absolute;
+	z-index: 999;
+	width: 13%;
+  	animation-name: birds-anim;
+  	animation-duration: 50s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out;
+  	animation-direction: normal;
+}
+.leftplant {
+	height: 50vh;
+	top: 5%;
+	left: -7%;
+	position: absolute;
+	z-index: 1000;
+	transition: transform 2s;
+}
+.tweety {
+	top: 6%;
+	left: 2%;
+	z-index: 1002;
+	width: 5%;
+	position: absolute;
+}
+.jungle{
+	width: 17%;
+	z-index: 1001;
+	position: absolute;
+	top: 9%;
+	left: -2%;
+	transition: transform 2s, top 2s;
+}
+.junglehover {
+	top: 7%;
+	transform: scale(1.2);
+}
+.baloon {
+  	position: absolute;
+  	z-index: 1001;
+  	width: 8%;
+    animation-name: baloon-anim;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transition: transform 2s;
+}
+.winnie {
+	position: absolute;
+	bottom: 25%;
+	width: 22%;
+	right: 8%;
+	z-index: 1001;
+	transition: transform 2s, right 2s;
+}
+.winniehover {
+	right: 4.5%;
+	transition: scale(1.2);
+}
+.chipmunk{
+	width: 12%;
+	bottom: 15%;
+	z-index: 1001;
+	position: absolute;
+	right : 5%;
+	transition: transform 2s, right 2s;
+}
+.chipmunkhover {
+	right: 0%;
+}
+.shinchan {
+	width: 12%;
+	z-index: 1001;
+	position: absolute;
+	bottom: 20%;
+	left: 15%;
+	transition: transform 2s, left 2s;
+}
+.shinchanhover {
+	left: 9%;
+	transform: scale(1.2);
+}
+.starfish {
+	position: absolute;
+	bottom: 25%;
+	right: 35%;
+	width: 4.5%;
+	z-index: 996;
+	transition: transform 2s;
+}
+.castle {
+	position: absolute;
+	bottom: 30%;
+	width: 12%;
+	z-index: 1000;
+	transition: transform 2s, left 2s;
+	left: 26vw;
+}
+.castlehover {
+	left: 23vw;
+	transform: scale(1.2);
+}
+.tape {
+	padding: 1%;
+	width: 7.5%;
+	z-index: 1000;
+	position: absolute;
+	bottom: 30%;
+	left: 4%;
+	transition: transform 2s;
+}
+.fb{
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+  top: 72%;
+  width: 3%;
+  left: 32%;
+  transform: skewY(-20deg);
+}
+.insta{
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.7;
+  top: 72%;
+  width: 3%;
+  left: 50%;
+  transform: skew(-20deg);
+}
+.bird {
+	bottom: 45%;
+	width: 5%;
+	position: absolute;
+  	animation-name: bird-anim;
+  	animation-duration: 12s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+  	z-index: 999;
+	transition: transform 2s;
+}
+.bird_left {
+	bottom: 45%;
+	width: 6%;
+	position: absolute;
+  	animation-name: bird-anim_left;
+  	animation-duration: 12s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+  	z-index: 999;
+	transition: transform 2s;
+}
+.pikachu {
+	position: absolute;
+	bottom: 40%;
+	height: 10%;
+  	animation-name: pikachu;
+  	animation-duration: 12s;
+  	z-index: 999;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+	transition: transform 2s;
+}
+.pikachu_left {
+	position: absolute;
+	bottom: 40%;
+	height: 10%;
+  	animation-name: pikachu_left;
+  	animation-duration: 12s;
+  	z-index: 999;
+  	animation-iteration-count: infinite;
+  	animation-direction: normal;
+  	animation-timing-function: linear;
+  	transition: transform 2s;
+}
+.boat {
+	right: 50%;
+	width: 5%;
+
+  position: absolute;
+	z-index: 990;
+    animation-name: boat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    transition: transform 2s, bottom 2s;
+}
+.grass1 {
+	position: absolute;
+	left: 0%;
+	z-index: 1005;
+	height: 100vh;
+	width: auto;
+	transition: left 1s linear, transform 1s;
+}
+.grass2 {
+	position: absolute;
+	right:  0%;
+	z-index: 1005;
+	height: 100vh;
+	width: auto;
+	transition: right 1s linear, transform 1s;
+}
+.grass1Hover {
+	left: -60%;
+	transform: scale(1.2);
+}
+.grass2Hover {
+	right: -60%;
+	transform: scale(1.2);
+}
+.grass3{
+  position: absolute;
+  left: 18%;
+  z-index: 1006;
+  /*height: 100vh;*/
+  width: 70%;
+  transition: left 2s linear, transform 2s;
+}
+.grass3Hover {
+  left: -110%;
+  transform: scale(1.2);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.fi{
+  position: fixed;
+  padding-left: 20%;
+}
+.modal-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.modal.fade {
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    transform: translate(0);
+}
+
+.modal-dialog {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+/*keyframes*/
+@keyframes cloud-move1 {
+	from {
+		right: -400px;
+	}
+	to {
+		right: 110vw;
+	}
+}
+@keyframes cloud-move5 {
+	from {
+		right: -5vw;
+	}
+	to {
+		right: 110vw;
+	}
+}
+@keyframes cloud-move2 {
+	0% {
+		right: 50vw;
+	}
+	50% {
+		right: 100vw;
+	}
+	50.00000001%{
+		right: -150px;
+	}
+	100% {
+		right: 50vw;
+	}
+}
+@keyframes cloud-move3 {
+	0% {
+		right: 40vw;
+	}
+	50% {
+		right: 110vw;
+	}
+	50.00000001%{
+		right: -150px;
+	}
+	100% {
+		right: 40vw;
+	}
+}
+@keyframes cloud-move4 {
+	0% {
+		right: 80vw;
+	}
+	50% {
+		right: 110vw;
+	}
+	50.00000001%{
+		right: -150px;
+	}
+	100% {
+		right: 80vw;
+	}
+}
+@keyframes birds-anim {
+	0% {
+		left: 20%;
+		top: 35%;
+	}
+	50% {
+		left: 5%;
+		top: -5%;
+	}
+	100% {
+		left: 20%;
+		top: 35%;
+	}
+}
+@keyframes bird-anim {
+	0% {
+		left: -21vw;
+	}
+	50% {
+		left: -21vw;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+@keyframes bird-anim_left {
+	0% {
+		right: -56vw;
+	}
+	50% {
+		right: 101vw;
+	}
+	100% {
+		right: 101vw;
+	}
+}
+@keyframes pikachu {
+	0% {
+		left: -15vw;
+	}
+	50% {
+		left: -15vw;
+	}
+	100% {
+		left: 111vw;
+	}
+}
+@keyframes pikachu_left {
+	0% {
+		right: -50vw;
+	}
+	50% {
+		right: 111vw;
+	}
+	100% {
+		right: 111vw;
+	}
+}
+@keyframes boat {
+	0% {
+		bottom: 51%;
+	}
+	50% {
+		bottom: 50%;
+	}
+	100% {
+		bottom: 51%;
+	}
+}
+@keyframes baloon-anim{
+  0% {
+    top: 12%;
+    right: 56%;
+  }
+  50% {
+    top: 19%;
+    right: 54%;
+  }
+  100% {
+    top: 12%;
+    right: 56%;
+  }
+}
+
+/*media queries*/
+@media(max-width: 768px){
+	.shore{
+		margin-left: -3%;
+	}
+  #canvas{
+    margin-top: 4%;
+  }
+  .water{
+    margin-left: -2.75%;
+  }
+  .zealicon{
+    bottom: 50%;
+    width: 42%;
+  }
+  .castle{
+    bottom: 25%;
+  }
+  .jungle{
+    left: -1%;
+  }
+  .sun{
+    bottom: 52%;
+  }
+  .cloud1{
+    width: 90px;
+  }
+  .cloud4{
+    height: 50px;
+  }
+  .cloud3{
+    width: 75px;
+  }
+  .cloud5{
+    width: 50px;
+  }
+  .cloud2{
+    height: 60px;
+  }
+  .birds{
+    top: 65%;
+  }
+}
+@media(min-width: 500px) and (max-width: 667px){
+	.shore{
+		margin-left: -3%;
+	}
+  .sign{
+    bottom: 34%;
+    left: 24%;
+  }
+  .wave{
+    bottom: 46%
+  }
+  #canvas{
+    margin-top: 6%;
+  }
+  .water{
+    margin-left: -2.75%;
+  }
+  .zealicon{
+    bottom: 38%;
+    width: 42%;
+  }
+  .jungle{
+    left: 2.5%;
+  }
+  .sun{
+    bottom: 50%;
+  }
+  .cloud1{
+    top: 30px;
+    width: 90px;
+  }
+  .cloud4{
+    top: 30px;
+    height: 50px;
+  }
+  .cloud3{
+    top: 30px;
+    width: 75px;
+  }
+  .cloud5{
+    top: 30px;
+    width: 50px;
+  }
+  .cloud2{
+    top: 30px;
+    height: 60px;
+  }
+  .birds{
+    top: 65%;
+  }
+  .shinchan{
+    bottom: 42%;
+  }
+  .tape{
+    bottom: 45%;
+    left: 8%;
+  }
+  .castle{
+    bottom: 47%;
+  }
+  .winnie{
+    bottom: 42%;
+  }
+  .chipmunk{
+    bottom: 34%;
+  }
+  .starfish{
+    bottom: 40%;
+  }
+  .navbg{
+    top: -15%;
+  }
+  .boat{
+    top:41%;
+  }
+  .top a{
+    font-size: 14px;
+    margin-left: -8px;
+    text-align: center;
+  }
+  .pikachu{
+    bottom: 53%;
+  }
+  .pikachu_left{
+    bottom: 53%;
+  }
+  .bird{
+    bottom: 58%;
+  }
+  .tweety{
+    top: 8%;
+    left: 5.5%;
+  }
+  .bird_left{
+    bottom: 58%;
+  }
+  .leftplant{
+    top: 9%;
+    left: -1.5%;
+  }
+  .reach-overlay p{
+    font-size: 1 em;
+  }
+}
+@media(min-width: 1024px) and (max-width: 1280px){
+  .shore{
+    width: 110%;
+  }
+  .castle{
+    bottom: 20%;
+  }
+  .shinchan{
+    bottom: 15%;
+  }
+  .tape{
+    bottom: 20%;
+    left: 10%;
+  }
+  .sun{
+    bottom: 20%;
+  }
+  .navbg{
+    top: -15%;
+  }
+  .zealicon{
+    bottom: 17%;
+  }
+  .winnie{
+    bottom: 15%
+  }
+  .chipmunk{
+    bottom: 10%;
+  }
+  .pikachu{
+    bottom: 28%;
+  }
+  .pikachu_left{
+    bottom: 28%;
+  }
+  .bird{
+    bottom: 33%;
+  }
+  .bird_left{
+    bottom: 33%;
+  }
+  .starfish{
+    bottom: 15%;
+  }
+
+}
+
+@media(min-width: 1280px) and (max-width: 1366px){
+  .shore{
+    width: 110%;
+  }
+  .castle{
+    bottom: 32%;
+  }
+  .shinchan{
+    bottom: 25%;
+  }
+  .tape{
+    bottom: 28%;
+    left: 8%;
+  }
+  .sun{
+    bottom: 25%;
+  }
+  .navbg{
+    top: -20%;
+  }
+  .zealicon{
+    bottom: 20%;
+  }
+  .tweety{
+    left: 5%
+  }
+  .winnie{
+    bottom: 27%
+  }
+  .chipmunk{
+    bottom: 18%;
+  }
+  .pikachu{
+    bottom:40%;
+  }
+  .pikachu_left{
+    bottom: 40%;
+  }
+  .jungle{
+    left: 3%;
+  }
+  .bird{
+    bottom: 45%;
+  }
+  .bird_left{
+    bottom: 45%;
+  }
+  .leftplant{
+    top: 8%;
+    left: 0.5%;
+  }
+  .starfish{
+    bottom: 24%;
+  }
+  .top a{
+    margin-top: 2.5%;
+  }
+}
+@media(min-width: 1366px) and (max-width: 1440px){
+  .shore{
+    max-width: 108%;
+  }
+  .castle{
+    bottom: 30%;
+  }
+  .shinchan{
+    bottom: 20%;
+    left: 13%;
+  }
+  .tape{
+    bottom: 28%;
+    left: 8%;
+  }
+  .sun{
+    bottom: 28%;
+  }
+  .navbg{
+    top: -20%;
+  }
+  .zealicon{
+    bottom: 20%;
+  }
+  .winnie{
+    bottom: 25%
+  }
+  .chipmunk{
+    bottom: 18%;
+  }
+  .pikachu{
+    bottom:40%;
+  }
+  .pikachu_left{
+    bottom: 40%;
+  }
+  .bird{
+    bottom: 45%;
+  }
+  .bird_left{
+    bottom: 45%;
+  }
+  .starfish{
+    bottom: 25%;
+  }
+  .cloud1{
+    top: 130px;
+  }
+  .cloud4{
+    top: 90px;
+  }
+  .cloud3{
+    top: 130px;
+  }
+  .cloud5{
+    top: 90px;
+  }
+  .cloud2{
+    top: 130px;
+  }
+  #canvas{
+    margin-top: -11%
+  }
+}
+@media(min-width: 1440px) and (max-width: 1600px){
+  .shore{
+    width: 110%;
+  }
+  #canvas{
+    margin-top: -14%;
+  }
+  .castle{
+    bottom: 23%;
+  }
+  .shinchan{
+    bottom: 13%;
+  }
+  .tape{
+    bottom: 20%;
+    left: 8%;
+  }
+  .wave{
+    bottom: 21% !important;
+  }
+  .sun{
+    bottom: 20%;
+  }
+  .navbg{
+    top: -18%;
+  }
+  .zealicon{
+    bottom: 14%;
+  }
+  .winnie{
+    bottom: 18%
+  }
+  .chipmunk{
+    bottom:12%;
+  }
+  .jungle{
+    left: 2%;
+    top: 15%
+  }
+  .pikachu{
+    bottom:30%;
+  }
+  .pikachu_left{
+    bottom: 30%;
+  }
+  .bird{
+    bottom: 35%;
+  }
+  .bird_left{
+    bottom: 35%;
+  }
+  .tweety{
+    left: 5%;
+    top: 13%;
+  }
+  .starfish{
+    bottom: 18%;
+  }
+  .cloud1{
+    top: 130px;
+  }
+  .cloud4{
+    top: 90px;
+  }
+  .cloud3{
+    top: 130px;
+  }
+  .cloud5{
+    top: 90px;
+  }
+  .cloud2{
+    top: 130px;
+  }
+  .leftplant{
+    left: -3%;
+    top: 11%;
+  }
+  .top a{
+    margin-top: 2.5%;
+    font-size: 28px;
+  }
+}
+
+@media(min-width: 1600px) and (max-width: 1920px){
+  .wave{
+    bottom: 22% !important;
+    left: 12% !important;
+  }
+  .sign{
+    bottom: 33% !important;
+  }
+  .insta{
+    top: 80%;
+  }
+  .fb{
+    top:81%;
+  }
+  .boat{
+    top: 50% !important;
+  }
+  .shore{
+    width: 110%;
+  }
+  #canvas{
+    margin-top: -16%;
+  }
+  .castle{
+    bottom: 25%;
+  }
+  .shinchan{
+    bottom: 15%;
+  }
+  .tape{
+    bottom: 20%;
+    left: 10%;
+  }
+  .sun{
+    bottom: 20%;
+  }
+  .navbg{
+    top: -20%;
+  }
+  .zealicon{
+    bottom: 12%;
+  }
+  .winnie{
+    bottom: 20%
+  }
+  .chipmunk{
+    bottom: 5%;
+  }
+  .pikachu{
+    bottom:33%;
+  }
+  .pikachu_left{
+    bottom: 33%;
+  }
+  .bird{
+    bottom: 39%;
+  }
+  .bird_left{
+    bottom: 39%;
+  }
+  .starfish{
+    bottom: 15%;
+  }
+  .cloud1{
+    top: 130px;
+  }
+  .cloud4{
+    top: 90px;
+  }
+  .cloud3{
+    top: 130px;
+  }
+  .cloud5{
+    top: 90px;
+  }
+  .cloud2{
+    top: 130px;
+  }
+  .top a{
+    font-size: 36px;
+  }
+}
+@media(min-width: 1920px){
+  .shore{
+    width: 110%;
+  }
+  #canvas{
+    margin-top: -16%;
+  }
+  .castle{
+    bottom: 25%;
+  }
+  .shinchan{
+    bottom: 15%;
+  }
+  .tape{
+    bottom: 20%;
+    left: 10%;
+  }
+  .sun{
+    bottom: 20%;
+  }
+  .navbg{
+    top: -20%;
+  }
+  .zealicon{
+    bottom: 12%;
+  }
+  .winnie{
+    bottom: 20%
+  }
+  .chipmunk{
+    bottom: 8%;
+  }
+  .tweety{
+    left: 4%;
+  }
+  .jungle{
+    top: 10%;
+    left: 3.5%;
+  }
+  .pikachu{
+    bottom:33%;
+  }
+  .pikachu_left{
+    bottom: 33%;
+  }
+  .bird{
+    bottom: 39%;
+  }
+  .bird_left{
+    bottom: 39%;
+  }
+  .leftplant{
+    top: 9%;
+    left: -1%;
+  }
+  .starfish{
+    bottom: 15%;
+  }
+  .cloud1{
+    top: 130px;
+  }
+  .cloud4{
+    top: 90px;
+  }
+  .cloud3{
+    top: 130px;
+  }
+  .cloud5{
+    top: 90px;
+  }
+  .cloud2{
+    top: 130px;
+  }
+  .top a{
+    margin-top: 2.3%;
+    font-size: 36px;
+  }
+}
+/*media queries*/
+
+.hover {
+  transform: scale(1.1);
+}
+
+body {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+  position: fixed;
+  transition: transform 1s;
+}
+
+
+
+#style-1::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #000;
+}
+
+#style-1::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #000;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #262626;
+}
+
+
+.wave {
+  position: absolute;
+  bottom: 30%;
+  left:10%;
+  animation: wave 0.7s linear infinite;
+  animation-direction: normal;
+  z-index: 999;
+  width: 3.5%;
+  }
+
+@keyframes wave {
+  0% {
+    transform: scale(3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+.team-link {
+  width: 80%;
+}
+
+.teambtn a:hover {
+  filter: drop-shadow(5px 4px 3px #236);
+}
+
+.img-circle {
+  margin: 0 auto;
+}
+
+.crate-container {
+  position: absolute;
+  bottom: 20%;
+  max-width: 100%;
+  max-height: 50%;
+  left: 50%;
+  padding-left: 1%;
+  transform: translateX(-50%);
+}
+
+
+.crate-container img {
+  display: inline-block;
+  width: 24%;
+  margin: 0 auto;
+}
+.crate-container a:hover {
+  filter: drop-shadow(5px 4px 3px #236);
+}
+
+
+.slot {
+  padding: 1% 0 4%;
+  margin-top: 1%;
+  height: auto;
+  min-height: 20%;
+  background-attachment: fixed;
+  width: 100%;
+  background: url(../images/board.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sign {
+  position: absolute;
+  bottom: 40%;
+  left:10%;
+  z-index: 1004;
+  width: 9%;
+}

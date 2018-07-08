@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <style type="text/css">
+    body {
+      text-align: center;
+      padding: 0px;
+      overflow-y: scroll;
+      /*in order to adjust with the arrow*/
+    }
+
+    .modal {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: scroll;
+    }
+
+    .modal-content {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background:linear-gradient(0deg,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(./images/event-background.png);
+      /*background: url(./images/event-background.png);*/
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .modal.fade {
+      opacity: 1;
+    }
+
+    .modal.fade .modal-dialog {
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      transform: translate(0);
+    }
+
+    .btn-black {
+      position: absolute;
+      bottom: 50px;
+      transform: translateX(-50%);
+      background: #222;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .modal-dialog {
+      position: fixed;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+    ol{
+      text-align: left;
+    }
+    #style-1::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #000;
+    }
+
+    #style-1::-webkit-scrollbar
+    {
+      width: 6px;
+      background-color: #000;
+    }
+
+    #style-1::-webkit-scrollbar-thumb
+    {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #262626;
+    }
+
+  </style>
+  <script src="js/modernizr.custom.79639.js"></script>
+  <style type="text/css">
+    .abc {
+      position: center;
+    }
+
+
+    .a {
+      position: relative;
+      right: 10%;
+      background: #000;
+      cursor: pointer;
+      display: inline-block;
+      margin: 30px;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    .a::before,
+    .a::after {
+      background: #fff;
+      content: '';
+      display: block;
+      height: 10px;
+      left: 0;
+      position: relative;
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transition: right 0.5s, -webkit-transform 0.5s;
+      transition: right 0.5s, -webkit-transform 0.5s;
+      transition: transform 0.5s, right 0.5s;
+      transition: transform 0.5s, right 0.5s, -webkit-transform 0.5s;
+      width: 2px;
+    }
+
+    .a::after {
+      -webkit-transform-origin: right top;
+      transform-origin: right top;
+    }
+
+    .a:hover::before,
+    .a:hover::after {
+      right: 7px;
+    }
+
+    .a:hover::before {
+      -webkit-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
+    }
+
+    .a:hover::after {
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+
+    .d {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      background: #000;
+      cursor: pointer;
+      display: inline-block;
+      margin: 30px;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    .d::before,
+    .d::after {
+      background: #fff;
+      content: '';
+      display: block;
+      height: 10px;
+      left: 0;
+      position: relative;
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transition: right 0.5s, -webkit-transform 0.5s;
+      transition: right 0.5s, -webkit-transform 0.5s;
+      transition: transform 0.5s, right 0.5s;
+      transition: transform 0.5s, right 0.5s, -webkit-transform 0.5s;
+      width: 2px;
+    }
+
+    .d::after {
+      -webkit-transform-origin: right top;
+      transform-origin: right top;
+    }
+
+    .d:hover::before,
+    .d:hover::after {
+      right: 7px;
+    }
+
+    .d:hover::before {
+      -webkit-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
+    }
+
+    .d:hover::after {
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+
+    .b {
+      background: #000;
+      cursor: pointer;
+      display: inline-block;
+      margin: 30px;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    .b::before,
+    .b::after {
+      background: #fff;
+      content: '';
+      display: block;
+      height: 10px;
+      left: 0;
+      position: relative;
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transition: left 0.5s, -webkit-transform 0.5s;
+      transition: left 0.5s, -webkit-transform 0.5s;
+      transition: transform 0.5s, left 0.5s;
+      transition: transform 0.5s, left 0.5s, -webkit-transform 0.5s;
+      width: 2px;
+    }
+
+    .b::after {
+      -webkit-transform-origin: left top;
+      transform-origin: left top;
+    }
+
+    .b:hover::before,
+    .b:hover::after {
+      left: -7px;
+    }
+
+    .b:hover::before {
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+
+    .b:hover::after {
+      -webkit-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
+    }
+
+    .c {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      position: absolute;
+      top: 0;
+      left: 20%;
+      background: #000;
+      cursor: pointer;
+      display: inline-block;
+      margin: 30px;
+      padding: 20px 30px;
+      z-index: 1000;
+    }
+
+    .c::before,
+    .c::after {
+      background: #fff;
+      content: '';
+      display: block;
+      height: 10px;
+      left: 0;
+      position: relative;
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transition: left 0.5s, -webkit-transform 0.5s;
+      transition: left 0.5s, -webkit-transform 0.5s;
+      transition: transform 0.5s, left 0.5s;
+      transition: transform 0.5s, left 0.5s, -webkit-transform 0.5s;
+      width: 2px;
+    }
+
+    .c::after {
+      -webkit-transform-origin: left top;
+      transform-origin: left top;
+    }
+
+    .c:hover::before,
+    .c:hover::after {
+      left: -7px;
+    }
+
+    .c:hover::before {
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+
+    .c:hover::after {
+      -webkit-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
+    }
+    .eventlist{
+     border: none;
+   }
+   #desc{
+     max-height: 80vh;
+     overflow-y: scroll;
+     text-align: left;
+     font-weight: bold;
+     border-right: 2px solid black;
+   }
+   #Coderz_eventname li,#Coloralo_eventname li,#Mechavoltz_eventname li,
+   #PlayitOn_eventname li,#Robotiles_eventname li,#Z-Wars_eventname li{
+     font-size: 25px;
+     font-weight: 400;
+   }
+   .category_to_click{
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: bold;
+     color: black;
+   }
+ </style>
+</head>
+
+<body>
+   <div style="height:100%; width:100%; filter:opacity(0.4); position:absolute;"></div>
+  <nav>
+    <div style="display:hidden" id="catCount" data-count="0"></div>
+    <span class="c" id="bb-cat-prev"></span>
+    <span class="d" id="bb-cat-next"></span>
+  </nav>
+  <div id="container" class="container">
+    <div class="categoryIcon">
+      <div class="ci-item" id="ci-item-1"><img src="images/coderz.png"></div>
+      <div class="ci-item" id="ci-item-2"><img src="images/coloralo.png"></div>
+      <div class="ci-item" id="ci-item-3"><img src="images/mechavoltz.png"></div>
+      <div class="ci-item" id="ci-item-4"><img src="images/playiton.png"></div>
+      <div class="ci-item" id="ci-item-5"><img src="images/robotiles.png"></div>
+      <div class="ci-item" id="ci-item-6"><img src="images/z-wars.png"></div>
+    </div>
+    <div class="bb-custom-wrapper" id="book-1" >
+      <div id="bb-bookblock-1" class="bb-bookblock">
+        <nav>
+          <span class="b" id="bb-nav-prev-1"></span>
+          <span class="a" id="bb-nav-next-1"></span>
+        </nav>
+        <div class="bb-item" id="item-1-1" style="background:url(images/event-background.png);">
+          <div class="content">
+            <div class="scroller" style="text-align: center;">
+              <h2>CODERZ</h2>
+              <!-- Button trigger modal -->
+              <a class="btn category_to_click" data-category="Coderz" data-toggle="modal" data-target="#coderz_myModal" style="padding:0; border:0;">
+               View more details</a>
+             </div>
+           </div>
+         </div>
+         <div class="bb-item" id="item-1-2" style="overflow-y: scroll;background:url(images/event-background.png)">
+          <div class="content" style="margin-top:-10%; ">
+            <div class="scroller">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%; font-size:15px" align="center" id="Coderz_eventname">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bb-custom-wrapper" id="book-2">
+      <div id="bb-bookblock-2" class="bb-bookblock">
+        <nav>
+          <span class="b" id="bb-nav-prev-2"></span>
+          <span class="a" id="bb-nav-next-2"></span>
+        </nav>
+        <div class="bb-item" id="item-2-1" style="background:url(images/event-background.png);">
+          <div class="content">
+            <div class="scroller" style="text-align: center;">
+              <h2>COLORALO</h2>
+              <!-- Button trigger modal -->
+
+              <a class="btn category_to_click" data-toggle="modal" data-category="Coloralo" data-target="#coloralo_myModal" style="padding:0; border:0;">
+                View more details</a>
+             </div>
+           </div>
+         </div>
+         <div class="bb-item" id="item-2-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
+            <div class="scroller">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Coloralo_eventname">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bb-custom-wrapper" id="book-3">
+      <div id="bb-bookblock-3" class="bb-bookblock">
+        <nav>
+          <span class="b" id="bb-nav-prev-3"></span>
+          <span class="a" id="bb-nav-next-3"></span>
+        </nav>
+        <div class="bb-item" id="item-3-1" style="background:url(images/event-background.png);">
+          <div class="content">
+            <div class="scroller" style="text-align: center;">
+              <h2>MECHAVOLTZ</h2>
+              <!-- Button trigger modal -->
+              <a class="btn category_to_click"  data-toggle="modal" data-category="Mechavoltz" data-target="#mechavoltz_myModal" style="padding:0; border:0;">
+               View more details</a>
+             </div>
+           </div>
+         </div>
+         <div class="bb-item" id="item-3-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
+            <div class="scroller">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Mechavoltz_eventname">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bb-custom-wrapper" id="book-4">
+      <div id="bb-bookblock-4" class="bb-bookblock">
+        <nav>
+          <span class="b" id="bb-nav-prev-4"></span>
+          <span class="a" id="bb-nav-next-4"></span>
+        </nav>
+        <div class="bb-item" id="item-4-1" style="background:url(images/event-background.png);">
+          <div class="content">
+            <div class="scroller" style="text-align: center;">
+              <h2>PLAY IT ON</h2>
+              <!-- Button trigger modal -->
+
+                          <a class="btn   category_to_click" data-toggle="modal" data-category="PlayitOn" data-target="#playiton_myModal" style="padding:0; border:0;">
+                           View more details</a>
+             </div>
+           </div>
+         </div>
+         <div class="bb-item" id="item-4-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
+            <div class="scroller">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="PlayitOn_eventname">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bb-custom-wrapper" id="book-5">
+      <div id="bb-bookblock-5" class="bb-bookblock">
+        <nav>
+          <span class="b" id="bb-nav-prev-5"></span>
+          <span class="a" id="bb-nav-next-5"></span>
+        </nav>
+        <div class="bb-item" id="item-5-1" style="background:url(images/event-background.png);">
+          <div class="content">
+            <div class="scroller" style="text-align: center;">
+              <h2>ROBOTILES</h2>
+              <!-- Button trigger modal --><a class="btn   category_to_click" data-toggle="modal" data-category="Robotiles" data-target="#robotiles_myModal" style="padding:0; border:0;">
+             View more details</a>
+             </div>
+           </div>
+         </div>
+         <div class="bb-item" id="item-5-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
+            <div class="scroller">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Robotiles_eventname">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bb-custom-wrapper" id="book-6">
+      <div id="bb-bookblock-6" class="bb-bookblock">
+        <nav>
+          <span class="b" id="bb-nav-prev-6"></span>
+          <span class="a" id="bb-nav-next-6"></span>
+        </nav>
+        <div class="bb-item" id="item-6-1" style="background:url(images/event-background.png);">
+          <div class="content" >
+            <div class="scroller" style="text-align: center;">
+              <h2>Z-WARS</h2>
+              <!-- Button trigger modal -->
+            <a class="btn category_to_click" data-toggle="modal" data-category="Z-Wars" data-target="#z-wars_myModal" style="padding:0; border:0;">               View more details</a>
+             </div>
+           </div>
+         </div>
+         <div class="bb-item" id="item-6-2" style="overflow-y: scroll;background:url(images/event-background.png);">
+          <div class="content" style="margin-top:-10%; ">
+            <div class="scroller">
+              <ul style="float: left;width: 50%;list-style: none;margin-left:25%;" align="center" id="Z-Wars_eventname">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+
+    <div class="modal fade " id="coderz_myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <h2 id="cat_name">CODERZ</h2>
+              <div role="tabpanel" style="margin-top:5%;">
+                <div class="col-sm-3">
+                  <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Coderz_modal_eventname">
+
+                  </ul>
+                </div>
+                <div class="col-sm-9">
+                  <div class="tab-content" id="Coderz_event_desc_default">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade " id="coloralo_myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <h2 id="cat_name">COLORALO</h2>
+              <div role="tabpanel" style="margin-top:5%;">
+                <div class="col-sm-3">
+                  <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Coloralo_modal_eventname">
+
+                  </ul>
+                </div>
+                <div class="col-sm-9">
+                  <div class="tab-content" id="Coloralo_event_desc_default">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade " id="mechavoltz_myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <h2 id="cat_name">Mechavoltz</h2>
+              <div role="tabpanel" style="margin-top:5%;">
+                <div class="col-sm-3">
+                  <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Mechavoltz_modal_eventname">
+
+                  </ul>
+                </div>
+                <div class="col-sm-9">
+                  <div class="tab-content" id="Mechavoltz_event_desc_default">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade " id="playiton_myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <h2 id="cat_name">Play It On</h2>
+              <div role="tabpanel" style="margin-top:5%;">
+                <div class="col-sm-3">
+                  <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="PlayitOn_modal_eventname">
+
+                  </ul>
+                </div>
+                <div class="col-sm-9">
+                  <div class="tab-content" id="PlayitOn_event_desc_default">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade " id="robotiles_myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <h2 id="cat_name">Robotiles</h2>
+              <div role="tabpanel" style="margin-top:5%;">
+                <div class="col-sm-3">
+                  <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Robotiles_modal_eventname">
+
+                  </ul>
+                </div>
+                <div class="col-sm-9">
+                  <div class="tab-content" id="Robotiles_event_desc_default">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade " id="z-wars_myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+              <h2 id="cat_name">Z-Wars</h2>
+              <div role="tabpanel" style="margin-top:5%;">
+                <div class="col-sm-3">
+                  <ul class="nav nav-pills brand-pills nav-stacked" role="tablist" id="Z-Wars_modal_eventname">
+
+                  </ul>
+                </div>
+                <div class="col-sm-9">
+                  <div class="tab-content" id="Z-Wars_event_desc_default">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.min.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/jquery.bookblock.js"></script>
+    <script src="js/page.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <script>
+      $(function() {
+        Page1.init();
+      });
+
+    </script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var url="http://backoffice.zealicon.in/events";
+      function testAnim(x) {
+        $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
+        console.log('class', 'modal-dialog  ' + x + '  animated');
+      };
+      $('#myModal','#coderz_myModal','#coloralo_myModal','#mechavoltz_myModal').on('show.bs.modal', function(e) {
+        testAnim('flipInY');
+      })
+      $('#myModal','#coderz_myModal','#coloralo_myModal','#mechavoltz_myModal').on('hide.bs.modal', function(e) {
+        testAnim('flipOutY');
+      })
+
+    </script>
+  </body>
+
+  </html>
